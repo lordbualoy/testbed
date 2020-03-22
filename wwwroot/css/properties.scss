@@ -1,0 +1,120 @@
+﻿/* latin-ext */
+@font-face {
+    font-family: 'MedievalSharp';
+    font-style: normal;
+    font-weight: 400;
+    src: local('MedievalSharp'), url(../fonts/MedievalSharp-latin-ext.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'MedievalSharp';
+    font-style: normal;
+    font-weight: 400;
+    src: local('MedievalSharp'), url(../fonts/MedievalSharp-latin.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+$container-width: 700px;
+$responsive-breakpoint: $container-width;
+$font: "MedievalSharp";
+$font-color: darkred;
+$border-color: saddlebrown;
+$background-color: wheat;
+$background-color-dark: burlywood;
+
+* {
+    font-family: $font;
+}
+
+%header1 {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+%header2 {
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+%header3 {
+    display: block;
+    font-size: 1.17em;
+    font-weight: bold;
+}
+
+.header {
+    @extend %header3;
+}
+
+.tabular {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 5px;
+    background-color: $background-color;
+    border-radius: 10px;
+    border: 1px solid $border-color;
+    display: flex;
+    flex-direction: column;
+
+    > legend {
+        @extend %header2;
+        color: $font-color;
+        background-color: $background-color-dark;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+        border: 1px solid $border-color;
+        padding: 5px;
+    }
+}
+
+.property {
+    > div {
+        &:nth-of-type(1) {
+
+            @media screen and (min-width: $responsive-breakpoint) {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+
+    .positive {
+        color: green;
+    }
+
+    .negative {
+        color: red;
+    }
+}
+
+p, span, li, dt, dd {
+    color: $font-color;
+}
+
+ul {
+    &.effect {
+        list-style-type: none;
+    }
+
+    @mixin list($name, $sign) {
+        > li.#{$name}:before {
+            content: $sign;
+            position: absolute;
+            margin-left: -1.1em;
+        }
+    }
+
+    @include list(positive, "+");
+    @include list(negative, "-");
+}
+
+#container {
+    width: 100%;
+    max-width: $container-width;
+}

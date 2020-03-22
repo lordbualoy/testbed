@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title></title>
+
+    
+    <link rel="stylesheet" href="wwwroot/css/creature.min.css" />
+
+</head>
+<body>
+    
+<template name="Container">
+    <div class="outline">
+    </div>
+    <div class="tab">
+        <div>
+            <span name="Profile" class="tab-button">
+                Profile
+            </span><span name="Attributes" class="tab-button">
+                Attributes
+            </span><span name="Properties" class="tab-button">
+                Properties
+            </span><span name="Classes" class="tab-button">
+                Classes
+            </span><span name="Feats" class="tab-button">
+                Feats
+            </span><span name="Skills" class="tab-button">
+                Skills
+            </span><span name="Spells" class="tab-button">
+                Spells
+            </span><span name="Traits" class="tab-button">
+                Traits
+            </span>
+        </div>
+    </div>
+    <div class="content">
+    </div>
+</template>
+<template name="Outline">
+    <div class="nick-name">{{NickName}}</div>
+    <div>
+        <div>
+            <div>
+                <img src="data:image/webp;base64,{{Image}}">
+                <span>Ability Estimation</span>
+                <span>{{AbilityEstimation}}</span>
+            </div>
+        </div>
+        <div class="tabular">
+            <div>
+                <span>Proper Name</span>
+                <span>{{ProperName}}</span>
+            </div>
+            <div>
+                <span>Sex</span>
+                <span>{{Sex}}</span>
+            </div>
+            <div>
+                <span>Race</span>
+                <span>{{Race}}</span>
+            </div>
+            <div>
+                <span>Breed</span>
+                <span>{{Breed}}</span>
+            </div>
+            <div>
+                <span>Birthdate</span>
+                <span>{{Birthdate}}</span>
+            </div>
+            <div>
+                <span>Age</span>
+                <span>{{Age}}</span>
+            </div>
+            <div>
+                <span>Height</span>
+                <span>{{Height}}</span>
+            </div>
+            <div>
+                <span>Weight</span>
+                <span>{{Weight}}</span>
+            </div>
+            <div>
+                <span>Physique</span>
+                <span>{{Physique}}</span>
+            </div>
+            <div>
+                <span>Residence</span>
+                <span>{{Residence}}</span>
+            </div>
+            <div>
+                <span>Literacy</span>
+                <span>{{Literacy}}</span>
+            </div>
+            <div>
+                <span>Nationality</span>
+                <span>{{Nationality}}</span>
+            </div>
+            <div>
+                <span>Affiliation</span>
+                <span>{{Affiliation}}</span>
+            </div>
+            <div>
+                <span>Rank</span>
+                <span>{{Rank}}</span>
+            </div>
+            <div>
+                <span>Occupation</span>
+                <span>{{Occupation}}</span>
+            </div>
+            <div>
+                <span>Social Class</span>
+                <span>{{SocialClass}}</span>
+            </div>
+            <div>
+                <span>Religion</span>
+                <span>{{Religion}}</span>
+            </div>
+            <div>
+                <span>Fighting Habit</span>
+                <span>{{FightingHabit}}</span>
+            </div>
+            <div>
+                <span>Personality</span>
+                <ul>
+                    {{#Personality}}
+                    <li>{{.}}</li>
+                    {{/Personality}}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <p>
+        {{Description}}
+    </p>
+</template>
+<template name="Profile">
+    <div id="content-profile">
+        <fieldset class="tabular">
+            <legend>True Identity</legend>
+            <div>
+                <span>Name</span>
+                <span>Grani</span>
+            </div>
+            <div>
+                <span>Alias</span>
+                <span>-</span>
+            </div>
+            <div>
+                <span>Racial Category</span>
+                <span>Humanoid</span>
+            </div>
+            <div>
+                <span>Race</span>
+                <span>Kuranta</span>
+            </div>
+            <div>
+                <span>Breed</span>
+                <span>-</span>
+            </div>
+            <div>
+                <span>Nationality</span>
+                <span>Victoria</span>
+            </div>
+            <div>
+                <span>Birthplace</span>
+                <span>Victoria</span>
+            </div>
+            <div>
+                <span>Birthdate</span>
+                <span>?</span>
+            </div>
+            <div>
+                <span>Chronological Age</span>
+                <span>?</span>
+            </div>
+            <div>
+                <span>Biological Age</span>
+                <span>?</span>
+            </div>
+            <div>
+                <span>Apparent Age</span>
+                <span>?</span>
+            </div>
+        </fieldset>
+        <fieldset class="tabular">
+            <legend>Alternate Identity #1</legend>
+            <div>
+                <span>Name</span>
+                <span>?</span>
+            </div>
+        </fieldset>
+        <fieldset class="tabular">
+            <legend>Genealogical Information</legend>
+            <div>
+                <span>Father</span>
+                <span>?</span>
+            </div>
+            <div>
+                <span>Mother</span>
+                <span>?</span>
+            </div>
+            <div>
+                <span>Siblings</span>
+                <span>?</span>
+            </div>
+            <div>
+                <span>Spouse</span>
+                <span>-</span>
+            </div>
+            <div>
+                <span>Children</span>
+                <span>-</span>
+            </div>
+        </fieldset>
+    </div>
+</template>
+<template name="Attributes">
+    <div id="content-attributes">
+        <fieldset class="tabular">
+            <legend>Primary Attributes</legend>
+            <div>
+                <span>Strength</span>
+                <span>100</span>
+            </div>
+            <div>
+                <span>Endurance</span>
+                <span>100</span>
+            </div>
+            <div>
+                <span>Constitution</span>
+                <span>100</span>
+            </div>
+            <div>
+                <span>Willpower</span>
+                <span>100</span>
+            </div>
+            <div>
+                <span>Agility</span>
+                <span>100</span>
+            </div>
+            <div>
+                <span>Reflex</span>
+                <span>100</span>
+            </div>
+            <div>
+                <span>Dexterity</span>
+                <span>100</span>
+            </div>
+            <div>
+                <span>Intelligence</span>
+                <span>100</span>
+            </div>
+            <div>
+                <span>Lacertilia Index</span>
+                <span>100</span>
+            </div>
+            <div>
+                <span>Luck</span>
+                <span>100</span>
+            </div>
+        </fieldset>
+        <fieldset class="tabular">
+            <legend>Secondary Attributes</legend>
+            <div>
+                <span>Health Point</span>
+                <span>100</span>
+            </div>
+            <div>
+                <span>Stamina Point</span>
+                <span>100</span>
+            </div>
+            <div>
+                <span>Sexual Dimorphism</span>
+                <span></span>
+            </div>
+            <div>
+                <span>Attractiveness</span>
+                <span></span>
+            </div>
+            <div>
+                <span>Sex Appeal</span>
+                <span></span>
+            </div>
+            <div>
+                <span>Fat</span>
+                <span></span>
+            </div>
+            <div>
+                <span>% Body Fat</span>
+                <span></span>
+            </div>
+            <div>
+                <span>Height</span>
+                <span>154 cm</span>
+            </div>
+            <div>
+                <span>Mass</span>
+                <span></span>
+            </div>
+            <div>
+                <span>Skeletal Muscle Mass</span>
+                <span></span>
+            </div>
+            <!--<div>
+              <span>Body Mass Index</span>
+              <span></span>
+            </div>-->
+            <div>
+                <span>Corpulence Index</span>
+                <span></span>
+            </div>
+            <div>
+                <span>Breast Size</span>
+                <span></span>
+            </div>
+            <div>
+                <span>Waist Hip Ratio</span>
+                <span></span>
+            </div>
+            <div>
+                <span>Physique</span>
+                <span></span>
+            </div>
+            <div>
+                <span>Skeletal Frame</span>
+                <span></span>
+            </div>
+            <div>
+                <span>Maximum Carrying Capacity</span>
+                <span></span>
+            </div>
+            <div>
+                <span>Terrestrial Speed</span>
+                <span></span>
+            </div>
+            <div>
+                <span>Terrestrial Mobility</span>
+                <span></span>
+            </div>
+            <div>
+                <span>Aquatic Speed</span>
+                <span></span>
+            </div>
+            <div>
+                <span>Aquatic Mobility</span>
+                <span></span>
+            </div>
+            <div>
+                <span>Buoyancy</span>
+                <span></span>
+            </div>
+            <div>
+                <span>Breath Holding Duration</span>
+                <span></span>
+            </div>
+            <div>
+                <span>Aerial Speed</span>
+                <span>-</span>
+            </div>
+            <div>
+                <span>Aerial Mobility</span>
+                <span>-</span>
+            </div>
+            <div>
+                <span>Max Altitude</span>
+                <span>-</span>
+            </div>
+            <div>
+                <span>Altitude Gaining</span>
+                <span>-</span>
+            </div>
+            <div>
+                <span>Flexibility</span>
+                <span>100</span>
+            </div>
+            <div>
+                <span>Nourishment</span>
+                <span>Normal</span>
+            </div>
+            <div>
+                <span>Grappling Power</span>
+                <span></span>
+            </div>
+        </fieldset>
+        <fieldset class="tabular">
+            <legend>Tertiary Attributes</legend>
+            <div>
+                <span>Social Rank</span>
+                <span></span>
+            </div>
+            <div>
+                <span>Organization Rank</span>
+                <span></span>
+            </div>
+            <div>
+                <span>Honorary Rank</span>
+                <span></span>
+            </div>
+            <div>
+                <span>Reputation</span>
+                <span></span>
+            </div>
+            <div>
+                <span>Skin Color</span>
+                <span></span>
+            </div>
+            <div>
+                <span>Eye Color</span>
+                <span>Purple</span>
+            </div>
+            <div>
+                <span>Hair Color</span>
+                <span>White</span>
+            </div>
+        </fieldset>
+    </div>
+</template>
+<template name="Properties">
+    <div id="content-properties">
+        <fieldset class="tabular">
+            <legend>Properties</legend>
+            <ul>
+                <li>Right-handed</li>
+                <li>Bipedalism</li>
+                <li>High Jump</li>
+                <li>Enhanced Balance</li>
+                <li>Binocular Vision</li>
+                <li>Peripheral Vision</li>
+                <li>Trichromacy</li>
+                <li>Horse Ears</li>
+                <li>Horse Tail</li>
+            </ul>
+        </fieldset>
+    </div>
+</template>
+<template name="Classes">
+    <div id="content-classes">
+        <fieldset class="tabular">
+            <legend>Classes</legend>
+            <div>
+                <span>Vanguard</span>
+                <span>5</span>
+            </div>
+            <div>
+                <span>Police</span>
+                <span>5</span>
+            </div>
+            <div>
+                <span>Spearman</span>
+                <span>5</span>
+            </div>
+            <div>
+                <span>Pikeman</span>
+                <span>5</span>
+            </div>
+            <div>
+                <span>Lancer</span>
+                <span>5</span>
+            </div>
+            <div>
+                <span>Cavalry</span>
+                <span>5</span>
+            </div>
+        </fieldset>
+    </div>
+</template>
+<template name="Feats">
+    <div id="content-feats">
+        <fieldset class="tabular">
+            <legend>Feats</legend>
+            <ul>
+            </ul>
+        </fieldset>
+    </div>
+</template>
+<template name="Skills">
+    <div id="content-skills">
+        <fieldset class="tabular">
+            <legend>Locomotion</legend>
+            <div>
+                <span>Running</span>
+                <span>10</span>
+            </div>
+            <div>
+                <span>Acrobatic</span>
+                <span>10</span>
+            </div>
+            <div>
+                <span>Parkour (Learned)</span>
+                <span>10</span>
+            </div>
+            <div>
+                <span>Crowd Weaving</span>
+                <span>7</span>
+            </div>
+            <div>
+                <span>Climbing</span>
+                <span>8</span>
+            </div>
+            <div>
+                <span>Branchiation (Learned)</span>
+                <span>0</span>
+            </div>
+            <div>
+                <span>Swimming</span>
+                <span>3</span>
+            </div>
+            <div>
+                <span>Diving</span>
+                <span>3</span>
+            </div>
+            <div>
+                <span>Aquabatic</span>
+                <span>0</span>
+            </div>
+            <div>
+                <span>Flying</span>
+                <span>-</span>
+            </div>
+            <div>
+                <span>Aerobatic</span>
+                <span>-</span>
+            </div>
+        </fieldset>
+        <fieldset class="tabular">
+            <legend>Martial Fighting Skill</legend>
+            <div>
+                <span>Close-Quarter Combat Avoiding</span>
+                <span>10</span>
+            </div>
+            <div>
+                <span>Projectile Avoiding</span>
+                <span>5</span>
+            </div>
+            <div>
+                <span>Striking</span>
+                <span>4</span>
+            </div>
+            <div>
+                <span>Grappling</span>
+                <span>2</span>
+            </div>
+            <div>
+                <span>Knife Proficiency</span>
+                <span>3</span>
+            </div>
+            <div>
+                <span>Staff Proficiency</span>
+                <span>6</span>
+            </div>
+            <div>
+                <span>Swordsmanship</span>
+                <span>1</span>
+            </div>
+            <div>
+                <span>Axe Proficiency</span>
+                <span>1</span>
+            </div>
+            <div>
+                <span>Mace Proficiency</span>
+                <span>1</span>
+            </div>
+            <div>
+                <span>Spear Proficiency</span>
+                <span>10</span>
+            </div>
+            <div>
+                <span>Polearms Proficiency</span>
+                <span>10</span>
+            </div>
+            <div>
+                <span>Flexible Weapons Proficiency</span>
+                <span>0</span>
+            </div>
+            <div>
+                <span>Shield Proficiency</span>
+                <span>1</span>
+            </div>
+            <div>
+                <span>Wielding Multiple Weapons</span>
+                <span>1</span>
+            </div>
+            <div>
+                <span>Throwing Skill</span>
+                <span>3</span>
+            </div>
+            <div>
+                <span>Slinging</span>
+                <span>0</span>
+            </div>
+            <div>
+                <span>Archery</span>
+                <span>0</span>
+            </div>
+            <div>
+                <span>Marksmanship (Crossbow)</span>
+                <span>0</span>
+            </div>
+            <div>
+                <span>Marksmanship (Gun)</span>
+                <span>5</span>
+            </div>
+            <div>
+                <span>Riding</span>
+                <span>7</span>
+            </div>
+        </fieldset>
+        <fieldset class="tabular">
+            <legend>Warfare</legend>
+            <div>
+                <span>Strategy</span>
+                <span>6</span>
+            </div>
+            <div>
+                <span>Tactic</span>
+                <span>6</span>
+            </div>
+        </fieldset>
+        <fieldset class="tabular">
+            <legend>Underhanded</legend>
+            <div>
+                <span>Street Smart</span>
+                <span>6</span>
+            </div>
+            <div>
+                <span>Deception</span>
+                <span>1</span>
+            </div>
+            <div>
+                <span>Intimidation</span>
+                <span>0</span>
+            </div>
+            <div>
+                <span>Bribing</span>
+                <span>0</span>
+            </div>
+            <div>
+                <span>Disguise</span>
+                <span>1</span>
+            </div>
+            <div>
+                <span>Camouflage</span>
+                <span>2</span>
+            </div>
+            <div>
+                <span>Hide</span>
+                <span>2</span>
+            </div>
+            <div>
+                <span>Sneaking</span>
+                <span>2</span>
+            </div>
+            <div>
+                <span>Stalking</span>
+                <span>4</span>
+            </div>
+            <div>
+                <span>Filch</span>
+                <span>0</span>
+            </div>
+            <div>
+                <span>Pickpocketing</span>
+                <span>0</span>
+            </div>
+            <div>
+                <span>Lock Picking</span>
+                <span>0</span>
+            </div>
+            <div>
+                <span>Forgery</span>
+                <span>0</span>
+            </div>
+            <div>
+                <span>Assassination</span>
+                <span>1</span>
+            </div>
+        </fieldset>
+    </div>
+</template>
+<template name="Spells">
+    <div id="content-spells">
+        <fieldset class="tabular">
+            <legend>Spells</legend>
+            <div>
+                <span>Originium Arts</span>
+                <span></span>
+            </div>
+        </fieldset>
+    </div>
+</template>
+<template name="Traits">
+    <div id="content-traits">
+        <fieldset class="tabular">
+            <legend>Traits</legend>
+            <ul>
+                <li>Confident</li>
+                <li>Cheerful</li>
+                <li>Brave</li>
+                <li>Loyal</li>
+                <li>Emotional</li>
+                <li>Charismatic</li>
+                <li>Sociable</li>
+                <li>Kindhearted</li>
+                <li>Just</li>
+                <li>Determined</li>
+            </ul>
+        </fieldset>
+    </div>
+</template>
+
+
+
+    
+    <script src="wwwroot/js/mustache.min.js"></script>
+    <script>
+        const queryString = new URLSearchParams(window.location.search);
+        const creature = queryString.get('creature');
+        if (creature) {
+            fetch(`wwwroot/creatures/${creature}.json`)
+                .then((resp) => resp.json())
+                .then(function(data) {
+                    document.title = data.Outline.NickName;
+
+                    const container = document.createElement('div');
+                    container.id = 'container';
+                    container.innerHTML = document.querySelector('template[name=Container]').innerHTML;
+
+                    container.querySelector('.outline').innerHTML = Mustache.render(document.querySelector('template[name=Outline]').innerHTML, data.Outline);
+                    
+                    const tab = container.querySelector('.tab');
+                    const content = container.querySelector('.content');
+
+                    tab.querySelectorAll('.tab-button').forEach(x =>
+                    {
+                        x.addEventListener('click', e => activeTab(e.target.getAttribute('name')));
+                    });
+
+                    activeTab('Profile');
+
+                    document.body.appendChild(container);
+
+                    function activeTab(name) {
+                        tab.querySelectorAll('.tab-button').forEach(x => x.classList.remove('active-tab'));
+                        tab.querySelector(`.tab-button[name=${name}]`).classList.add('active-tab');
+                        content.innerHTML = Mustache.render(document.querySelector(`template[name=${name}]`).innerHTML, data.Detail[name]);
+                    }
+                });
+        }
+    </script>
+
+</body>
+</html>
