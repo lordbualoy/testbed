@@ -221,46 +221,50 @@
     <div id="content-attributes">
         <fieldset class="tabular">
             <legend>Primary Attributes</legend>
-            <div>
-                <span>Strength</span>
-                <span>100</span>
-            </div>
-            <div>
-                <span>Endurance</span>
-                <span>100</span>
-            </div>
-            <div>
-                <span>Constitution</span>
-                <span>100</span>
-            </div>
-            <div>
-                <span>Willpower</span>
-                <span>100</span>
-            </div>
-            <div>
-                <span>Agility</span>
-                <span>100</span>
-            </div>
-            <div>
-                <span>Reflex</span>
-                <span>100</span>
-            </div>
-            <div>
-                <span>Dexterity</span>
-                <span>100</span>
-            </div>
-            <div>
-                <span>Intelligence</span>
-                <span>100</span>
-            </div>
-            <div>
-                <span>Lacertilia Index</span>
-                <span>100</span>
-            </div>
-            <div>
-                <span>Luck</span>
-                <span>100</span>
-            </div>
+                <div>
+                    <span class="tooltip" data-template="TooltipAttributes" name="Strength"><a href="PrimaryAttributes.html#Strength">Strength</a></span>
+                    <span>100</span>
+                </div>
+                <div>
+                    <span class="tooltip" data-template="TooltipAttributes" name="Intelligence"><a href="PrimaryAttributes.html#Intelligence">Intelligence</a></span>
+                    <span>100</span>
+                </div>
+                <div>
+                    <span class="tooltip" data-template="TooltipAttributes" name="Constitution"><a href="PrimaryAttributes.html#Constitution">Constitution</a></span>
+                    <span>100</span>
+                </div>
+                <div>
+                    <span class="tooltip" data-template="TooltipAttributes" name="Willpower"><a href="PrimaryAttributes.html#Willpower">Willpower</a></span>
+                    <span>100</span>
+                </div>
+                <div>
+                    <span class="tooltip" data-template="TooltipAttributes" name="Agility"><a href="PrimaryAttributes.html#Agility">Agility</a></span>
+                    <span>100</span>
+                </div>
+                <div>
+                    <span class="tooltip" data-template="TooltipAttributes" name="Reflex"><a href="PrimaryAttributes.html#Reflex">Reflex</a></span>
+                    <span>100</span>
+                </div>
+                <div>
+                    <span class="tooltip" data-template="TooltipAttributes" name="SpeedOfThought"><a href="PrimaryAttributes.html#SpeedOfThought">Speed of Thought</a></span>
+                    <span>100</span>
+                </div>
+                <div>
+                    <span class="tooltip" data-template="TooltipAttributes" name="Endurance"><a href="PrimaryAttributes.html#Endurance">Endurance</a></span>
+                    <span>100</span>
+                </div>
+                <div>
+                    <span class="tooltip" data-template="TooltipAttributes" name="Dexterity"><a href="PrimaryAttributes.html#Dexterity">Dexterity</a></span>
+                    <span>100</span>
+                </div>
+                <div>
+                    <span class="tooltip" data-template="TooltipAttributes" name="LacertiliaIndex"><a href="PrimaryAttributes.html#LacertiliaIndex">Lacertilia Index</a></span>
+                    <span>100</span>
+                </div>
+                <div>
+                    <span class="tooltip" data-template="TooltipAttributes" name="Luck"><a href="PrimaryAttributes.html#Luck">Luck</a></span>
+                    <span>100</span>
+                </div>
         </fieldset>
         <fieldset class="tabular">
             <legend>Secondary Attributes</legend>
@@ -710,31 +714,58 @@
         </fieldset>
     </div>
 </template>
+<template name="TooltipAttributes">
+    <div style="display: flex; flex-direction:column;">
+        <span>{{Name}}</span>
+        <dl>
+            <dt class="header">Description</dt>
+            <dd>{{Description}}</dd>
+        </dl>
+        {{#Commentary}}
+        <dl>
+            <dt class="header">Commentary</dt>
+            <dd>{{.}}</dd>
+        </dl>
+        {{/Commentary}}
+        <div>
+            <span class="header">Effects</span>
+            <ul class="effect">
+                {{#PositiveEffects}}
+                <li class="positive">{{.}}</li>
+                {{/PositiveEffects}}
+                {{#NegativeEffects}}
+                <li class="negative">{{.}}</li>
+                {{/NegativeEffects}}
+            </ul>
+        </div>
+    </div>
+</template>
 
 
 
     
     <script src="wwwroot/js/mustache.min.js"></script>
+    <script src="wwwroot/js/popper.min.js"></script>
+    <script src="wwwroot/js/tippy-bundle.umd.min.js"></script>
     <script>
         const queryString = new URLSearchParams(window.location.search);
         const creature = queryString.get('creature');
         if (creature) {
-            fetch(`wwwroot/creatures/${creature}.json`)
-                .then((resp) => resp.json())
+            loadData()
                 .then(function(data) {
-                    document.title = data.Outline.NickName;
+                    ({attributes, creatureData} = data);
+                    document.title = creatureData.Outline.NickName;
 
                     const container = document.createElement('div');
                     container.id = 'container';
                     container.innerHTML = document.querySelector('template[name=Container]').innerHTML;
 
-                    container.querySelector('.outline').innerHTML = Mustache.render(document.querySelector('template[name=Outline]').innerHTML, data.Outline);
-                    
+                    container.querySelector('.outline').innerHTML = Mustache.render(document.querySelector('template[name=Outline]').innerHTML, creatureData.Outline);
+
                     const tab = container.querySelector('.tab');
                     const content = container.querySelector('.content');
 
-                    tab.querySelectorAll('.tab-button').forEach(x =>
-                    {
+                    tab.querySelectorAll('.tab-button').forEach(x => {
                         x.addEventListener('click', e => activeTab(e.target.getAttribute('name')));
                     });
 
@@ -745,9 +776,36 @@
                     function activeTab(name) {
                         tab.querySelectorAll('.tab-button').forEach(x => x.classList.remove('active-tab'));
                         tab.querySelector(`.tab-button[name=${name}]`).classList.add('active-tab');
-                        content.innerHTML = Mustache.render(document.querySelector(`template[name=${name}]`).innerHTML, data.Detail[name]);
+                        content.innerHTML = Mustache.render(document.querySelector(`template[name=${name}]`).innerHTML, creatureData.Detail[name]);
+
+                        tippy(document.querySelectorAll('.tooltip'), {
+                            content: 'Loading...',
+                            arrow: false,
+                            allowHTML: true,
+                            theme: 'custom',
+                            onShow(instance) {
+                                const element = instance.reference;
+                                const html = Mustache.render(document.querySelector(`template[name=${element.dataset.template}]`).innerHTML, attributes[element.getAttribute('name')]);
+                                instance.setContent(html);
+                            },
+                            onHidden(instance) {
+                                instance.setContent('Loading...');
+                            }
+                        });
                     }
                 });
+        
+
+            async function loadData() {
+                const attributes = fetch('wwwroot/json/attributes.json')
+                    .then((resp) => resp.json());
+                const creatureData = fetch(`wwwroot/json/creatures/${creature}.json`)
+                    .then((resp) => resp.json());
+                return {
+                    attributes: await attributes
+                    , creatureData: await creatureData
+                };
+            }
         }
     </script>
 

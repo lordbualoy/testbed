@@ -152,8 +152,31 @@
   border: 1px solid saddlebrown;
   padding: 0% 5% 5%; }
 
-p, span, li {
+.tippy-box[data-theme='custom'] {
+  border: 1px solid saddlebrown;
+  background-color: wheat; }
+
+p, span, li, a, dt, dd {
   color: darkred; }
+
+ul.effect {
+  list-style-type: none; }
+
+ul > li.positive:before {
+  content: "+";
+  position: absolute;
+  margin-left: -1.1em; }
+
+ul > li.negative:before {
+  content: "-";
+  position: absolute;
+  margin-left: -1.1em; }
+
+ul .positive {
+  color: green; }
+
+ul .negative {
+  color: red; }
 
 #container {
   width: 100%;

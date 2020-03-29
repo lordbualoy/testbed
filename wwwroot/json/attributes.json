@@ -1,0 +1,128 @@
+{
+  "Strength": {
+    "Name": "Strength",
+    "PositiveEffects": [
+      "Increases Carrying Capacity",
+      "Increases Grappling Power",
+      "Increases Muscle Powered Attack Damage",
+      "Increases the range of Muscle Powered Ranged Weapons (Bow, Sling, Throwing)",
+      "Increases Blocking",
+      "Increases Mass",
+      "Increases Aquatic Speed"
+    ],
+    "NegativeEffects": [
+      "Decreases Buoyancy"
+    ],
+    "Description": "A measure of how physically strong a creature is",
+    "Commentary": null
+  },
+  "Intelligence": {
+    "Name": "Intelligence",
+    "PositiveEffects": [
+      "Increases all Damage",
+      "Increases Grappling Power",
+      "Increases Throwing Precision",
+      "Increases Shooting Precision",
+      "Decreases the chance of getting Bluffed by another character"
+    ],
+    "NegativeEffects": [],
+    "Description": "A measure of a creature\u0027s problem-solving, decision-making ability, and how quickly it learns",
+    "Commentary": null
+  },
+  "Constitution": {
+    "Name": "Constitution",
+    "PositiveEffects": [
+      "Increases Maximum Health Point",
+      "Increases Immune System efficiency"
+    ],
+    "NegativeEffects": [],
+    "Description": "A measure of how sturdy a creature is",
+    "Commentary": null
+  },
+  "Willpower": {
+    "Name": "Willpower",
+    "PositiveEffects": [
+      "Decreases the chance of getting Intimidated, Brainwashed, Charmed, Seduced, Hypnotized by another character",
+      "Decreases the chance of getting succumb to fear",
+      "Increases the chance of resisting Interrogation and Torture"
+    ],
+    "NegativeEffects": [],
+    "Description": "A measure of a creature\u2019s strength of mind as in ability to withstand psychological stress",
+    "Commentary": null
+  },
+  "Agility": {
+    "Name": "Agility",
+    "PositiveEffects": [],
+    "NegativeEffects": [],
+    "Description": "A measure of how agile a creature is",
+    "Commentary": null
+  },
+  "Reflex": {
+    "Name": "Reflex",
+    "PositiveEffects": [
+      "Increases Parrying"
+    ],
+    "NegativeEffects": [],
+    "Description": "A measure of how quickly can a creature subconsciously responds to external stimuluses such as attacks",
+    "Commentary": null
+  },
+  "SpeedOfThought": {
+    "Name": "Speed of Thought",
+    "PositiveEffects": [
+      "Increase conscious response speed to all external stimuluses",
+      "Increase arithmetic operations per second"
+    ],
+    "NegativeEffects": [],
+    "Description": "A measure of a creature\u0027s thinking speed",
+    "Commentary": null
+  },
+  "Endurance": {
+    "Name": "Endurance",
+    "PositiveEffects": [
+      "Increases Maximum Stamina Point",
+      "Increases Carrying Capacity",
+      "Determine how long can a character keep a bow string drawn"
+    ],
+    "NegativeEffects": [],
+    "Description": "A measure of how much energy a creature can exerted before getting exhausted",
+    "Commentary": null
+  },
+  "Dexterity": {
+    "Name": "Dexterity",
+    "PositiveEffects": [
+      "Increases Grappling Power",
+      "Increases Throwing Precision",
+      "Increases Shooting Precision",
+      "Increases Parrying"
+    ],
+    "NegativeEffects": [],
+    "Description": "A measure of a creature coarse and fine motor skills",
+    "Commentary": null
+  },
+  "LacertiliaIndex": {
+    "Name": "Lacertilia Index",
+    "PositiveEffects": [
+      "Minimum Lacertilia Index required for spellcasting is at 120"
+    ],
+    "NegativeEffects": [],
+    "Description": "A measure of a creature\u0027s affinity with the Lacertilia",
+    "Commentary": null
+  },
+  "Luck": {
+    "Name": "Luck",
+    "PositiveEffects": [
+      "Increases chance of success on all rolls",
+      "Increases chance of winning in gambling"
+    ],
+    "NegativeEffects": [],
+    "Description": "A measure of a creature\u0027s luck",
+    "Commentary": null
+  },
+  "Lifespan": {
+    "Name": "Lifespan",
+    "PositiveEffects": [],
+    "NegativeEffects": [],
+    "Description": "the length of time for which a creature lives",
+    "Commentary": null
+  }
+}

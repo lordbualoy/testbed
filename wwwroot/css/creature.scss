@@ -25,8 +25,9 @@ $font-color-inactive: scale-color($font-color, $saturation: -100%, $lightness: +
 $border-color: saddlebrown;
 $border-color-light: lightgray;
 $background-color: burlywood;
+$background-color-light: wheat;
 $background-color-odd: $background-color;
-$background-color-even: wheat;
+$background-color-even: $background-color-light;
 
 * {
     font-family: $font;
@@ -220,8 +221,38 @@ $background-color-even: wheat;
     padding: 0% 5% 5%;
 }
 
-p, span, li {
+.tippy-box[data-theme='custom'] {
+    border: 1px solid $border-color;
+    background-color: $background-color-light;
+}
+
+p, span, li, a, dt, dd {
     color: $font-color;
+}
+
+ul {
+    &.effect {
+        list-style-type: none;
+    }
+
+    @mixin list($name, $sign) {
+        > li.#{$name}:before {
+            content: $sign;
+            position: absolute;
+            margin-left: -1.1em;
+        }
+    }
+
+    @include list(positive, "+");
+    @include list(negative, "-");
+
+    .positive {
+        color: green;
+    }
+
+    .negative {
+        color: red;
+    }
 }
 
 #container {
