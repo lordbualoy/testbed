@@ -1,4 +1,14 @@
-﻿/* latin-ext */
+﻿.descr-list > legend {
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold; }
+
+.header {
+  display: block;
+  font-size: 1.17em;
+  font-weight: bold; }
+
+/* latin-ext */
 @font-face {
   font-family: 'MedievalSharp';
   font-style: normal;
@@ -17,7 +27,14 @@
 * {
   font-family: "MedievalSharp"; }
 
-.tabular > legend {
+p, span, li, dt, dd {
+  color: darkred; }
+  p.positive, span.positive, li.positive, dt.positive, dd.positive {
+    color: green; }
+  p.negative, span.negative, li.negative, dt.negative, dd.negative {
+    color: red; }
+
+.descr-list > legend {
   display: block;
   font-size: 1.5em;
   font-weight: bold; }
@@ -27,7 +44,7 @@
   font-size: 1.17em;
   font-weight: bold; }
 
-.tabular {
+.descr-list {
   margin-top: 30px;
   margin-bottom: 30px;
   padding: 5px;
@@ -36,7 +53,7 @@
   border: 1px solid saddlebrown;
   display: flex;
   flex-direction: column; }
-  .tabular > legend {
+  .descr-list > legend {
     color: darkred;
     background-color: burlywood;
     margin-top: 0;
@@ -51,15 +68,6 @@
   .property > div:nth-of-type(1) {
     display: flex;
     justify-content: space-between; } }
-
-.property .positive {
-  color: green; }
-
-.property .negative {
-  color: red; }
-
-p, span, li, dt, dd {
-  color: darkred; }
 
 ul.effect {
   list-style-type: none; }

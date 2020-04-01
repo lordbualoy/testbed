@@ -1,0 +1,735 @@
+{
+  "LacertiliaManipulation": {
+    "Name": "Lacertilia Manipulation",
+    "AlternateNames": {
+      "Items": [
+        "Spellcasting"
+      ]
+    },
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Origin": "Racial Perk",
+    "Tags": [
+      "Lacertilia"
+    ],
+    "Conditions": {
+      "Items": [
+        "Lacertilia Index of at least 120"
+      ]
+    },
+    "Effects": {
+      "PositiveEffects": [
+        "The creatures can manipulate Lacertilia giving them the ability to use \u201Cmagic\u201D",
+        "Grants \u003Ca href=\u0022#LacertiliaSense\u0022\u003ELacertilia Sense\u003C/a\u003E"
+      ],
+      "NegativeEffects": []
+    },
+    "Description": "The creatures that has Lacertilia Index of at least 120 have the potential to use magic",
+    "Commentary": null
+  },
+  "LacertiliaSense": {
+    "Name": "Lacertilia Sense",
+    "AlternateNames": null,
+    "DerivedFrom": "Enhanced Touch",
+    "Derivations": null,
+    "Origin": "Racial Perk",
+    "Tags": [
+      "Lacertilia"
+    ],
+    "Conditions": null,
+    "Effects": {
+      "PositiveEffects": [
+        "The creatures can sense the presence of Lacertilia, both it amount and density"
+      ],
+      "NegativeEffects": []
+    },
+    "Description": "The creatures can sense Lacertilia via their skin",
+    "Commentary": null
+  },
+  "Mechanical": {
+    "Name": "Mechanical",
+    "AlternateNames": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Origin": "Racial Perk",
+    "Tags": [
+      "Physiology"
+    ],
+    "Conditions": null,
+    "Effects": {
+      "PositiveEffects": [
+        "Immune to toxin",
+        "Immune to disease"
+      ],
+      "NegativeEffects": [
+        "Vulnerable to mechanical virus"
+      ]
+    },
+    "Description": "The creatures are mechanical in nature",
+    "Commentary": "Beings such as golems or robots are considered mechanical"
+  },
+  "Biocomputer": {
+    "Name": "Biocomputer",
+    "AlternateNames": null,
+    "DerivedFrom": null,
+    "Derivations": {
+      "Items": [
+        "Lightning Fast Arithmetic",
+        "Enhanced Spatial Ability",
+        "Biocomputer: Programmable"
+      ]
+    },
+    "Origin": "Racial Perk",
+    "Tags": [
+      "Physiology",
+      "Intelligence",
+      "Computer"
+    ],
+    "Conditions": null,
+    "Effects": null,
+    "Description": "The creatures have a brain that are capable of computer-like processing",
+    "Commentary": null
+  },
+  "LightningFastArithmetic": {
+    "Name": "Lightning Fast Arithmetic",
+    "AlternateNames": null,
+    "DerivedFrom": "Biocomputer",
+    "Derivations": null,
+    "Origin": "Racial Perk",
+    "Tags": [
+      "Intelligence",
+      "Computer"
+    ],
+    "Conditions": null,
+    "Effects": {
+      "PositiveEffects": [
+        "Able to do 16 bit integer arithmetic on the fly",
+        "Very quick 8 bit integer arithmetic"
+      ],
+      "NegativeEffects": []
+    },
+    "Description": "The creatures have a very high arithmetic operations per second",
+    "Commentary": null
+  },
+  "EnhancedSpatialAbility": {
+    "Name": "Enhanced Spatial Ability",
+    "AlternateNames": null,
+    "DerivedFrom": "Biocomputer",
+    "Derivations": null,
+    "Origin": "Racial Perk",
+    "Tags": [
+      "Intelligence",
+      "Computer"
+    ],
+    "Conditions": null,
+    "Effects": {
+      "PositiveEffects": [
+        "Enhanced mental rotation",
+        "Enhanced spatial visualization",
+        "Enhanced spatial memory; allowing the character to do engineering design in the head"
+      ],
+      "NegativeEffects": []
+    },
+    "Description": "The creatures have a superior spatial ability",
+    "Commentary": "\u003Ca href=\u0022https://en.wikipedia.orghttps://en.wikipedia.org/wiki/Spatial_ability\u0022\u003Ehttps://en.wikipedia.org/wiki/Spatial_ability\u003C/a\u003E"
+  },
+  "Biocomputer_Programmable": {
+    "Name": "Biocomputer: Programmable",
+    "AlternateNames": null,
+    "DerivedFrom": "Biocomputer",
+    "Derivations": null,
+    "Origin": "Racial Perk",
+    "Tags": [
+      "Intelligence",
+      "Computer"
+    ],
+    "Conditions": null,
+    "Effects": {
+      "PositiveEffects": [
+        "Can create, compile, execute function in the head",
+        "Compiled function can be called recursively with stack depth of 5",
+        "Can do small for loop"
+      ],
+      "NegativeEffects": []
+    },
+    "Description": "The creatures have a brain that are capable of processing information like a computer function",
+    "Commentary": null
+  },
+  "AncestralMemory": {
+    "Name": "Ancestral Memory",
+    "AlternateNames": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Origin": "Gift",
+    "Tags": [
+      "Memory"
+    ],
+    "Conditions": null,
+    "Effects": {
+      "PositiveEffects": [
+        ""
+      ],
+      "NegativeEffects": []
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "Asexual": {
+    "Name": "Asexual",
+    "AlternateNames": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Origin": "Racial Perk",
+    "Tags": [
+      "Physiology"
+    ],
+    "Conditions": null,
+    "Effects": {
+      "PositiveEffects": [
+        "Grants \u003Ca href=\u0022#AsexualReproduction\u0022\u003EAsexual Reproduction\u003C/a\u003E"
+      ],
+      "NegativeEffects": [
+        "Cannot reproduced sexually",
+        "Next to non-existent genetic diversity"
+      ]
+    },
+    "Description": "The race has no sex and cannot sexually reproduce",
+    "Commentary": "Beings such as Microorganisms; Note that plants can also reproduce asexually but they weren\u0027t asexual as they can reproduce via both sexually \u0026 asexually"
+  },
+  "AsexualReproduction": {
+    "Name": "Asexual Reproduction",
+    "AlternateNames": null,
+    "DerivedFrom": null,
+    "Derivations": {
+      "Items": [
+        "Binary Fission",
+        "Parthenogenesis"
+      ]
+    },
+    "Origin": "Racial Perk",
+    "Tags": [
+      "Physiology",
+      "Reproduction"
+    ],
+    "Conditions": null,
+    "Effects": null,
+    "Description": "The creatures can reproduce asexually",
+    "Commentary": null
+  },
+  "BinaryFission": {
+    "Name": "Binary Fission",
+    "AlternateNames": null,
+    "DerivedFrom": "Asexual Reproduction",
+    "Derivations": null,
+    "Origin": "Racial Perk",
+    "Tags": [
+      "Physiology",
+      "Reproduction"
+    ],
+    "Conditions": null,
+    "Effects": {
+      "PositiveEffects": [
+        "Can divides itself in two to produce two genetically identical organisms"
+      ],
+      "NegativeEffects": [
+        "Next to non-existent genetic diversity if this is the main form of reproduction"
+      ]
+    },
+    "Description": "The creatures can reproduced asexually via Binary Fission",
+    "Commentary": "Beings such as bacteria can reproduce asexually via Binary Fission"
+  },
+  "Parthenogenesis": {
+    "Name": "Parthenogenesis",
+    "AlternateNames": null,
+    "DerivedFrom": "Asexual Reproduction",
+    "Derivations": null,
+    "Origin": "Racial Perk",
+    "Tags": [
+      "Physiology",
+      "Reproduction"
+    ],
+    "Conditions": null,
+    "Effects": {
+      "PositiveEffects": [
+        "Can repopulate the race without the need of opposite sex"
+      ],
+      "NegativeEffects": []
+    },
+    "Description": "The creatures can reproduced asexually via Parthenogenesis",
+    "Commentary": "Beings such as plants and some animals can reproduce asexually via Parthenogenesis"
+  },
+  "SexualReproduction": {
+    "Name": "Sexual Reproduction",
+    "AlternateNames": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Origin": "Racial Perk",
+    "Tags": [
+      "Physiology",
+      "Reproduction"
+    ],
+    "Conditions": null,
+    "Effects": {
+      "PositiveEffects": [
+        "Great genetic diversity"
+      ],
+      "NegativeEffects": [
+        "Genetic lottery",
+        "Cannot reproduce if there was no different sex individual to copulate"
+      ]
+    },
+    "Description": "The creatures can reproduce sexually",
+    "Commentary": null
+  },
+  "NaturalCamouflage": {
+    "Name": "Natural Camouflage",
+    "AlternateNames": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Origin": "Racial Perk",
+    "Tags": [
+      "Physiology"
+    ],
+    "Conditions": {
+      "Items": [
+        "Has no effect on blinded creatures",
+        "Fair amount of light in the environment (Natural Camouflage has no effect in complete darkness as all observers are effectively blinded!)",
+        "Affect everyone who rely on sight",
+        "Less effective on anyone who does have sight but can compensated by other sense such as smelling, hearing"
+      ]
+    },
+    "Effects": {
+      "PositiveEffects": [
+        "The creatures can conceal itself, making it harder to see"
+      ],
+      "NegativeEffects": []
+    },
+    "Description": "The creatures can conceal itself, making it harder to see",
+    "Commentary": null
+  },
+  "Toughskin": {
+    "Name": "Toughskin",
+    "AlternateNames": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Origin": "Racial Perk",
+    "Tags": [
+      "Physiology",
+      "NaturalProtection"
+    ],
+    "Conditions": null,
+    "Effects": {
+      "PositiveEffects": [
+        "Resistance to light cut",
+        "Resistance to light piercing such as injection (snake bite may glance off and unable to inject the biotoxin)"
+      ],
+      "NegativeEffects": []
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "AnimalHide": {
+    "Name": "Animal Hide",
+    "AlternateNames": null,
+    "DerivedFrom": null,
+    "Derivations": {
+      "Items": [
+        "Thick Hide"
+      ]
+    },
+    "Origin": "Racial Perk",
+    "Tags": [
+      "Physiology",
+      "NaturalProtection"
+    ],
+    "Conditions": null,
+    "Effects": {
+      "PositiveEffects": [
+        ""
+      ],
+      "NegativeEffects": []
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "ThickHide": {
+    "Name": "Thick Hide",
+    "AlternateNames": null,
+    "DerivedFrom": "Animal Hide",
+    "Derivations": null,
+    "Origin": "Racial Perk",
+    "Tags": [
+      "Physiology",
+      "NaturalProtection"
+    ],
+    "Conditions": null,
+    "Effects": {
+      "PositiveEffects": [
+        "Resistance to light cut",
+        "Resistance to light piercing such as injection (snake bite may glance off and unable to inject the biotoxin)"
+      ],
+      "NegativeEffects": []
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "Carapace": {
+    "Name": "Carapace",
+    "AlternateNames": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Origin": "Racial Perk",
+    "Tags": [
+      "Physiology",
+      "NaturalProtection"
+    ],
+    "Conditions": null,
+    "Effects": {
+      "PositiveEffects": [
+        "Resistance to light cut",
+        "Resistance to light piercing such as injection (snake bite may glance off and unable to inject the biotoxin)"
+      ],
+      "NegativeEffects": []
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "ProtectiveShell": {
+    "Name": "Protective Shell",
+    "AlternateNames": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Origin": "Racial Perk",
+    "Tags": [
+      "Physiology",
+      "NaturalProtection"
+    ],
+    "Conditions": null,
+    "Effects": {
+      "PositiveEffects": [
+        "Resistance to cut",
+        "Resistance to piercing",
+        "Resistance to impact"
+      ],
+      "NegativeEffects": []
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "ProtectiveScale": {
+    "Name": "Protective Scale",
+    "AlternateNames": null,
+    "DerivedFrom": null,
+    "Derivations": {
+      "Items": [
+        "Dragonscale"
+      ]
+    },
+    "Origin": "Racial Perk",
+    "Tags": [
+      "Physiology",
+      "NaturalProtection"
+    ],
+    "Conditions": null,
+    "Effects": {
+      "PositiveEffects": [
+        "Resistance to light cut",
+        "Resistance to light piercing such as injection (snake bite may glance off and unable to inject the biotoxin)"
+      ],
+      "NegativeEffects": []
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "Dragonscale": {
+    "Name": "Dragonscale",
+    "AlternateNames": null,
+    "DerivedFrom": "Protective Scale",
+    "Derivations": null,
+    "Origin": "Racial Perk",
+    "Tags": [
+      "Physiology",
+      "NaturalProtection"
+    ],
+    "Conditions": null,
+    "Effects": {
+      "PositiveEffects": [
+        "Resistance to cut",
+        "Resistance to piercing",
+        "Resistance to impact"
+      ],
+      "NegativeEffects": []
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "Ectotherm": {
+    "Name": "Ectotherm",
+    "AlternateNames": {
+      "Items": [
+        "Cold-blooded"
+      ]
+    },
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Origin": "Racial Vulnerability",
+    "Tags": [
+      "Physiology"
+    ],
+    "Conditions": null,
+    "Effects": {
+      "PositiveEffects": null,
+      "NegativeEffects": null
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "Endotherm": {
+    "Name": "Endotherm",
+    "AlternateNames": {
+      "Items": [
+        "Warm-blooded"
+      ]
+    },
+    "DerivedFrom": "Protective Scale",
+    "Derivations": null,
+    "Origin": "Racial Perk",
+    "Tags": [
+      "Physiology"
+    ],
+    "Conditions": null,
+    "Effects": {
+      "PositiveEffects": [
+        "Resistance to heat",
+        "Resistance to cold"
+      ],
+      "NegativeEffects": []
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "Bipedalism": {
+    "Name": "Bipedalism",
+    "AlternateNames": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Origin": "Racial Perk",
+    "Tags": [
+      "Physiology",
+      "Locomotion"
+    ],
+    "Conditions": null,
+    "Effects": {
+      "PositiveEffects": [
+        "Can walks with 2 feet"
+      ],
+      "NegativeEffects": []
+    },
+    "Description": "The creatures can walk upright with 2 of its feet",
+    "Commentary": null
+  },
+  "HighJump": {
+    "Name": "High Jump",
+    "AlternateNames": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Origin": "Racial Perk",
+    "Tags": [
+      "Locomotion"
+    ],
+    "Conditions": null,
+    "Effects": {
+      "PositiveEffects": [
+        "Can jump a high vertical distance"
+      ],
+      "NegativeEffects": []
+    },
+    "Description": "The creatures can jump a high vertical distance",
+    "Commentary": null
+  },
+  "EnhancedBalance": {
+    "Name": "Enhanced Balance",
+    "AlternateNames": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Origin": "Racial Perk",
+    "Tags": [
+      "Locomotion"
+    ],
+    "Conditions": null,
+    "Effects": {
+      "PositiveEffects": [
+        "Harder to lose balance"
+      ],
+      "NegativeEffects": []
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "BinocularVision": {
+    "Name": "Binocular Vision",
+    "AlternateNames": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Origin": "Racial Perk",
+    "Tags": [
+      "Physiology",
+      "Sight"
+    ],
+    "Conditions": null,
+    "Effects": {
+      "PositiveEffects": [
+        "It gives a creature a spare eye in case one is damaged",
+        "It gives a wider field of view",
+        "It can give stereopsis in which binocular disparity (or parallax) provided by the two eyes\u0027 different positions on the head gives precise depth perception; This also allows a creature to break the camouflage of another creature",
+        "It allows a creature to see more of, or all of, an object behind an obstacle"
+      ],
+      "NegativeEffects": []
+    },
+    "Description": "The creatures has two or more eyes and can use it to focus on a single object",
+    "Commentary": null
+  },
+  "PeripheralVision": {
+    "Name": "Peripheral Vision",
+    "AlternateNames": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Origin": "Racial Perk",
+    "Tags": [
+      "Physiology",
+      "Sight"
+    ],
+    "Conditions": null,
+    "Effects": {
+      "PositiveEffects": [
+        ""
+      ],
+      "NegativeEffects": []
+    },
+    "Description": "240 degree vision",
+    "Commentary": null
+  },
+  "Trichromacy": {
+    "Name": "Trichromacy",
+    "AlternateNames": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Origin": "Racial Perk",
+    "Tags": [
+      "Physiology",
+      "Sight"
+    ],
+    "Conditions": null,
+    "Effects": {
+      "PositiveEffects": [
+        "Can differentiate visible light into 3 colors of red, green and blue"
+      ],
+      "NegativeEffects": []
+    },
+    "Description": "The creatures can see visible light in 3 colors of red, green and blue",
+    "Commentary": null
+  },
+  "RightHanded": {
+    "Name": "Right-handed",
+    "AlternateNames": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Origin": "Racial Perk",
+    "Tags": [
+      "Physiology",
+      "Manipulator"
+    ],
+    "Conditions": null,
+    "Effects": {
+      "PositiveEffects": null,
+      "NegativeEffects": null
+    },
+    "Description": "non dominant hand penalty: says the char is left handed when the char is wielding a sword (or anything that were normally used in dominant hand) in his left hand he will suffer -2 dex mod for every action he use that sword for (ambidextrous remove non dominant penalty)\r\nuse dominant hand for something normally used in non-dominant hand: (for ambidextrous the bonus is always active) bonus to dex and str when rolling for\r\n-shield\r\n-parrying dagger\r\n-free hand action mid combat\r\nFor example a shield is most prominently worn on left hand (non-dominant hand) but let\u0027s say if a character is right-handed and he wield a shield on his right instead of left he would get this bonus\r\nAnd for another example, if a character is ambidextrous and he wield a shield on his left like any normal warrior would he would get this bonus as his left hand were also dominant hand (well both of his hands were dominant...)",
+    "Commentary": null
+  },
+  "LeftHanded": {
+    "Name": "Left-handed",
+    "AlternateNames": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Origin": "Racial Perk",
+    "Tags": [
+      "Physiology",
+      "Manipulator"
+    ],
+    "Conditions": null,
+    "Effects": {
+      "PositiveEffects": [
+        "advantage when fighting non-left handed fighters (including ambidextrous fighters)"
+      ],
+      "NegativeEffects": [
+        "Penalty to Dexterity when using tools, or performing activity designed for right hander (writing)"
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "Ambidextrous": {
+    "Name": "Ambidextrous",
+    "AlternateNames": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Origin": "Racial Perk",
+    "Tags": [
+      "Physiology",
+      "Manipulator"
+    ],
+    "Conditions": null,
+    "Effects": {
+      "PositiveEffects": [
+        "advantage when fighting non-left handed fighters (including ambidextrous fighters)"
+      ],
+      "NegativeEffects": []
+    },
+    "Description": "The creatures can used both of its hands equally well",
+    "Commentary": null
+  },
+  "EnhancedTouch": {
+    "Name": "Enhanced Touch",
+    "AlternateNames": null,
+    "DerivedFrom": null,
+    "Derivations": {
+      "Items": [
+        "Lacertilia Sense",
+        "Feline Whisker"
+      ]
+    },
+    "Origin": "Racial Perk",
+    "Tags": [
+      "Physiology"
+    ],
+    "Conditions": null,
+    "Effects": {
+      "PositiveEffects": [
+        ""
+      ],
+      "NegativeEffects": []
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "FelineWhisker": {
+    "Name": "Feline Whisker",
+    "AlternateNames": null,
+    "DerivedFrom": "Enhanced Touch",
+    "Derivations": null,
+    "Origin": "Racial Perk",
+    "Tags": [
+      "Physiology"
+    ],
+    "Conditions": null,
+    "Effects": {
+      "PositiveEffects": [
+        ""
+      ],
+      "NegativeEffects": []
+    },
+    "Description": "",
+    "Commentary": "\u003Ca href=\u0022https://www.livescience.comhttps://www.livescience.com/44196-why-do-cats-have-whiskers.html\u0022\u003Ehttps://www.livescience.com/44196-why-do-cats-have-whiskers.html\u003C/a\u003E"
+  }
+}

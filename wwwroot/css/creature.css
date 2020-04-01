@@ -1,4 +1,19 @@
-﻿/* latin-ext */
+﻿.nick-name {
+  display: block;
+  font-size: 2em;
+  font-weight: bold; }
+
+.tabular > legend, div.tippy-box[data-theme='custom'] > div.tippy-content > fieldset > legend {
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold; }
+
+div.tippy-box[data-theme='custom'] > div.tippy-content > fieldset .header, .tab > div > .tab-button {
+  display: block;
+  font-size: 1.17em;
+  font-weight: bold; }
+
+/* latin-ext */
 @font-face {
   font-family: 'MedievalSharp';
   font-style: normal;
@@ -17,40 +32,27 @@
 * {
   font-family: "MedievalSharp"; }
 
+p, span, li, dt, dd {
+  color: darkred; }
+  p.positive, span.positive, li.positive, dt.positive, dd.positive {
+    color: green; }
+  p.negative, span.negative, li.negative, dt.negative, dd.negative {
+    color: red; }
+
 .nick-name {
   display: block;
   font-size: 2em;
   font-weight: bold; }
 
-.tabular > legend {
+.tabular > legend, div.tippy-box[data-theme='custom'] > div.tippy-content > fieldset > legend {
   display: block;
   font-size: 1.5em;
   font-weight: bold; }
 
-.tab > div > .tab-button {
+div.tippy-box[data-theme='custom'] > div.tippy-content > fieldset .header, .tab > div > .tab-button {
   display: block;
   font-size: 1.17em;
   font-weight: bold; }
-
-#container {
-  border: 30px solid transparent;
-  border-image-source: url(../images/background.png);
-  border-image-slice: 100 fill;
-  border-image-repeat: repeat; }
-
-.nick-name {
-  border-width: 8px 56px;
-  border-style: solid;
-  border-color: transparent;
-  border-image-source: url(../images/title.png);
-  border-image-slice: 8 56;
-  border-image-repeat: repeat; }
-
-.outline > div:nth-child(2) > div:first-child > div > img {
-  border: 20px solid transparent;
-  border-image-source: url(../images/frame.png);
-  border-image-slice: 20;
-  border-image-repeat: repeat; }
 
 .tabular {
   margin-top: 30px;
@@ -77,6 +79,59 @@
       flex-basis: 50%;
       border: 1px solid lightgray;
       margin: 1px; }
+
+div.tippy-box[data-theme='custom'] {
+  border-radius: unset;
+  background-color: unset; }
+  div.tippy-box[data-theme='custom'] > div.tippy-content > fieldset {
+    border-radius: 5px;
+    border: 1px solid saddlebrown;
+    background-color: wheat; }
+    div.tippy-box[data-theme='custom'] > div.tippy-content > fieldset > legend {
+      color: darkred;
+      background-color: burlywood;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 5px;
+      border: 1px solid saddlebrown;
+      padding: 2.5px; }
+
+ul.effect {
+  list-style-type: none; }
+
+ul > li.positive:before {
+  content: "+";
+  position: absolute;
+  margin-left: -1.1em; }
+
+ul > li.negative:before {
+  content: "-";
+  position: absolute;
+  margin-left: -1.1em; }
+
+#container {
+  width: 100%;
+  max-width: 700px; }
+
+#container {
+  border: 30px solid transparent;
+  border-image-source: url(../images/background.png);
+  border-image-slice: 100 fill;
+  border-image-repeat: repeat; }
+
+.nick-name {
+  border-width: 8px 56px;
+  border-style: solid;
+  border-color: transparent;
+  border-image-source: url(../images/title.png);
+  border-image-slice: 8 56;
+  border-image-repeat: repeat; }
+
+.outline > div:nth-child(2) > div:first-child > div > img {
+  border: 20px solid transparent;
+  border-image-source: url(../images/frame.png);
+  border-image-slice: 20;
+  border-image-repeat: repeat; }
 
 .outline > div:nth-child(1) {
   align-items: center;
@@ -152,34 +207,9 @@
   border: 1px solid saddlebrown;
   padding: 0% 5% 5%; }
 
-.tippy-box[data-theme='custom'] {
-  border: 1px solid saddlebrown;
-  background-color: wheat; }
-
-p, span, li, a, dt, dd {
+a {
   color: darkred; }
 
-ul.effect {
-  list-style-type: none; }
-
-ul > li.positive:before {
-  content: "+";
-  position: absolute;
-  margin-left: -1.1em; }
-
-ul > li.negative:before {
-  content: "-";
-  position: absolute;
-  margin-left: -1.1em; }
-
-ul .positive {
-  color: green; }
-
-ul .negative {
-  color: red; }
-
 #container {
-  width: 100%;
-  max-width: 700px;
   display: flex;
   flex-direction: column; }

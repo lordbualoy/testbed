@@ -427,15 +427,9 @@
         <fieldset class="tabular">
             <legend>Properties</legend>
             <ul>
-                <li>Right-handed</li>
-                <li>Bipedalism</li>
-                <li>High Jump</li>
-                <li>Enhanced Balance</li>
-                <li>Binocular Vision</li>
-                <li>Peripheral Vision</li>
-                <li>Trichromacy</li>
-                <li>Horse Ears</li>
-                <li>Horse Tail</li>
+                {{#Properties}}
+                <li class="tooltip" data-template="TooltipProperties" name="{{ID}}"><a href="Properties.html#{{ID}}">{{Name}}</a></li>
+                {{/Properties}}
             </ul>
         </fieldset>
     </div>
@@ -715,8 +709,8 @@
     </div>
 </template>
 <template name="TooltipAttributes">
-    <div style="display: flex; flex-direction:column;">
-        <span>{{Name}}</span>
+    <fieldset>
+        <legend>{{Name}}</legend>
         <dl>
             <dt class="header">Description</dt>
             <dd>{{Description}}</dd>
@@ -738,7 +732,87 @@
                 {{/NegativeEffects}}
             </ul>
         </div>
-    </div>
+    </fieldset>
+</template>
+<template name="TooltipProperties">
+    <fieldset>
+        <legend>{{Name}}</legend>
+        <div>
+            <div>
+                {{#AlternateNames}}
+                <div>
+                    <span class="header">Alternate Names</span>
+                    <ul>
+                        {{#Items}}
+                        <li>{{.}}</li>
+                        {{/Items}}
+                    </ul>
+                </div>
+                {{/AlternateNames}}
+                {{#DerivedFrom}}
+                <dl>
+                    <dt class="header">Derived From</dt>
+                    <dd>{{.}}</dd>
+                </dl>
+                {{/DerivedFrom}}
+                {{#Derivations}}
+                <div>
+                    <span class="header">Derivations</span>
+                    <ul>
+                        {{#Items}}
+                        <li>{{.}}</li>
+                        {{/Items}}
+                    </ul>
+                </div>
+                {{/Derivations}}
+                <dl>
+                    <dt class="header">Origin</dt>
+                    <dd>{{Origin}}</dd>
+                </dl>
+            </div>
+            <div>
+                <span class="header">Tags</span>
+                <ul>
+                    {{#Tags}}
+                    <li>{{.}}</li>
+                    {{/Tags}}
+                </ul>
+            </div>
+        </div>
+        {{#Conditions}}
+        <div>
+            <span class="header">Conditions</span>
+            <ul>
+                {{#Items}}
+                <li>{{.}}</li>
+                {{/Items}}
+            </ul>
+        </div>
+        {{/Conditions}}
+        {{#Effects}}
+        <div>
+            <span class="header">Effects</span>
+            <ul class="effect">
+                {{#PositiveEffects}}
+                <li class="positive">{{.}}</li>
+                {{/PositiveEffects}}
+                {{#NegativeEffects}}
+                <li class="negative">{{.}}</li>
+                {{/NegativeEffects}}
+            </ul>
+        </div>
+        {{/Effects}}
+        <dl>
+            <dt class="header">Description</dt>
+            <dd>{{Description}}</dd>
+        </dl>
+        {{#Commentary}}
+        <dl>
+            <dt class="header">Commentary</dt>
+            <dd>{{.}}</dd>
+        </dl>
+        {{/Commentary}}
+    </fieldset>
 </template>
 
 
@@ -749,11 +823,17 @@
     <script src="wwwroot/js/tippy-bundle.umd.min.js"></script>
     <script>
         const queryString = new URLSearchParams(window.location.search);
+        const fragment = window.location.hash === "" ? "Profile" : window.location.hash.substring(1);
         const creature = queryString.get('creature');
         if (creature) {
             loadData()
                 .then(function(data) {
-                    ({attributes, creatureData} = data);
+                    const map = {
+                        Profile: null
+                        , Attributes: data.attributes
+                        , Properties: data.properties
+                    };
+                    const creatureData = data.creatureData;
                     document.title = creatureData.Outline.NickName;
 
                     const container = document.createElement('div');
@@ -769,40 +849,43 @@
                         x.addEventListener('click', e => activeTab(e.target.getAttribute('name')));
                     });
 
-                    activeTab('Profile');
-
                     document.body.appendChild(container);
+
+                    activeTab(fragment);
 
                     function activeTab(name) {
                         tab.querySelectorAll('.tab-button').forEach(x => x.classList.remove('active-tab'));
                         tab.querySelector(`.tab-button[name=${name}]`).classList.add('active-tab');
-                        content.innerHTML = Mustache.render(document.querySelector(`template[name=${name}]`).innerHTML, creatureData.Detail[name]);
+                        content.innerHTML = Mustache.render(document.querySelector(`template[name=${name}]`).innerHTML, creatureData.Detail);
 
                         tippy(document.querySelectorAll('.tooltip'), {
                             content: 'Loading...',
                             arrow: false,
                             allowHTML: true,
                             theme: 'custom',
-                            onShow(instance) {
+                            onShow: function(instance) {
                                 const element = instance.reference;
-                                const html = Mustache.render(document.querySelector(`template[name=${element.dataset.template}]`).innerHTML, attributes[element.getAttribute('name')]);
+                                const html = Mustache.render(document.querySelector(`template[name=${element.dataset.template}]`).innerHTML, map[name][element.getAttribute('name')]);
                                 instance.setContent(html);
                             },
-                            onHidden(instance) {
+                            onHidden: function(instance) {
                                 instance.setContent('Loading...');
                             }
                         });
                     }
                 });
-        
+
 
             async function loadData() {
                 const attributes = fetch('wwwroot/json/attributes.json')
+                    .then((resp) => resp.json());
+                const properties = fetch('wwwroot/json/properties.json')
                     .then((resp) => resp.json());
                 const creatureData = fetch(`wwwroot/json/creatures/${creature}.json`)
                     .then((resp) => resp.json());
                 return {
                     attributes: await attributes
+                    , properties: await properties
                     , creatureData: await creatureData
                 };
             }

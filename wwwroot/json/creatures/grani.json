@@ -25,6 +25,42 @@
     "Description": "Grani, formerly of the Victorian Mounted Police, specializes in high mobility operations such as raids, mechanized warfare, and infiltration."
   },
   "Detail": {
-
+    "Properties": [
+      {
+        "ID": "RightHanded",
+        "Name": "Right-handed",
+        "Origin": null
+      },
+      {
+        "ID": "Bipedalism",
+        "Name": "Bipedalism",
+        "Origin": null
+      },
+      {
+        "ID": "HighJump",
+        "Name": "High Jump",
+        "Origin": null
+      },
+      {
+        "ID": "EnhancedBalance",
+        "Name": "Enhanced Balance",
+        "Origin": null
+      },
+      {
+        "ID": "BinocularVision",
+        "Name": "Binocular Vision",
+        "Origin": null
+      },
+      {
+        "ID": "PeripheralVision",
+        "Name": "Peripheral Vision",
+        "Origin": null
+      },
+      {
+        "ID": "Trichromacy",
+        "Name": "Trichromacy",
+        "Origin": null
+      }
+    ]
   }
 }
