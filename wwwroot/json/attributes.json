@@ -29,6 +29,24 @@
     "Description": "A measure of a creature\u0027s problem-solving, decision-making ability, and how quickly it learns",
     "Commentary": null
   },
+  "Cunning": {
+    "Name": "Cunning",
+    "PositiveEffects": [
+      "Decreases the chance of getting Bluffed by another character"
+    ],
+    "NegativeEffects": [],
+    "Description": "A measure of a creature\u0027s perception, craftiness, wit and wile",
+    "Commentary": null
+  },
+  "Sociability": {
+    "Name": "Sociability",
+    "PositiveEffects": [
+      ""
+    ],
+    "NegativeEffects": [],
+    "Description": "A measure of a creature\u0027s ability to socialize with others",
+    "Commentary": null
+  },
   "Constitution": {
     "Name": "Constitution",
     "PositiveEffects": [

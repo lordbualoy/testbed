@@ -1,0 +1,419 @@
+{
+  "FastLearner": {
+    "Name": "Fast Learner",
+    "AlternateNames": null,
+    "Type": "Positive",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Confident": {
+    "Name": "Confident",
+    "AlternateNames": null,
+    "Type": "Positive",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": {
+      "Items": [
+        "Diffident"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Diffident": {
+    "Name": "Diffident",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": {
+      "Items": [
+        "Confident",
+        "Arrogance"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Arrogance": {
+    "Name": "Arrogance",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": {
+      "Items": [
+        "Diffident",
+        "Humble"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": "Arrogance is different from \u003Ca href=\u0022#Proud\u0022\u003EProud\u003C/a\u003E"
+  },
+  "Humble": {
+    "Name": "Humble",
+    "AlternateNames": null,
+    "Type": "Positive",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": {
+      "Items": [
+        "Arrogance"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Proud": {
+    "Name": "Proud",
+    "AlternateNames": null,
+    "Type": "Positive",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": "Proud is different from \u003Ca href=\u0022#Arrogance\u0022\u003EArrogance\u003C/a\u003E"
+  },
+  "Decisive": {
+    "Name": "Decisive",
+    "AlternateNames": null,
+    "Type": "Positive",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": {
+      "Items": [
+        "Confident",
+        "Brave",
+        "Careless",
+        "Optimistic",
+        "Impatient",
+        "Arrogance",
+        "Irritable"
+      ]
+    },
+    "IncompatibleWith": {
+      "Items": [
+        "Hesitant"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Hesitant": {
+    "Name": "Hesitant",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": {
+      "Items": [
+        "Decisive"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Brave": {
+    "Name": "Brave",
+    "AlternateNames": null,
+    "Type": "Positive",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": {
+      "Items": [
+        "Cowardice"
+      ]
+    },
+    "Levels": null,
+    "Effects": {
+      "PositiveEffects": [
+        "\u002BWillpower against intimidation check",
+        "\u002BWillpower against fright check"
+      ],
+      "NegativeEffects": []
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "Cowardice": {
+    "Name": "Cowardice",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": {
+      "Items": [
+        "Brave"
+      ]
+    },
+    "Levels": null,
+    "Effects": {
+      "PositiveEffects": [
+        "-Willpower against intimidation check",
+        "-Willpower against fright check"
+      ],
+      "NegativeEffects": []
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "Diligent": {
+    "Name": "Diligent",
+    "AlternateNames": {
+      "Items": [
+        "Hardworking"
+      ]
+    },
+    "Type": "Positive",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": {
+      "Items": [
+        "Lazy"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Lazy": {
+    "Name": "Lazy",
+    "AlternateNames": {
+      "Items": [
+        "Slothful"
+      ]
+    },
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": {
+      "Items": [
+        "Diligent"
+      ]
+    },
+    "Levels": null,
+    "Effects": {
+      "PositiveEffects": null,
+      "NegativeEffects": null
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "Cautious": {
+    "Name": "Cautious",
+    "AlternateNames": {
+      "Items": [
+        "Careful"
+      ]
+    },
+    "Type": "Positive",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": {
+      "Items": [
+        "Pessimistic"
+      ]
+    },
+    "IncompatibleWith": {
+      "Items": [
+        "Careless"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Careless": {
+    "Name": "Careless",
+    "AlternateNames": {
+      "Items": [
+        "Reckless"
+      ]
+    },
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": {
+      "Items": [
+        "Optimistic"
+      ]
+    },
+    "IncompatibleWith": {
+      "Items": [
+        "Cautious"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Pessimistic": {
+    "Name": "Pessimistic",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": {
+      "Items": [
+        "Cautious"
+      ]
+    },
+    "IncompatibleWith": {
+      "Items": [
+        "Optimistic"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Optimistic": {
+    "Name": "Optimistic",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": {
+      "Items": [
+        "Careless"
+      ]
+    },
+    "IncompatibleWith": {
+      "Items": [
+        "Pessimistic"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Patient": {
+    "Name": "Patient",
+    "AlternateNames": null,
+    "Type": "Positive",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": {
+      "Items": [
+        "Impatient"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Impatient": {
+    "Name": "Impatient",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": {
+      "Items": [
+        "Patient"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": "says the char is an archer going to fight another archer both side starts out of range so shooting right away is beyond stupid but the char being impatient he will need to make will check to resist his desire to fire right away and wasting all his arrows thereby letting his opponent win instantly"
+  },
+  "Kindhearted": {
+    "Name": "Kindhearted",
+    "AlternateNames": null,
+    "Type": "Positive",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": {
+      "Items": [
+        "Cruel",
+        "Irritable"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": "when a foe surrender and beg for his life make a will check to resist falling in for your own kindness and let your foe go"
+  },
+  "Cruel": {
+    "Name": "Cruel",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": {
+      "Items": [
+        "Kindhearted"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Irritable": {
+    "Name": "Irritable",
+    "AlternateNames": {
+      "Items": [
+        "Bad Temper",
+        "Impulsive"
+      ]
+    },
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": {
+      "Items": [
+        "Kindhearted"
+      ]
+    },
+    "Levels": null,
+    "Effects": {
+      "PositiveEffects": null,
+      "NegativeEffects": null
+    },
+    "Description": "",
+    "Commentary": null
+  }
+}

@@ -25,42 +25,57 @@
     "Description": "Grani, formerly of the Victorian Mounted Police, specializes in high mobility operations such as raids, mechanized warfare, and infiltration."
   },
   "Detail": {
-    "Properties": [
-      {
-        "ID": "RightHanded",
-        "Name": "Right-handed",
-        "Origin": null
-      },
-      {
-        "ID": "Bipedalism",
-        "Name": "Bipedalism",
-        "Origin": null
-      },
-      {
-        "ID": "HighJump",
-        "Name": "High Jump",
-        "Origin": null
-      },
-      {
-        "ID": "EnhancedBalance",
-        "Name": "Enhanced Balance",
-        "Origin": null
-      },
-      {
-        "ID": "BinocularVision",
-        "Name": "Binocular Vision",
-        "Origin": null
-      },
-      {
-        "ID": "PeripheralVision",
-        "Name": "Peripheral Vision",
-        "Origin": null
-      },
-      {
-        "ID": "Trichromacy",
-        "Name": "Trichromacy",
-        "Origin": null
-      }
-    ]
-  }
+    "Attributes": {
+      "Strength": 100,
+      "Intelligence": 100,
+      "Cunning": 100,
+      "Sociability": 100,
+      "Constitution": 100,
+      "Willpower": 100,
+      "Agility": 100,
+      "Reflex": 100,
+      "SpeedOfThought": 100,
+      "Endurance": 100,
+      "Dexterity": 100,
+      "LacertiliaIndex": 100,
+      "Luck": 100
+    },
+      "Properties": [
+        {
+          "ID": "RightHanded",
+          "Name": "Right-handed",
+          "Origin": "Racial Perk"
+        },
+        {
+          "ID": "Bipedalism",
+          "Name": "Bipedalism",
+          "Origin": "Racial Perk"
+        },
+        {
+          "ID": "HighJump",
+          "Name": "High Jump",
+          "Origin": "Feat"
+        },
+        {
+          "ID": "EnhancedBalance",
+          "Name": "Enhanced Balance",
+          "Origin": "Feat"
+        },
+        {
+          "ID": "BinocularVision",
+          "Name": "Binocular Vision",
+          "Origin": "Racial Perk"
+        },
+        {
+          "ID": "PeripheralVision",
+          "Name": "Peripheral Vision",
+          "Origin": "Racial Perk"
+        },
+        {
+          "ID": "Trichromacy",
+          "Name": "Trichromacy",
+          "Origin": "Racial Perk"
+        }
+      ]
+    }
 }

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Traits</title>
+
+    
+    <link rel="stylesheet" href="wwwroot/css/traits.min.css" />
+
+</head>
+<body>
+    
+<div id="container">
+    <fieldset id="FastLearner" class="descr-list">
+        <legend>Fast Learner</legend>
+        <dl>
+            <dt class="header">Description</dt>
+            <dd></dd>
+        </dl>
+    </fieldset>
+    <fieldset id="Confident" class="descr-list">
+        <legend>Confident</legend>
+            <div>
+                <span class="header">Incompatible With</span>
+                <ul>
+                        <li><a href="#Diffident">Diffident</a></li>
+                </ul>
+            </div>
+        <dl>
+            <dt class="header">Description</dt>
+            <dd></dd>
+        </dl>
+    </fieldset>
+    <fieldset id="Diffident" class="descr-list">
+        <legend>Diffident</legend>
+            <div>
+                <span class="header">Incompatible With</span>
+                <ul>
+                        <li><a href="#Confident">Confident</a></li>
+                        <li><a href="#Arrogance">Arrogance</a></li>
+                </ul>
+            </div>
+        <dl>
+            <dt class="header">Description</dt>
+            <dd></dd>
+        </dl>
+    </fieldset>
+    <fieldset id="Arrogance" class="descr-list">
+        <legend>Arrogance</legend>
+            <div>
+                <span class="header">Incompatible With</span>
+                <ul>
+                        <li><a href="#Diffident">Diffident</a></li>
+                        <li><a href="#Humble">Humble</a></li>
+                </ul>
+            </div>
+        <dl>
+            <dt class="header">Description</dt>
+            <dd></dd>
+        </dl>
+            <dl>
+                <dt class="header">Commentary</dt>
+                <dd>Arrogance is different from <a href="#Proud">Proud</a></dd>
+            </dl>
+    </fieldset>
+    <fieldset id="Humble" class="descr-list">
+        <legend>Humble</legend>
+            <div>
+                <span class="header">Incompatible With</span>
+                <ul>
+                        <li><a href="#Arrogance">Arrogance</a></li>
+                </ul>
+            </div>
+        <dl>
+            <dt class="header">Description</dt>
+            <dd></dd>
+        </dl>
+    </fieldset>
+    <fieldset id="Proud" class="descr-list">
+        <legend>Proud</legend>
+        <dl>
+            <dt class="header">Description</dt>
+            <dd></dd>
+        </dl>
+            <dl>
+                <dt class="header">Commentary</dt>
+                <dd>Proud is different from <a href="#Arrogance">Arrogance</a></dd>
+            </dl>
+    </fieldset>
+    <fieldset id="Decisive" class="descr-list">
+        <legend>Decisive</legend>
+            <div>
+                <span class="header">Accompanying Traits</span>
+                <ul>
+                        <li><a href="#Confident">Confident</a></li>
+                        <li><a href="#Brave">Brave</a></li>
+                        <li><a href="#Careless">Careless</a></li>
+                        <li><a href="#Optimistic">Optimistic</a></li>
+                        <li><a href="#Impatient">Impatient</a></li>
+                        <li><a href="#Arrogance">Arrogance</a></li>
+                        <li><a href="#Irritable">Irritable</a></li>
+                </ul>
+            </div>
+            <div>
+                <span class="header">Incompatible With</span>
+                <ul>
+                        <li><a href="#Hesitant">Hesitant</a></li>
+                </ul>
+            </div>
+        <dl>
+            <dt class="header">Description</dt>
+            <dd></dd>
+        </dl>
+    </fieldset>
+    <fieldset id="Hesitant" class="descr-list">
+        <legend>Hesitant</legend>
+            <div>
+                <span class="header">Incompatible With</span>
+                <ul>
+                        <li><a href="#Decisive">Decisive</a></li>
+                </ul>
+            </div>
+        <dl>
+            <dt class="header">Description</dt>
+            <dd></dd>
+        </dl>
+    </fieldset>
+    <fieldset id="Brave" class="descr-list">
+        <legend>Brave</legend>
+            <div>
+                <span class="header">Incompatible With</span>
+                <ul>
+                        <li><a href="#Cowardice">Cowardice</a></li>
+                </ul>
+            </div>
+            <div>
+                <span class="header">Effects</span>
+                <ul class="effect">
+                        <li class="positive">+Willpower against intimidation check</li>
+                        <li class="positive">+Willpower against fright check</li>
+                </ul>
+            </div>
+        <dl>
+            <dt class="header">Description</dt>
+            <dd></dd>
+        </dl>
+    </fieldset>
+    <fieldset id="Cowardice" class="descr-list">
+        <legend>Cowardice</legend>
+            <div>
+                <span class="header">Incompatible With</span>
+                <ul>
+                        <li><a href="#Brave">Brave</a></li>
+                </ul>
+            </div>
+            <div>
+                <span class="header">Effects</span>
+                <ul class="effect">
+                        <li class="positive">-Willpower against intimidation check</li>
+                        <li class="positive">-Willpower against fright check</li>
+                </ul>
+            </div>
+        <dl>
+            <dt class="header">Description</dt>
+            <dd></dd>
+        </dl>
+    </fieldset>
+    <fieldset id="Diligent" class="descr-list">
+        <legend>Diligent</legend>
+            <div>
+                <span class="header">Alternate Names</span>
+                <ul>
+                        <li>Hardworking</li>
+                </ul>
+            </div>
+            <div>
+                <span class="header">Incompatible With</span>
+                <ul>
+                        <li><a href="#Lazy">Lazy</a></li>
+                </ul>
+            </div>
+        <dl>
+            <dt class="header">Description</dt>
+            <dd></dd>
+        </dl>
+    </fieldset>
+    <fieldset id="Lazy" class="descr-list">
+        <legend>Lazy</legend>
+            <div>
+                <span class="header">Alternate Names</span>
+                <ul>
+                        <li>Slothful</li>
+                </ul>
+            </div>
+            <div>
+                <span class="header">Incompatible With</span>
+                <ul>
+                        <li><a href="#Diligent">Diligent</a></li>
+                </ul>
+            </div>
+            <div>
+                <span class="header">Effects</span>
+                <ul class="effect">
+                        <li class="negative">Need to make Willpower check to do something</li>
+                </ul>
+            </div>
+        <dl>
+            <dt class="header">Description</dt>
+            <dd></dd>
+        </dl>
+    </fieldset>
+    <fieldset id="Cautious" class="descr-list">
+        <legend>Cautious</legend>
+            <div>
+                <span class="header">Alternate Names</span>
+                <ul>
+                        <li>Careful</li>
+                </ul>
+            </div>
+            <div>
+                <span class="header">Accompanying Traits</span>
+                <ul>
+                        <li><a href="#Pessimistic">Pessimistic</a></li>
+                </ul>
+            </div>
+            <div>
+                <span class="header">Incompatible With</span>
+                <ul>
+                        <li><a href="#Careless">Careless</a></li>
+                </ul>
+            </div>
+        <dl>
+            <dt class="header">Description</dt>
+            <dd></dd>
+        </dl>
+    </fieldset>
+    <fieldset id="Careless" class="descr-list">
+        <legend>Careless</legend>
+            <div>
+                <span class="header">Alternate Names</span>
+                <ul>
+                        <li>Reckless</li>
+                </ul>
+            </div>
+            <div>
+                <span class="header">Accompanying Traits</span>
+                <ul>
+                        <li><a href="#Optimistic">Optimistic</a></li>
+                </ul>
+            </div>
+            <div>
+                <span class="header">Incompatible With</span>
+                <ul>
+                        <li><a href="#Cautious">Cautious</a></li>
+                </ul>
+            </div>
+        <dl>
+            <dt class="header">Description</dt>
+            <dd></dd>
+        </dl>
+    </fieldset>
+    <fieldset id="Pessimistic" class="descr-list">
+        <legend>Pessimistic</legend>
+            <div>
+                <span class="header">Accompanying Traits</span>
+                <ul>
+                        <li><a href="#Cautious">Cautious</a></li>
+                </ul>
+            </div>
+            <div>
+                <span class="header">Incompatible With</span>
+                <ul>
+                        <li><a href="#Optimistic">Optimistic</a></li>
+                </ul>
+            </div>
+        <dl>
+            <dt class="header">Description</dt>
+            <dd></dd>
+        </dl>
+    </fieldset>
+    <fieldset id="Optimistic" class="descr-list">
+        <legend>Optimistic</legend>
+            <div>
+                <span class="header">Accompanying Traits</span>
+                <ul>
+                        <li><a href="#Careless">Careless</a></li>
+                </ul>
+            </div>
+            <div>
+                <span class="header">Incompatible With</span>
+                <ul>
+                        <li><a href="#Pessimistic">Pessimistic</a></li>
+                </ul>
+            </div>
+        <dl>
+            <dt class="header">Description</dt>
+            <dd></dd>
+        </dl>
+    </fieldset>
+    <fieldset id="Patient" class="descr-list">
+        <legend>Patient</legend>
+            <div>
+                <span class="header">Incompatible With</span>
+                <ul>
+                        <li><a href="#Impatient">Impatient</a></li>
+                </ul>
+            </div>
+        <dl>
+            <dt class="header">Description</dt>
+            <dd></dd>
+        </dl>
+    </fieldset>
+    <fieldset id="Impatient" class="descr-list">
+        <legend>Impatient</legend>
+            <div>
+                <span class="header">Incompatible With</span>
+                <ul>
+                        <li><a href="#Patient">Patient</a></li>
+                </ul>
+            </div>
+        <dl>
+            <dt class="header">Description</dt>
+            <dd></dd>
+        </dl>
+            <dl>
+                <dt class="header">Commentary</dt>
+                <dd>says the char is an archer going to fight another archer both side starts out of range so shooting right away is beyond stupid but the char being impatient he will need to make will check to resist his desire to fire right away and wasting all his arrows thereby letting his opponent win instantly</dd>
+            </dl>
+    </fieldset>
+    <fieldset id="Kindhearted" class="descr-list">
+        <legend>Kindhearted</legend>
+            <div>
+                <span class="header">Incompatible With</span>
+                <ul>
+                        <li><a href="#Cruel">Cruel</a></li>
+                        <li><a href="#Irritable">Irritable</a></li>
+                </ul>
+            </div>
+        <dl>
+            <dt class="header">Description</dt>
+            <dd></dd>
+        </dl>
+            <dl>
+                <dt class="header">Commentary</dt>
+                <dd>when a foe surrender and beg for his life make a will check to resist falling in for your own kindness and let your foe go</dd>
+            </dl>
+    </fieldset>
+    <fieldset id="Cruel" class="descr-list">
+        <legend>Cruel</legend>
+            <div>
+                <span class="header">Incompatible With</span>
+                <ul>
+                        <li><a href="#Kindhearted">Kindhearted</a></li>
+                </ul>
+            </div>
+        <dl>
+            <dt class="header">Description</dt>
+            <dd></dd>
+        </dl>
+    </fieldset>
+    <fieldset id="Irritable" class="descr-list">
+        <legend>Irritable</legend>
+            <div>
+                <span class="header">Alternate Names</span>
+                <ul>
+                        <li>Bad Temper</li>
+                        <li>Impulsive</li>
+                </ul>
+            </div>
+            <div>
+                <span class="header">Incompatible With</span>
+                <ul>
+                        <li><a href="#Kindhearted">Kindhearted</a></li>
+                </ul>
+            </div>
+            <div>
+                <span class="header">Effects</span>
+                <ul class="effect">
+                        <li class="negative">easily provoked must make will check to resist getting angry and attack the provoker</li>
+                </ul>
+            </div>
+        <dl>
+            <dt class="header">Description</dt>
+            <dd></dd>
+        </dl>
+    </fieldset>
+</div>
+
+
+    
+</body>
+</html>

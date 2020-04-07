@@ -8,7 +8,13 @@
     },
     "DerivedFrom": null,
     "Derivations": null,
-    "Origin": "Racial Perk",
+    "IncompatibleWith": null,
+    "Origin": {
+      "Items": [
+        "Racial Perk",
+        "Gift"
+      ]
+    },
     "Tags": [
       "Lacertilia"
     ],
@@ -32,7 +38,13 @@
     "AlternateNames": null,
     "DerivedFrom": "Enhanced Touch",
     "Derivations": null,
-    "Origin": "Racial Perk",
+    "IncompatibleWith": null,
+    "Origin": {
+      "Items": [
+        "Racial Perk",
+        "Gift"
+      ]
+    },
     "Tags": [
       "Lacertilia"
     ],
@@ -51,7 +63,20 @@
     "AlternateNames": null,
     "DerivedFrom": null,
     "Derivations": null,
-    "Origin": "Racial Perk",
+    "IncompatibleWith": {
+      "Items": [
+        "Asexual Reproduction",
+        "Sexual Reproduction",
+        "Ectotherm",
+        "Endotherm"
+      ]
+    },
+    "Origin": {
+      "Items": [
+        "Racial Perk",
+        "Racial Vulnerability"
+      ]
+    },
     "Tags": [
       "Physiology"
     ],
@@ -79,7 +104,13 @@
         "Biocomputer: Programmable"
       ]
     },
-    "Origin": "Racial Perk",
+    "IncompatibleWith": null,
+    "Origin": {
+      "Items": [
+        "Racial Perk",
+        "Gift"
+      ]
+    },
     "Tags": [
       "Physiology",
       "Intelligence",
@@ -95,7 +126,13 @@
     "AlternateNames": null,
     "DerivedFrom": "Biocomputer",
     "Derivations": null,
-    "Origin": "Racial Perk",
+    "IncompatibleWith": null,
+    "Origin": {
+      "Items": [
+        "Racial Perk",
+        "Gift"
+      ]
+    },
     "Tags": [
       "Intelligence",
       "Computer"
@@ -116,7 +153,13 @@
     "AlternateNames": null,
     "DerivedFrom": "Biocomputer",
     "Derivations": null,
-    "Origin": "Racial Perk",
+    "IncompatibleWith": null,
+    "Origin": {
+      "Items": [
+        "Racial Perk",
+        "Gift"
+      ]
+    },
     "Tags": [
       "Intelligence",
       "Computer"
@@ -138,7 +181,13 @@
     "AlternateNames": null,
     "DerivedFrom": "Biocomputer",
     "Derivations": null,
-    "Origin": "Racial Perk",
+    "IncompatibleWith": null,
+    "Origin": {
+      "Items": [
+        "Racial Perk",
+        "Gift"
+      ]
+    },
     "Tags": [
       "Intelligence",
       "Computer"
@@ -160,7 +209,12 @@
     "AlternateNames": null,
     "DerivedFrom": null,
     "Derivations": null,
-    "Origin": "Gift",
+    "IncompatibleWith": null,
+    "Origin": {
+      "Items": [
+        "Gift"
+      ]
+    },
     "Tags": [
       "Memory"
     ],
@@ -179,7 +233,13 @@
     "AlternateNames": null,
     "DerivedFrom": null,
     "Derivations": null,
-    "Origin": "Racial Perk",
+    "IncompatibleWith": null,
+    "Origin": {
+      "Items": [
+        "Racial Perk",
+        "Racial Vulnerability"
+      ]
+    },
     "Tags": [
       "Physiology"
     ],
@@ -206,7 +266,13 @@
         "Parthenogenesis"
       ]
     },
-    "Origin": "Racial Perk",
+    "IncompatibleWith": null,
+    "Origin": {
+      "Items": [
+        "Racial Perk",
+        "Gift"
+      ]
+    },
     "Tags": [
       "Physiology",
       "Reproduction"
@@ -221,7 +287,13 @@
     "AlternateNames": null,
     "DerivedFrom": "Asexual Reproduction",
     "Derivations": null,
-    "Origin": "Racial Perk",
+    "IncompatibleWith": null,
+    "Origin": {
+      "Items": [
+        "Racial Perk",
+        "Racial Vulnerability"
+      ]
+    },
     "Tags": [
       "Physiology",
       "Reproduction"
@@ -243,7 +315,13 @@
     "AlternateNames": null,
     "DerivedFrom": "Asexual Reproduction",
     "Derivations": null,
-    "Origin": "Racial Perk",
+    "IncompatibleWith": null,
+    "Origin": {
+      "Items": [
+        "Racial Perk",
+        "Gift"
+      ]
+    },
     "Tags": [
       "Physiology",
       "Reproduction"
@@ -263,7 +341,13 @@
     "AlternateNames": null,
     "DerivedFrom": null,
     "Derivations": null,
-    "Origin": "Racial Perk",
+    "IncompatibleWith": null,
+    "Origin": {
+      "Items": [
+        "Racial Perk",
+        "Racial Vulnerability"
+      ]
+    },
     "Tags": [
       "Physiology",
       "Reproduction"
@@ -286,7 +370,12 @@
     "AlternateNames": null,
     "DerivedFrom": null,
     "Derivations": null,
-    "Origin": "Racial Perk",
+    "IncompatibleWith": null,
+    "Origin": {
+      "Items": [
+        "Racial Perk"
+      ]
+    },
     "Tags": [
       "Physiology"
     ],
@@ -312,7 +401,12 @@
     "AlternateNames": null,
     "DerivedFrom": null,
     "Derivations": null,
-    "Origin": "Racial Perk",
+    "IncompatibleWith": null,
+    "Origin": {
+      "Items": [
+        "Racial Perk"
+      ]
+    },
     "Tags": [
       "Physiology",
       "NaturalProtection"
@@ -337,7 +431,12 @@
         "Thick Hide"
       ]
     },
-    "Origin": "Racial Perk",
+    "IncompatibleWith": null,
+    "Origin": {
+      "Items": [
+        "Racial Perk"
+      ]
+    },
     "Tags": [
       "Physiology",
       "NaturalProtection"
@@ -357,7 +456,12 @@
     "AlternateNames": null,
     "DerivedFrom": "Animal Hide",
     "Derivations": null,
-    "Origin": "Racial Perk",
+    "IncompatibleWith": null,
+    "Origin": {
+      "Items": [
+        "Racial Perk"
+      ]
+    },
     "Tags": [
       "Physiology",
       "NaturalProtection"
@@ -378,7 +482,12 @@
     "AlternateNames": null,
     "DerivedFrom": null,
     "Derivations": null,
-    "Origin": "Racial Perk",
+    "IncompatibleWith": null,
+    "Origin": {
+      "Items": [
+        "Racial Perk"
+      ]
+    },
     "Tags": [
       "Physiology",
       "NaturalProtection"
@@ -399,7 +508,12 @@
     "AlternateNames": null,
     "DerivedFrom": null,
     "Derivations": null,
-    "Origin": "Racial Perk",
+    "IncompatibleWith": null,
+    "Origin": {
+      "Items": [
+        "Racial Perk"
+      ]
+    },
     "Tags": [
       "Physiology",
       "NaturalProtection"
@@ -425,7 +539,12 @@
         "Dragonscale"
       ]
     },
-    "Origin": "Racial Perk",
+    "IncompatibleWith": null,
+    "Origin": {
+      "Items": [
+        "Racial Perk"
+      ]
+    },
     "Tags": [
       "Physiology",
       "NaturalProtection"
@@ -446,7 +565,12 @@
     "AlternateNames": null,
     "DerivedFrom": "Protective Scale",
     "Derivations": null,
-    "Origin": "Racial Perk",
+    "IncompatibleWith": null,
+    "Origin": {
+      "Items": [
+        "Racial Perk"
+      ]
+    },
     "Tags": [
       "Physiology",
       "NaturalProtection"
@@ -472,7 +596,12 @@
     },
     "DerivedFrom": null,
     "Derivations": null,
-    "Origin": "Racial Vulnerability",
+    "IncompatibleWith": null,
+    "Origin": {
+      "Items": [
+        "Racial Vulnerability"
+      ]
+    },
     "Tags": [
       "Physiology"
     ],
@@ -493,7 +622,12 @@
     },
     "DerivedFrom": "Protective Scale",
     "Derivations": null,
-    "Origin": "Racial Perk",
+    "IncompatibleWith": null,
+    "Origin": {
+      "Items": [
+        "Racial Perk"
+      ]
+    },
     "Tags": [
       "Physiology"
     ],
@@ -513,7 +647,12 @@
     "AlternateNames": null,
     "DerivedFrom": null,
     "Derivations": null,
-    "Origin": "Racial Perk",
+    "IncompatibleWith": null,
+    "Origin": {
+      "Items": [
+        "Racial Perk"
+      ]
+    },
     "Tags": [
       "Physiology",
       "Locomotion"
@@ -533,7 +672,14 @@
     "AlternateNames": null,
     "DerivedFrom": null,
     "Derivations": null,
-    "Origin": "Racial Perk",
+    "IncompatibleWith": null,
+    "Origin": {
+      "Items": [
+        "Racial Perk",
+        "Gift",
+        "Feat"
+      ]
+    },
     "Tags": [
       "Locomotion"
     ],
@@ -552,7 +698,14 @@
     "AlternateNames": null,
     "DerivedFrom": null,
     "Derivations": null,
-    "Origin": "Racial Perk",
+    "IncompatibleWith": null,
+    "Origin": {
+      "Items": [
+        "Racial Perk",
+        "Gift",
+        "Feat"
+      ]
+    },
     "Tags": [
       "Locomotion"
     ],
@@ -571,7 +724,12 @@
     "AlternateNames": null,
     "DerivedFrom": null,
     "Derivations": null,
-    "Origin": "Racial Perk",
+    "IncompatibleWith": null,
+    "Origin": {
+      "Items": [
+        "Racial Perk"
+      ]
+    },
     "Tags": [
       "Physiology",
       "Sight"
@@ -594,7 +752,12 @@
     "AlternateNames": null,
     "DerivedFrom": null,
     "Derivations": null,
-    "Origin": "Racial Perk",
+    "IncompatibleWith": null,
+    "Origin": {
+      "Items": [
+        "Racial Perk"
+      ]
+    },
     "Tags": [
       "Physiology",
       "Sight"
@@ -614,7 +777,12 @@
     "AlternateNames": null,
     "DerivedFrom": null,
     "Derivations": null,
-    "Origin": "Racial Perk",
+    "IncompatibleWith": null,
+    "Origin": {
+      "Items": [
+        "Racial Perk"
+      ]
+    },
     "Tags": [
       "Physiology",
       "Sight"
@@ -634,7 +802,17 @@
     "AlternateNames": null,
     "DerivedFrom": null,
     "Derivations": null,
-    "Origin": "Racial Perk",
+    "IncompatibleWith": {
+      "Items": [
+        "Left-handed",
+        "Ambidextrous"
+      ]
+    },
+    "Origin": {
+      "Items": [
+        "Racial Perk"
+      ]
+    },
     "Tags": [
       "Physiology",
       "Manipulator"
@@ -652,7 +830,18 @@
     "AlternateNames": null,
     "DerivedFrom": null,
     "Derivations": null,
-    "Origin": "Racial Perk",
+    "IncompatibleWith": {
+      "Items": [
+        "Right-handed",
+        "Ambidextrous"
+      ]
+    },
+    "Origin": {
+      "Items": [
+        "Racial Perk",
+        "Gift"
+      ]
+    },
     "Tags": [
       "Physiology",
       "Manipulator"
@@ -674,7 +863,18 @@
     "AlternateNames": null,
     "DerivedFrom": null,
     "Derivations": null,
-    "Origin": "Racial Perk",
+    "IncompatibleWith": {
+      "Items": [
+        "Right-handed",
+        "Left-handed"
+      ]
+    },
+    "Origin": {
+      "Items": [
+        "Racial Perk",
+        "Gift"
+      ]
+    },
     "Tags": [
       "Physiology",
       "Manipulator"
@@ -699,7 +899,13 @@
         "Feline Whisker"
       ]
     },
-    "Origin": "Racial Perk",
+    "IncompatibleWith": null,
+    "Origin": {
+      "Items": [
+        "Racial Perk",
+        "Gift"
+      ]
+    },
     "Tags": [
       "Physiology"
     ],
@@ -718,7 +924,13 @@
     "AlternateNames": null,
     "DerivedFrom": "Enhanced Touch",
     "Derivations": null,
-    "Origin": "Racial Perk",
+    "IncompatibleWith": null,
+    "Origin": {
+      "Items": [
+        "Racial Perk",
+        "Gift"
+      ]
+    },
     "Tags": [
       "Physiology"
     ],
