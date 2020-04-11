@@ -9,13 +9,17 @@ import tippy from './tippy.esm.js';
         const data = await Promise.all([
             fetch('wwwroot/json/attributes.json').then((resp) => resp.json())
             , fetch('wwwroot/json/properties.json').then((resp) => resp.json())
+            , fetch('wwwroot/json/skills.json').then((resp) => resp.json())
+            , fetch('wwwroot/json/traits.json').then((resp) => resp.json())
             , fetch(`wwwroot/json/creatures/${creatureID}.json`).then((resp) => resp.json())
         ]);
 
         const map = new Map();
         map.set('Attributes', data[0]);
         map.set('Properties', data[1]);
-        const creatureData = data[2];
+        map.set('Skills', data[2]);
+        map.set('Traits', data[3]);
+        const creatureData = data[4];
 
         document.title = creatureData.Outline.NickName;
         const creature = new Creature(map, creatureData);

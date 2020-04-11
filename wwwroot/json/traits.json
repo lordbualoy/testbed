@@ -47,6 +47,56 @@
     "Description": "",
     "Commentary": null
   },
+  "Shy": {
+    "Name": "Shy",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": {
+      "Items": [
+        "Diffident",
+        "Aloof",
+        "Antisocial",
+        "Low Self Esteem"
+      ]
+    },
+    "IncompatibleWith": {
+      "Items": [
+        "Confident",
+        "Sociable"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "LowSelfEsteem": {
+    "Name": "Low Self Esteem",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": {
+      "Items": [
+        "Diffident",
+        "Shy",
+        "Aloof",
+        "Antisocial"
+      ]
+    },
+    "IncompatibleWith": {
+      "Items": [
+        "Confident",
+        "Sociable"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
   "Arrogance": {
     "Name": "Arrogance",
     "AlternateNames": null,
@@ -128,7 +178,11 @@
     "Type": "Negative",
     "DerivedFrom": null,
     "Derivations": null,
-    "AccompanyingTraits": null,
+    "AccompanyingTraits": {
+      "Items": [
+        "Cautious"
+      ]
+    },
     "IncompatibleWith": {
       "Items": [
         "Decisive"
@@ -248,6 +302,29 @@
     "IncompatibleWith": {
       "Items": [
         "Careless"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Paranoid": {
+    "Name": "Paranoid",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": {
+      "Items": [
+        "Cautious",
+        "Pessimistic",
+        "Distrustful"
+      ]
+    },
+    "IncompatibleWith": {
+      "Items": [
+        "Trusting"
       ]
     },
     "Levels": null,
@@ -413,6 +490,1919 @@
       "PositiveEffects": null,
       "NegativeEffects": null
     },
+    "Description": "",
+    "Commentary": null
+  },
+  "Ambitious": {
+    "Name": "Ambitious",
+    "AlternateNames": null,
+    "Type": "Positive",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Just": {
+    "Name": "Just",
+    "AlternateNames": null,
+    "Type": "Positive",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": {
+      "Items": [
+        "Unfair"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Unfair": {
+    "Name": "Unfair",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": {
+      "Items": [
+        "Just"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Cynical": {
+    "Name": "Cynical",
+    "AlternateNames": null,
+    "Type": "Neutral",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": {
+      "Items": [
+        "Naive",
+        "Fanaticism"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Naive": {
+    "Name": "Naive",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": {
+      "Items": [
+        "Cynical"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Fanaticism": {
+    "Name": "Fanaticism",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": {
+      "Items": [
+        "Religious",
+        "Fanaticism Nationality",
+        "Fanaticism Liege",
+        "Fanaticism Individual",
+        "Fanaticism Organization"
+      ]
+    },
+    "AccompanyingTraits": null,
+    "IncompatibleWith": {
+      "Items": [
+        "Cynical"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Fanaticism_Religious": {
+    "Name": "Religious",
+    "AlternateNames": {
+      "Items": [
+        "Pious"
+      ]
+    },
+    "Type": "Negative",
+    "DerivedFrom": "Fanaticism",
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Fanaticism_Nationality": {
+    "Name": "Fanaticism Nationality",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": "Fanaticism",
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Fanaticism_Liege": {
+    "Name": "Fanaticism Liege",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": "Fanaticism",
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Fanaticism_Individual": {
+    "Name": "Fanaticism Individual",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": "Fanaticism",
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Fanaticism_Organization": {
+    "Name": "Fanaticism Organization",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": "Fanaticism",
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Impartiality": {
+    "Name": "Impartiality",
+    "AlternateNames": null,
+    "Type": "Positive",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": {
+      "Items": [
+        "Discriminatory"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Discriminatory": {
+    "Name": "Discriminatory",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": {
+      "Items": [
+        "Specific Discrimination",
+        "General Discrimination"
+      ]
+    },
+    "AccompanyingTraits": null,
+    "IncompatibleWith": {
+      "Items": [
+        "Impartiality"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Discriminatory_Specific": {
+    "Name": "Specific Discrimination",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": "Discriminatory",
+    "Derivations": {
+      "Items": [
+        "Specific Discrimination: Species",
+        "Specific Discrimination: Racist",
+        "Specific Discrimination: Nationality",
+        "Specific Discrimination: Religion",
+        "Specific Discrimination: Culture",
+        "Specific Discrimination: Sex",
+        "Specific Discrimination: Social Class"
+      ]
+    },
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "The character only dislike one particular nationality, ethnicity, species; eg: dislike just rascieran but ok with other nationality",
+    "Commentary": null
+  },
+  "Discriminatory_Specific_Species": {
+    "Name": "Specific Discrimination: Species",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": "Specific Discrimination",
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Discriminatory_Specific_Racist": {
+    "Name": "Specific Discrimination: Racist",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": "Specific Discrimination",
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Discriminatory_Specific_Nationality": {
+    "Name": "Specific Discrimination: Nationality",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": "Specific Discrimination",
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Discriminatory_Specific_Religion": {
+    "Name": "Specific Discrimination: Religion",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": "Specific Discrimination",
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Discriminatory_Specific_Culture": {
+    "Name": "Specific Discrimination: Culture",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": "Specific Discrimination",
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Discriminatory_Specific_Sex": {
+    "Name": "Specific Discrimination: Sex",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": "Specific Discrimination",
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Discriminatory_Specific_SocialClass": {
+    "Name": "Specific Discrimination: Social Class",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": "Specific Discrimination",
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Discriminatory_General": {
+    "Name": "General Discrimination",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": "Discriminatory",
+    "Derivations": {
+      "Items": [
+        "General Discrimination: Species",
+        "General Discrimination: Racist",
+        "General Discrimination: Nationality",
+        "General Discrimination: Religion",
+        "General Discrimination: Culture",
+        "General Discrimination: Sex",
+        "General Discrimination: Social Class"
+      ]
+    },
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Discriminatory_General_Species": {
+    "Name": "General Discrimination: Species",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": "General Discrimination",
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Discriminatory_General_Racist": {
+    "Name": "General Discrimination: Racist",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": "General Discrimination",
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Discriminatory_General_Nationality": {
+    "Name": "General Discrimination: Nationality",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": "General Discrimination",
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Discriminatory_General_Religion": {
+    "Name": "General Discrimination: Religion",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": "General Discrimination",
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Discriminatory_General_Culture": {
+    "Name": "General Discrimination: Culture",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": "General Discrimination",
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Discriminatory_General_Sex": {
+    "Name": "General Discrimination: Sex",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": "General Discrimination",
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Discriminatory_General_SocialClass": {
+    "Name": "General Discrimination: Social Class",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": "General Discrimination",
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Sociable": {
+    "Name": "Sociable",
+    "AlternateNames": null,
+    "Type": "Positive",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": {
+      "Items": [
+        "Charismatic",
+        "Eloquence"
+      ]
+    },
+    "IncompatibleWith": {
+      "Items": [
+        "Aloof",
+        "Antisocial"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Charismatic": {
+    "Name": "Charismatic",
+    "AlternateNames": null,
+    "Type": "Positive",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": {
+      "Items": [
+        "Sociable",
+        "Eloquence"
+      ]
+    },
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Eloquence": {
+    "Name": "Eloquence",
+    "AlternateNames": null,
+    "Type": "Positive",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": {
+      "Items": [
+        "Sociable",
+        "Charismatic"
+      ]
+    },
+    "IncompatibleWith": {
+      "Items": [
+        "Sarcastic",
+        "Blunt"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Sarcastic": {
+    "Name": "Sarcastic",
+    "AlternateNames": {
+      "Items": [
+        "Sharp Tongue"
+      ]
+    },
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": {
+      "Items": [
+        "Blunt",
+        "Irritable"
+      ]
+    },
+    "IncompatibleWith": {
+      "Items": [
+        "Eloquence"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Blunt": {
+    "Name": "Blunt",
+    "AlternateNames": null,
+    "Type": "Positive",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": {
+      "Items": [
+        "Sarcastic",
+        "Irritable"
+      ]
+    },
+    "IncompatibleWith": {
+      "Items": [
+        "Eloquence"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "The character don\u0027t sugarcoat anything and say exactly what he think",
+    "Commentary": null
+  },
+  "Stuttering": {
+    "Name": "Stuttering",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": {
+      "Items": [
+        "Eloquence"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Aloof": {
+    "Name": "Aloof",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": {
+      "Items": [
+        "Antisocial"
+      ]
+    },
+    "IncompatibleWith": {
+      "Items": [
+        "Sociable"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Antisocial": {
+    "Name": "Antisocial",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": {
+      "Items": [
+        "Aloof"
+      ]
+    },
+    "IncompatibleWith": {
+      "Items": [
+        "Sociable"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "GoodDeduction": {
+    "Name": "Good Deduction",
+    "AlternateNames": null,
+    "Type": "Positive",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Observant": {
+    "Name": "Observant",
+    "AlternateNames": null,
+    "Type": "Positive",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": {
+      "Items": [
+        "Careless"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Pragmatic": {
+    "Name": "Pragmatic",
+    "AlternateNames": null,
+    "Type": "Positive",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Loyal": {
+    "Name": "Loyal",
+    "AlternateNames": null,
+    "Type": "Positive",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": {
+      "Items": [
+        "Disloyal"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Disloyal": {
+    "Name": "Disloyal",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": {
+      "Items": [
+        "Loyal"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Cheerful": {
+    "Name": "Cheerful",
+    "AlternateNames": null,
+    "Type": "Positive",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Determined": {
+    "Name": "Determined",
+    "AlternateNames": null,
+    "Type": "Positive",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "GreatShortTermMemory": {
+    "Name": "Great Short Term Memory",
+    "AlternateNames": null,
+    "Type": "Positive",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": {
+      "Items": [
+        "Poor Short Term Memory"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "GreatLongTermMemory": {
+    "Name": "Great Long Term Memory",
+    "AlternateNames": null,
+    "Type": "Positive",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": {
+      "Items": [
+        "Poor Long Term Memory"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "PoorShortTermMemory": {
+    "Name": "Poor Short Term Memory",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": {
+      "Items": [
+        "Great Short Term Memory"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "PoorLongTermMemory": {
+    "Name": "Poor Long Term Memory",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": {
+      "Items": [
+        "Poor Short Term Memory"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Perfectionist": {
+    "Name": "Perfectionist",
+    "AlternateNames": null,
+    "Type": "Positive",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Sly": {
+    "Name": "Sly",
+    "AlternateNames": {
+      "Items": [
+        "Cunning",
+        "Deceitful"
+      ]
+    },
+    "Type": "Neutral",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": {
+      "Items": [
+        "Manipulative"
+      ]
+    },
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Manipulative": {
+    "Name": "Manipulative",
+    "AlternateNames": null,
+    "Type": "Neutral",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": {
+      "Items": [
+        "Sly"
+      ]
+    },
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Strict": {
+    "Name": "Strict",
+    "AlternateNames": null,
+    "Type": "Neutral",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Serious": {
+    "Name": "Serious",
+    "AlternateNames": null,
+    "Type": "Neutral",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Mature": {
+    "Name": "Mature",
+    "AlternateNames": null,
+    "Type": "Neutral",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Reserved": {
+    "Name": "Reserved",
+    "AlternateNames": null,
+    "Type": "Neutral",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Competitive": {
+    "Name": "Competitive",
+    "AlternateNames": null,
+    "Type": "Neutral",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "like to compete and win, dislike losing",
+    "Commentary": null
+  },
+  "Protective": {
+    "Name": "Protective",
+    "AlternateNames": null,
+    "Type": "Neutral",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Facade": {
+    "Name": "Facade",
+    "AlternateNames": null,
+    "Type": "Neutral",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Stoic": {
+    "Name": "Stoic",
+    "AlternateNames": null,
+    "Type": "Neutral",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Elegant": {
+    "Name": "Elegant",
+    "AlternateNames": {
+      "Items": [
+        "Refined"
+      ]
+    },
+    "Type": "Neutral",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Masochism": {
+    "Name": "Masochism",
+    "AlternateNames": null,
+    "Type": "Neutral",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": {
+      "Items": [
+        "Sadistic"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Sadistic": {
+    "Name": "Sadistic",
+    "AlternateNames": null,
+    "Type": "Neutral",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": {
+      "Items": [
+        "Masochism"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Curious": {
+    "Name": "Curious",
+    "AlternateNames": null,
+    "Type": "Neutral",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "When you are presented with an interesting item or situation, you must roll vs. Will to avoid examining it",
+    "Commentary": null
+  },
+  "Obsession": {
+    "Name": "Obsession",
+    "AlternateNames": null,
+    "Type": "Neutral",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "Your will is fixed upon a single goal. Everything you do is intended to further this goal",
+    "Commentary": null
+  },
+  "Selfish": {
+    "Name": "Selfish",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": {
+      "Items": [
+        "Charitable"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Charitable": {
+    "Name": "Charitable",
+    "AlternateNames": {
+      "Items": [
+        "Generous"
+      ]
+    },
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": {
+      "Items": [
+        "Selfish",
+        "Stingy"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "make will check to resist money begging",
+    "Commentary": null
+  },
+  "Greedy": {
+    "Name": "Greedy",
+    "AlternateNames": {
+      "Items": [
+        "Avaricious"
+      ]
+    },
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": {
+      "Items": [
+        "Stingy"
+      ]
+    },
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "make will check to resist bribe or deal that would give them sizable money relative to their wealth",
+    "Commentary": null
+  },
+  "Stingy": {
+    "Name": "Stingy",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": {
+      "Items": [
+        "Greedy"
+      ]
+    },
+    "IncompatibleWith": {
+      "Items": [
+        "Charitable"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "somewhat relate to greedy but differs in that greedy person wants to \u0022earn\u0022 more and more wealth but can still be a big spender, stingy person on the other hand wants to \u0022hoard wealth and didn\u0027t want to spend them\u0022 but doesn\u0027t necessarily want to \u0022earn\u0022 more and more wealth like greedy person do; make will check to spend money even if it is something the character urgently needed, bonus to discount rate",
+    "Commentary": null
+  },
+  "Extravagant": {
+    "Name": "Extravagant",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": {
+      "Items": [
+        "Charitable"
+      ]
+    },
+    "IncompatibleWith": {
+      "Items": [
+        "Stingy"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "make will check to resist buying everything",
+    "Commentary": null
+  },
+  "Trusting": {
+    "Name": "Trusting",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": {
+      "Items": [
+        "Optimistic"
+      ]
+    },
+    "IncompatibleWith": {
+      "Items": [
+        "Distrustful",
+        "Pessimistic",
+        "Cynical",
+        "Dishonest",
+        "Paranoid"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Distrustful": {
+    "Name": "Distrustful",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": {
+      "Items": [
+        "Trusting"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Honest": {
+    "Name": "Honest",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": {
+      "Items": [
+        "Trusting"
+      ]
+    },
+    "IncompatibleWith": {
+      "Items": [
+        "Dishonest"
+      ]
+    },
+    "Levels": null,
+    "Effects": {
+      "PositiveEffects": null,
+      "NegativeEffects": null
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "Dishonest": {
+    "Name": "Dishonest",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": {
+      "Items": [
+        "Sly"
+      ]
+    },
+    "IncompatibleWith": {
+      "Items": [
+        "Honest",
+        "Trusting"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "CompulsiveBehavior": {
+    "Name": "Compulsive Behavior",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": {
+      "Items": [
+        "Compulsive Behavior Gambling",
+        "Compulsive Behavior Nail Biting",
+        "Compulsive Behavior Shopping",
+        "Compulsive Behavior Hoarding",
+        "Compulsive Behavior Eating",
+        "Compulsive Behavior Talking",
+        "Compulsive Behavior Drinking"
+      ]
+    },
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "CompulsiveBehavior_Gambling": {
+    "Name": "Compulsive Behavior Gambling",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": "Compulsive Behavior",
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "CompulsiveBehavior_NailBiting": {
+    "Name": "Compulsive Behavior Nail Biting",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": "Compulsive Behavior",
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "CompulsiveBehavior_Shopping": {
+    "Name": "Compulsive Behavior Shopping",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": "Compulsive Behavior",
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "CompulsiveBehavior_Hoarding": {
+    "Name": "Compulsive Behavior Hoarding",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": "Compulsive Behavior",
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "CompulsiveBehavior_Eating": {
+    "Name": "Compulsive Behavior Eating",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": "Compulsive Behavior",
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "CompulsiveBehavior_Talking": {
+    "Name": "Compulsive Behavior Talking",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": "Compulsive Behavior",
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "CompulsiveBehavior_Drinking": {
+    "Name": "Compulsive Behavior Drinking",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": "Compulsive Behavior",
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Narcissism": {
+    "Name": "Narcissism",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": {
+      "Items": [
+        "Arrogance"
+      ]
+    },
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "DrugAddiction": {
+    "Name": "Drug Addiction",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Gluttony": {
+    "Name": "Gluttony",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": {
+      "Items": [
+        "Compulsive Behavior Eating"
+      ]
+    },
+    "IncompatibleWith": {
+      "Items": [
+        "Anorexia"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": "Gluttony is different from \u003Ca href=\u0022#CompulsiveBehavior_Eating\u0022\u003ECompulsive Behavior Eating\u003C/a\u003E"
+  },
+  "Anorexia": {
+    "Name": "Anorexia",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": {
+      "Items": [
+        "Gluttony"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Envious": {
+    "Name": "Envious",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Bloodlust": {
+    "Name": "Bloodlust",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": {
+      "Items": [
+        "Irritable"
+      ]
+    },
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "the character will kill any foe that he engages in a fight unless he pass a will check to restrain his urge to kill, if he didn\u2019t attempt the roll or failed the roll he will kill his foe even if it mean breaking the law, violating the order, or getting him killed later",
+    "Commentary": null
+  },
+  "Berserk": {
+    "Name": "Berserk",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": {
+      "Items": [
+        "Irritable",
+        "Bloodlust"
+      ]
+    },
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "the character might go berserk in combat and temporarily lose his sanity, attacking both friends and foes",
+    "Commentary": null
+  },
+  "Doormat": {
+    "Name": "Doormat",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": {
+      "Items": [
+        "Pacifist",
+        "Self Defense Only",
+        "Reluctant Fighter",
+        "Reluctant Killer",
+        "Won\u0027t Kill",
+        "Won\u0027t Fight"
+      ]
+    },
+    "AccompanyingTraits": {
+      "Items": [
+        "Cowardice"
+      ]
+    },
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Pacifist": {
+    "Name": "Pacifist",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": "Doormat",
+    "Derivations": null,
+    "AccompanyingTraits": {
+      "Items": [
+        "Cowardice"
+      ]
+    },
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "try to discourage people from starting a fight",
+    "Commentary": null
+  },
+  "SelfDefenseOnly": {
+    "Name": "Self Defense Only",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": "Doormat",
+    "Derivations": null,
+    "AccompanyingTraits": {
+      "Items": [
+        "Cowardice"
+      ]
+    },
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "wont start fight even if provoked, can still start fight if the provocation or situation were extremely severe or dangerous if not act",
+    "Commentary": null
+  },
+  "ReluctantFighter": {
+    "Name": "Reluctant Fighter",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": "Doormat",
+    "Derivations": null,
+    "AccompanyingTraits": {
+      "Items": [
+        "Cowardice"
+      ]
+    },
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "reluctant in injuring other person (only target he considers a person; not monster or machine unless he considered said monster a person)",
+    "Commentary": null
+  },
+  "ReluctantKiller": {
+    "Name": "Reluctant Killer",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": "Doormat",
+    "Derivations": null,
+    "AccompanyingTraits": {
+      "Items": [
+        "Cowardice"
+      ]
+    },
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "reluctant in killing other person (only target he considers a person; not monster or machine unless he considered said monster a person) he would prefer knocking out his opponent instead of killing him",
+    "Commentary": null
+  },
+  "NeverKill": {
+    "Name": "Won\u0027t Kill",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": "Doormat",
+    "Derivations": null,
+    "AccompanyingTraits": {
+      "Items": [
+        "Cowardice"
+      ]
+    },
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "will suffer mental breakdown when killing or feeling responsible for someone\u0027s death",
+    "Commentary": null
+  },
+  "NeverFight": {
+    "Name": "Won\u0027t Fight",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": "Doormat",
+    "Derivations": null,
+    "AccompanyingTraits": {
+      "Items": [
+        "Cowardice"
+      ]
+    },
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Chaste": {
+    "Name": "Chaste",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": {
+      "Items": [
+        "Nymphomaniac"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Nymphomaniac": {
+    "Name": "Nymphomaniac",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": {
+      "Items": [
+        "Chaste"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Docile": {
+    "Name": "Docile",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": {
+      "Items": [
+        "Stubborn"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Stubborn": {
+    "Name": "Stubborn",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": {
+      "Items": [
+        "Docile"
+      ]
+    },
+    "Levels": null,
+    "Effects": null,
+    "Description": "need to be persuade, bluff, fast talk , intimidate, misled , lied into doing something the character disagree with",
+    "Commentary": null
+  },
+  "AbnormalSexualOrientation": {
+    "Name": "Abnormal Sexual Orientation",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": {
+      "Items": [
+        "Gay",
+        "Lesbian",
+        "Bisexual",
+        "Transgender"
+      ]
+    },
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Gay": {
+    "Name": "Gay",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": "Abnormal Sexual Orientation",
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Lesbian": {
+    "Name": "Lesbian",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": "Abnormal Sexual Orientation",
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Bisexual": {
+    "Name": "Bisexual",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": "Abnormal Sexual Orientation",
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Transgender": {
+    "Name": "Transgender",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": "Abnormal Sexual Orientation",
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Eccentric": {
+    "Name": "Eccentric",
+    "AlternateNames": {
+      "Items": [
+        "Otherworldly Personality"
+      ]
+    },
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "CodeOfHonor": {
+    "Name": "Code of Honor",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "SenseOfDuty": {
+    "Name": "Sense of Duty",
+    "AlternateNames": {
+      "Items": [
+        "Responsibility"
+      ]
+    },
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Spoiled": {
+    "Name": "Spoiled",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Emotional": {
+    "Name": "Emotional",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Possessive": {
+    "Name": "Possessive",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Yandere": {
+    "Name": "Yandere",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": {
+      "Items": [
+        "Possessive"
+      ]
+    },
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Superficial": {
+    "Name": "Superficial",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Clumsy": {
+    "Name": "Clumsy",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Misogynist": {
+    "Name": "Misogynist",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "The character hates women",
+    "Commentary": null
+  },
+  "Misandrist": {
+    "Name": "Misandrist",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "The character hates men",
+    "Commentary": null
+  },
+  "PoorCommonSense": {
+    "Name": "Lacks Common Sense",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Boastful": {
+    "Name": "Boastful",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "BipolarDisorder": {
+    "Name": "Bipolar Disorder",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Loathing": {
+    "Name": "Loathing",
+    "AlternateNames": null,
+    "Type": "Negative",
+    "DerivedFrom": null,
+    "Derivations": null,
+    "AccompanyingTraits": null,
+    "IncompatibleWith": null,
+    "Levels": null,
+    "Effects": null,
     "Description": "",
     "Commentary": null
   }

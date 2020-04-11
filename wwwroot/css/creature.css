@@ -95,7 +95,7 @@ div.tippy-box[data-theme='custom'] {
       border-radius: 5px;
       border: 1px solid saddlebrown;
       padding: 2.5px; }
-    div.tippy-box[data-theme='custom'] > div.tippy-content > fieldset.property > div:nth-of-type(1) {
+    div.tippy-box[data-theme='custom'] > div.tippy-content > fieldset.property > div:nth-of-type(1), div.tippy-box[data-theme='custom'] > div.tippy-content > fieldset.skill > div:nth-of-type(1) {
       display: flex;
       justify-content: space-between; }
 

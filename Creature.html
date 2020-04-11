@@ -479,15 +479,15 @@
         <fieldset class="tabular">
             <legend>Locomotion</legend>
             <div>
-                <span>Running</span>
+                <span class="tooltip" data-template="TooltipSkills" name="Running"><a href="Skills.html#Running">Running</a></span>
                 <span>10</span>
             </div>
             <div>
-                <span>Acrobatic</span>
+                <span class="tooltip" data-template="TooltipSkills" name="Acrobatic"><a href="Skills.html#Acrobatic">Acrobatic</a></span>
                 <span>10</span>
             </div>
             <div>
-                <span>Parkour (Learned)</span>
+                <span class="tooltip" data-template="TooltipSkills" name="Parkour"><a href="Skills.html#Parkour">Parkour</a></span>
                 <span>10</span>
             </div>
             <div>
@@ -495,31 +495,31 @@
                 <span>7</span>
             </div>
             <div>
-                <span>Climbing</span>
+                <span class="tooltip" data-template="TooltipSkills" name="Climbing"><a href="Skills.html#Climbing">Climbing</a></span>
                 <span>8</span>
             </div>
             <div>
-                <span>Branchiation (Learned)</span>
+                <span class="tooltip" data-template="TooltipSkills" name="Branchiation"><a href="Skills.html#Branchiation">Branchiation</a></span>
                 <span>0</span>
             </div>
             <div>
-                <span>Swimming</span>
+                <span class="tooltip" data-template="TooltipSkills" name="Swimming"><a href="Skills.html#Swimming">Swimming</a></span>
                 <span>3</span>
             </div>
             <div>
-                <span>Diving</span>
+                <span class="tooltip" data-template="TooltipSkills" name="Diving"><a href="Skills.html#Diving">Diving</a></span>
                 <span>3</span>
             </div>
             <div>
-                <span>Aquabatic</span>
+                <span class="tooltip" data-template="TooltipSkills" name="Aquabatic"><a href="Skills.html#Aquabatic">Aquabatic</a></span>
                 <span>0</span>
             </div>
             <div>
-                <span>Flying</span>
+                <span class="tooltip" data-template="TooltipSkills" name="Flying"><a href="Skills.html#Flying">Flying</a></span>
                 <span>-</span>
             </div>
             <div>
-                <span>Aerobatic</span>
+                <span class="tooltip" data-template="TooltipSkills" name="Aerobatic"><a href="Skills.html#Aerobatic">Aerobatic</a></span>
                 <span>-</span>
             </div>
         </fieldset>
@@ -694,16 +694,9 @@
         <fieldset class="tabular">
             <legend>Traits</legend>
             <ul>
-                <li>Confident</li>
-                <li>Cheerful</li>
-                <li>Brave</li>
-                <li>Loyal</li>
-                <li>Emotional</li>
-                <li>Charismatic</li>
-                <li>Sociable</li>
-                <li>Kindhearted</li>
-                <li>Just</li>
-                <li>Determined</li>
+                {{#Traits}}
+                <li class="tooltip" data-template="TooltipTraits" name="{{ID}}"><a href="Traits.html#{{ID}}">{{Name}}</a></li>
+                {{/Traits}}
             </ul>
         </fieldset>
     </div>
@@ -805,6 +798,161 @@
             </ul>
         </div>
         {{/Conditions}}
+        {{#Effects}}
+        <div>
+            <span class="header">Effects</span>
+            <ul class="effect">
+                {{#PositiveEffects}}
+                <li class="positive">{{.}}</li>
+                {{/PositiveEffects}}
+                {{#NegativeEffects}}
+                <li class="negative">{{.}}</li>
+                {{/NegativeEffects}}
+            </ul>
+        </div>
+        {{/Effects}}
+        <dl>
+            <dt class="header">Description</dt>
+            <dd>{{Description}}</dd>
+        </dl>
+        {{#Commentary}}
+        <dl>
+            <dt class="header">Commentary</dt>
+            <dd>{{.}}</dd>
+        </dl>
+        {{/Commentary}}
+    </fieldset>
+</template>
+<template name="TooltipSkills">
+    <fieldset class="skill">
+        <legend>{{Name}}</legend>
+        <div>
+            <div>
+                {{#AlternateNames}}
+                <div>
+                    <span class="header">Alternate Names</span>
+                    <ul>
+                        {{#Items}}
+                        <li>{{.}}</li>
+                        {{/Items}}
+                    </ul>
+                </div>
+                {{/AlternateNames}}
+                {{#Prerequisite}}
+                <div>
+                    <span class="header">Prerequisite</span>
+                    <ul>
+                        {{#Items}}
+                        <li>{{.}}</li>
+                        {{/Items}}
+                    </ul>
+                </div>
+                {{/Prerequisite}}
+                {{#DerivedFrom}}
+                <dl>
+                    <dt class="header">Derived From</dt>
+                    <dd>{{.}}</dd>
+                </dl>
+                {{/DerivedFrom}}
+                {{#Derivations}}
+                <div>
+                    <span class="header">Derivations</span>
+                    <ul>
+                        {{#Items}}
+                        <li>{{.}}</li>
+                        {{/Items}}
+                    </ul>
+                </div>
+                {{/Derivations}}
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                        {{#Tags}}
+                        <li>{{.}}</li>
+                        {{/Tags}}
+                    </ul>
+                </div>
+            </div>
+            <div>
+            </div>
+        </div>
+        {{#Effects}}
+        <div>
+            <span class="header">Effects</span>
+            <ul>
+                {{#Items}}
+                <li>{{.}}</li>
+                {{/Items}}
+            </ul>
+        </div>
+        {{/Effects}}
+        <dl>
+            <dt class="header">Description</dt>
+            <dd>{{Description}}</dd>
+        </dl>
+        {{#Commentary}}
+        <dl>
+            <dt class="header">Commentary</dt>
+            <dd>{{.}}</dd>
+        </dl>
+        {{/Commentary}}
+    </fieldset>
+</template>
+<template name="TooltipTraits">
+    <fieldset>
+        <legend>{{Name}}</legend>
+        {{#AlternateNames}}
+        <div>
+            <span class="header">Alternate Names</span>
+            <ul>
+                {{#Items}}
+                <li>{{.}}</li>
+                {{/Items}}
+            </ul>
+        </div>
+        {{/AlternateNames}}
+        {{#DerivedFrom}}
+        <dl>
+            <dt class="header">Derived From</dt>
+            <dd>{{.}}</dd>
+        </dl>
+        {{/DerivedFrom}}
+        {{#Derivations}}
+        <div>
+            <span class="header">Derivations</span>
+            <ul>
+                {{#Items}}
+                <li>{{.}}</li>
+                {{/Items}}
+            </ul>
+        </div>
+        {{/Derivations}}
+        {{#AccompanyingTraits}}
+        <div>
+            <span class="header">Accompanying Traits</span>
+            <ul>
+                {{#Items}}
+                <li>{{.}}</li>
+                {{/Items}}
+            </ul>
+        </div>
+        {{/AccompanyingTraits}}
+        {{#IncompatibleWith}}
+        <div>
+            <span class="header">Incompatible With</span>
+            <ul>
+                {{#Items}}
+                <li>{{.}}</li>
+                {{/Items}}
+            </ul>
+        </div>
+        {{/IncompatibleWith}}
+        {{#Levels}}
+        <dl>
+            <dt class="header">Levels</dt>
+            <dd>{{.}}</dd>
+        </dl>
+        {{/Levels}}
         {{#Effects}}
         <div>
             <span class="header">Effects</span>

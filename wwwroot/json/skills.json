@@ -1,0 +1,237 @@
+{
+  "Walking": {
+    "Name": "Walking",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Locomotion"
+    ],
+    "Effects": null,
+    "Description": "Determines how skill the creatures were at walking",
+    "Commentary": null
+  },
+  "Running": {
+    "Name": "Running",
+    "AlternateNames": null,
+    "Prerequisite": {
+      "Items": [
+        "Walking"
+      ]
+    },
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Locomotion"
+    ],
+    "Effects": {
+      "Items": [
+        "Increases Terrestrial Speed",
+        "Reduces Stamina Consumption when running"
+      ]
+    },
+    "Description": "Determines how skill the creatures were at running",
+    "Commentary": null
+  },
+  "Jumping": {
+    "Name": "Jumping",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Locomotion"
+    ],
+    "Effects": {
+      "Items": [
+        "Increases Jumping height",
+        "Increases Jumping distance"
+      ]
+    },
+    "Description": "Determines how skill the creatures were at jumping",
+    "Commentary": null
+  },
+  "Acrobatic": {
+    "Name": "Acrobatic",
+    "AlternateNames": null,
+    "Prerequisite": {
+      "Items": [
+        "Running",
+        "Jumping"
+      ]
+    },
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Locomotion"
+    ],
+    "Effects": {
+      "Items": [
+        "Increases Terrestrial Mobility"
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "Parkour": {
+    "Name": "Parkour",
+    "AlternateNames": null,
+    "Prerequisite": {
+      "Items": [
+        "Running",
+        "Jumping",
+        "Climbing"
+      ]
+    },
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Locomotion"
+    ],
+    "Effects": {
+      "Items": [
+        "Increases Terrestrial Mobility"
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "Climbing": {
+    "Name": "Climbing",
+    "AlternateNames": null,
+    "Prerequisite": {
+      "Items": [
+        "Jumping"
+      ]
+    },
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Locomotion"
+    ],
+    "Effects": null,
+    "Description": "Determines how skill the creatures were at climbing",
+    "Commentary": null
+  },
+  "Branchiation": {
+    "Name": "Branchiation",
+    "AlternateNames": null,
+    "Prerequisite": {
+      "Items": [
+        "Climbing",
+        "Jumping"
+      ]
+    },
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Locomotion"
+    ],
+    "Effects": null,
+    "Description": "",
+    "Commentary": null
+  },
+  "Swimming": {
+    "Name": "Swimming",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Locomotion"
+    ],
+    "Effects": {
+      "Items": [
+        "Increases Aquatic Speed",
+        "Reduces Stamina Consumption when swimming",
+        "Increases the skill at saving someone from drowning"
+      ]
+    },
+    "Description": "Determines how skill the creatures were at swimming",
+    "Commentary": null
+  },
+  "Diving": {
+    "Name": "Diving",
+    "AlternateNames": null,
+    "Prerequisite": {
+      "Items": [
+        "Swimming"
+      ]
+    },
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Locomotion"
+    ],
+    "Effects": {
+      "Items": [
+        "Increases Aquatic Speed when fully submerged",
+        "Increases Breath Holding Duration"
+      ]
+    },
+    "Description": "Determines how skill the creatures were at diving",
+    "Commentary": null
+  },
+  "Aquabatic": {
+    "Name": "Aquabatic",
+    "AlternateNames": null,
+    "Prerequisite": {
+      "Items": [
+        "Swimming"
+      ]
+    },
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Locomotion"
+    ],
+    "Effects": {
+      "Items": [
+        "Increases Aquatic Mobility"
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "Flying": {
+    "Name": "Flying",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Locomotion"
+    ],
+    "Effects": {
+      "Items": [
+        "Increases Aerial Speed",
+        "Increases Max Altitude",
+        "Increases Altitude Gaining"
+      ]
+    },
+    "Description": "Determines how skill the creatures were at flying",
+    "Commentary": null
+  },
+  "Aerobatic": {
+    "Name": "Aerobatic",
+    "AlternateNames": null,
+    "Prerequisite": {
+      "Items": [
+        "Flying"
+      ]
+    },
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Locomotion"
+    ],
+    "Effects": {
+      "Items": [
+        "Increases Aerial Mobility"
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  }
+}
