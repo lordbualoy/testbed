@@ -68,17 +68,33 @@ div.tippy-box[data-theme='custom'] > div.tippy-content > fieldset .header, .tab 
     margin-bottom: 0;
     margin-left: auto;
     margin-right: auto; }
-  .tabular > div {
+  .tabular-section.associative-array.tabular > div, .tabular > div.tabular-section.associative-array > div {
     display: flex;
     padding: 1px; }
-    .tabular > div:nth-of-type(odd) {
+    .tabular-section.associative-array.tabular > div:nth-of-type(odd), .tabular > div.tabular-section.associative-array > div:nth-of-type(odd) {
       background-color: burlywood; }
-    .tabular > div:nth-of-type(even) {
+    .tabular-section.associative-array.tabular > div:nth-of-type(even), .tabular > div.tabular-section.associative-array > div:nth-of-type(even) {
       background-color: wheat; }
-    .tabular > div > span {
+    .tabular-section.associative-array.tabular > div > span, .tabular > div.tabular-section.associative-array > div > span {
       flex-basis: 50%;
       border: 1px solid lightgray;
       margin: 1px; }
+  .tabular-section.filter.tabular > div, .tabular > div.tabular-section.filter > div {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1px; }
+    .tabular-section.filter.tabular > div > div, .tabular > div.tabular-section.filter > div > div {
+      flex-basis: 48.5%;
+      border: 1px solid lightgray;
+      margin: 1px;
+      display: inline-flex; }
+      @media screen and (min-width: 700px) {
+        .tabular-section.filter.tabular > div > div, .tabular > div.tabular-section.filter > div > div {
+          flex-basis: 32.5%; } }
+    .tabular-section.filter.tabular > div:nth-of-type(odd), .tabular > div.tabular-section.filter > div:nth-of-type(odd) {
+      background-color: burlywood; }
+    .tabular-section.filter.tabular > div:nth-of-type(even), .tabular > div.tabular-section.filter > div:nth-of-type(even) {
+      background-color: wheat; }
 
 div.tippy-box[data-theme='custom'] {
   border-radius: unset;
@@ -111,6 +127,43 @@ ul > li.negative:before {
   content: "-";
   position: absolute;
   margin-left: -1.1em; }
+
+label.checkbox {
+  display: flex;
+  align-items: center; }
+  label.checkbox > span {
+    cursor: pointer; }
+  label.checkbox > input[type=checkbox] {
+    display: none; }
+    label.checkbox > input[type=checkbox]:checked + span.checkmark::after {
+      content: '\2714';
+      left: 1px;
+      top: -3.5px; }
+    label.checkbox > input[type=checkbox]:indeterminate + span.checkmark::after {
+      content: '\2731';
+      left: 0.5px;
+      top: -3.6px; }
+    label.checkbox > input[type=checkbox]:disabled ~ span {
+      color: #6b6b6b;
+      cursor: auto; }
+      label.checkbox > input[type=checkbox]:disabled ~ span.checkmark::after {
+        color: #6b6b6b; }
+  label.checkbox > .checkmark {
+    display: inline-block;
+    position: relative;
+    margin-right: 0.3em;
+    width: 15px;
+    height: 15px;
+    border: 3px double saddlebrown;
+    background-color: burlywood; }
+    label.checkbox > .checkmark::after {
+      content: '\2716';
+      position: absolute;
+      left: 1px;
+      top: -3.6px;
+      color: darkred; }
+  label.checkbox:hover > .checkmark::after {
+    color: #961a1a; }
 
 #container {
   width: 100%;

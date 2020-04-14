@@ -48,7 +48,7 @@
                 <span>{{AbilityEstimation}}</span>
             </div>
         </div>
-        <div class="tabular">
+        <div class="tabular tabular-section associative-array">
             <div>
                 <span>Proper Name</span>
                 <span>{{ProperName}}</span>
@@ -137,7 +137,7 @@
 </template>
 <template name="Profile">
     <div id="content-profile">
-        <fieldset class="tabular">
+        <fieldset class="tabular tabular-section associative-array">
             <legend>True Identity</legend>
             <div>
                 <span>Name</span>
@@ -184,14 +184,14 @@
                 <span>?</span>
             </div>
         </fieldset>
-        <fieldset class="tabular">
+        <fieldset class="tabular tabular-section associative-array">
             <legend>Alternate Identity #1</legend>
             <div>
                 <span>Name</span>
                 <span>?</span>
             </div>
         </fieldset>
-        <fieldset class="tabular">
+        <fieldset class="tabular tabular-section associative-array">
             <legend>Genealogical Information</legend>
             <div>
                 <span>Father</span>
@@ -218,7 +218,7 @@
 </template>
 <template name="Attributes">
     <div id="content-attributes">
-        <fieldset class="tabular">
+        <fieldset class="tabular tabular-section associative-array">
             <legend>Primary Attributes</legend>
             {{#Attributes}}
                 <div>
@@ -275,7 +275,7 @@
                 </div>
             {{/Attributes}}
         </fieldset>
-        <fieldset class="tabular">
+        <fieldset class="tabular tabular-section associative-array">
             <legend>Secondary Attributes</legend>
             <div>
                 <span>Health Point</span>
@@ -398,7 +398,7 @@
                 <span></span>
             </div>
         </fieldset>
-        <fieldset class="tabular">
+        <fieldset class="tabular tabular-section associative-array">
             <legend>Tertiary Attributes</legend>
             <div>
                 <span>Social Rank</span>
@@ -445,7 +445,7 @@
 </template>
 <template name="Classes">
     <div id="content-classes">
-        <fieldset class="tabular">
+        <fieldset class="tabular tabular-section associative-array">
             <legend>Classes</legend>
             <div>
                 <span>Vanguard</span>
@@ -477,210 +477,25 @@
 <template name="Skills">
     <div id="content-skills">
         <fieldset class="tabular">
-            <legend>Locomotion</legend>
-            <div>
-                <span class="tooltip" data-template="TooltipSkills" name="Running"><a href="Skills.html#Running">Running</a></span>
-                <span>10</span>
+            <legend>Skills</legend>
+            <div class="tabular-section filter">
             </div>
-            <div>
-                <span class="tooltip" data-template="TooltipSkills" name="Acrobatic"><a href="Skills.html#Acrobatic">Acrobatic</a></span>
-                <span>10</span>
-            </div>
-            <div>
-                <span class="tooltip" data-template="TooltipSkills" name="Parkour"><a href="Skills.html#Parkour">Parkour</a></span>
-                <span>10</span>
-            </div>
-            <div>
-                <span>Crowd Weaving</span>
-                <span>7</span>
-            </div>
-            <div>
-                <span class="tooltip" data-template="TooltipSkills" name="Climbing"><a href="Skills.html#Climbing">Climbing</a></span>
-                <span>8</span>
-            </div>
-            <div>
-                <span class="tooltip" data-template="TooltipSkills" name="Branchiation"><a href="Skills.html#Branchiation">Branchiation</a></span>
-                <span>0</span>
-            </div>
-            <div>
-                <span class="tooltip" data-template="TooltipSkills" name="Swimming"><a href="Skills.html#Swimming">Swimming</a></span>
-                <span>3</span>
-            </div>
-            <div>
-                <span class="tooltip" data-template="TooltipSkills" name="Diving"><a href="Skills.html#Diving">Diving</a></span>
-                <span>3</span>
-            </div>
-            <div>
-                <span class="tooltip" data-template="TooltipSkills" name="Aquabatic"><a href="Skills.html#Aquabatic">Aquabatic</a></span>
-                <span>0</span>
-            </div>
-            <div>
-                <span class="tooltip" data-template="TooltipSkills" name="Flying"><a href="Skills.html#Flying">Flying</a></span>
-                <span>-</span>
-            </div>
-            <div>
-                <span class="tooltip" data-template="TooltipSkills" name="Aerobatic"><a href="Skills.html#Aerobatic">Aerobatic</a></span>
-                <span>-</span>
-            </div>
-        </fieldset>
-        <fieldset class="tabular">
-            <legend>Martial Fighting Skill</legend>
-            <div>
-                <span>Close-Quarter Combat Avoiding</span>
-                <span>10</span>
-            </div>
-            <div>
-                <span>Projectile Avoiding</span>
-                <span>5</span>
-            </div>
-            <div>
-                <span>Striking</span>
-                <span>4</span>
-            </div>
-            <div>
-                <span>Grappling</span>
-                <span>2</span>
-            </div>
-            <div>
-                <span>Knife Proficiency</span>
-                <span>3</span>
-            </div>
-            <div>
-                <span>Staff Proficiency</span>
-                <span>6</span>
-            </div>
-            <div>
-                <span>Swordsmanship</span>
-                <span>1</span>
-            </div>
-            <div>
-                <span>Axe Proficiency</span>
-                <span>1</span>
-            </div>
-            <div>
-                <span>Mace Proficiency</span>
-                <span>1</span>
-            </div>
-            <div>
-                <span>Spear Proficiency</span>
-                <span>10</span>
-            </div>
-            <div>
-                <span>Polearms Proficiency</span>
-                <span>10</span>
-            </div>
-            <div>
-                <span>Flexible Weapons Proficiency</span>
-                <span>0</span>
-            </div>
-            <div>
-                <span>Shield Proficiency</span>
-                <span>1</span>
-            </div>
-            <div>
-                <span>Wielding Multiple Weapons</span>
-                <span>1</span>
-            </div>
-            <div>
-                <span>Throwing Skill</span>
-                <span>3</span>
-            </div>
-            <div>
-                <span>Slinging</span>
-                <span>0</span>
-            </div>
-            <div>
-                <span>Archery</span>
-                <span>0</span>
-            </div>
-            <div>
-                <span>Marksmanship (Crossbow)</span>
-                <span>0</span>
-            </div>
-            <div>
-                <span>Marksmanship (Gun)</span>
-                <span>5</span>
-            </div>
-            <div>
-                <span>Riding</span>
-                <span>7</span>
-            </div>
-        </fieldset>
-        <fieldset class="tabular">
-            <legend>Warfare</legend>
-            <div>
-                <span>Strategy</span>
-                <span>6</span>
-            </div>
-            <div>
-                <span>Tactic</span>
-                <span>6</span>
-            </div>
-        </fieldset>
-        <fieldset class="tabular">
-            <legend>Underhanded</legend>
-            <div>
-                <span>Street Smart</span>
-                <span>6</span>
-            </div>
-            <div>
-                <span>Deception</span>
-                <span>1</span>
-            </div>
-            <div>
-                <span>Intimidation</span>
-                <span>0</span>
-            </div>
-            <div>
-                <span>Bribing</span>
-                <span>0</span>
-            </div>
-            <div>
-                <span>Disguise</span>
-                <span>1</span>
-            </div>
-            <div>
-                <span>Camouflage</span>
-                <span>2</span>
-            </div>
-            <div>
-                <span>Hide</span>
-                <span>2</span>
-            </div>
-            <div>
-                <span>Sneaking</span>
-                <span>2</span>
-            </div>
-            <div>
-                <span>Stalking</span>
-                <span>4</span>
-            </div>
-            <div>
-                <span>Filch</span>
-                <span>0</span>
-            </div>
-            <div>
-                <span>Pickpocketing</span>
-                <span>0</span>
-            </div>
-            <div>
-                <span>Lock Picking</span>
-                <span>0</span>
-            </div>
-            <div>
-                <span>Forgery</span>
-                <span>0</span>
-            </div>
-            <div>
-                <span>Assassination</span>
-                <span>1</span>
+            <div class="tabular-section associative-array">
             </div>
         </fieldset>
     </div>
 </template>
+<template name="SkillsBody">
+    {{#Skills}}
+    <div>
+        <span class="tooltip" data-template="TooltipSkills" name="{{ID}}"><a href="Skills.html#{{ID}}">{{Name}}</a></span>
+        <span>{{Level}}</span>
+    </div>
+    {{/Skills}}
+</template>
 <template name="Spells">
     <div id="content-spells">
-        <fieldset class="tabular">
+        <fieldset class="tabular tabular-section associative-array">
             <legend>Spells</legend>
             <div>
                 <span>Originium Arts</span>
@@ -699,6 +514,20 @@
                 {{/Traits}}
             </ul>
         </fieldset>
+    </div>
+</template>
+<template name="ContentFilter">
+    <div class="all">
+        <div>
+            <label class="checkbox"><input type="checkbox"></input><span class="checkmark"></span><span>All</span></label>
+        </div>
+    </div>
+    <div class="specific">
+        {{#Filter}}
+        <div>
+            <label name="{{.}}" class="checkbox"><input type="checkbox"></input><span class="checkmark"></span><span>{{.}}</span></label>
+        </div>
+        {{/Filter}}
     </div>
 </template>
 <template name="TooltipAttributes">

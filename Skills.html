@@ -1,0 +1,2356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Skills</title>
+
+    
+    <link rel="stylesheet" href="wwwroot/css/skills.min.css" />
+
+</head>
+<body>
+    
+<div id="container">
+        <fieldset id="Walking" class="descr-list">
+            <legend>Walking</legend>
+            <div>
+                <div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Locomotion</li>
+                    </ul>
+                </div>
+            </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd>Determines how skill the creatures were at walking</dd>
+            </dl>
+        </fieldset>
+        <fieldset id="Running" class="descr-list">
+            <legend>Running</legend>
+            <div>
+                <div>
+                        <div>
+                            <span class="header">Prerequisite</span>
+                            <ul>
+                                    <li><a href="#Walking">Walking</a></li>
+                            </ul>
+                        </div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Locomotion</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li>Increases Terrestrial Speed</li>
+                            <li>Reduces Stamina Consumption when running</li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd>Determines how skill the creatures were at running</dd>
+            </dl>
+        </fieldset>
+        <fieldset id="Jumping" class="descr-list">
+            <legend>Jumping</legend>
+            <div>
+                <div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Locomotion</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li>Increases Jumping height</li>
+                            <li>Increases Jumping distance</li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd>Determines how skill the creatures were at jumping</dd>
+            </dl>
+        </fieldset>
+        <fieldset id="Acrobatic" class="descr-list">
+            <legend>Acrobatic</legend>
+            <div>
+                <div>
+                        <div>
+                            <span class="header">Prerequisite</span>
+                            <ul>
+                                    <li><a href="#Running">Running</a></li>
+                                    <li><a href="#Jumping">Jumping</a></li>
+                            </ul>
+                        </div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Locomotion</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li>Increases Terrestrial Mobility</li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="Parkour" class="descr-list">
+            <legend>Parkour</legend>
+            <div>
+                <div>
+                        <div>
+                            <span class="header">Prerequisite</span>
+                            <ul>
+                                    <li><a href="#Running">Running</a></li>
+                                    <li><a href="#Jumping">Jumping</a></li>
+                                    <li><a href="#Climbing">Climbing</a></li>
+                            </ul>
+                        </div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Locomotion</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li>Increases Terrestrial Mobility</li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="Climbing" class="descr-list">
+            <legend>Climbing</legend>
+            <div>
+                <div>
+                        <div>
+                            <span class="header">Prerequisite</span>
+                            <ul>
+                                    <li><a href="#Jumping">Jumping</a></li>
+                            </ul>
+                        </div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Locomotion</li>
+                    </ul>
+                </div>
+            </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd>Determines how skill the creatures were at climbing</dd>
+            </dl>
+        </fieldset>
+        <fieldset id="Branchiation" class="descr-list">
+            <legend>Branchiation</legend>
+            <div>
+                <div>
+                        <div>
+                            <span class="header">Prerequisite</span>
+                            <ul>
+                                    <li><a href="#Climbing">Climbing</a></li>
+                                    <li><a href="#Jumping">Jumping</a></li>
+                            </ul>
+                        </div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Locomotion</li>
+                    </ul>
+                </div>
+            </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="Swimming" class="descr-list">
+            <legend>Swimming</legend>
+            <div>
+                <div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Locomotion</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li>Increases Aquatic Speed</li>
+                            <li>Reduces Stamina Consumption when swimming</li>
+                            <li>Increases the skill at saving someone from drowning</li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd>Determines how skill the creatures were at swimming</dd>
+            </dl>
+        </fieldset>
+        <fieldset id="Diving" class="descr-list">
+            <legend>Diving</legend>
+            <div>
+                <div>
+                        <div>
+                            <span class="header">Prerequisite</span>
+                            <ul>
+                                    <li><a href="#Swimming">Swimming</a></li>
+                            </ul>
+                        </div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Locomotion</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li>Increases Aquatic Speed when fully submerged</li>
+                            <li>Increases Breath Holding Duration</li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd>Determines how skill the creatures were at diving</dd>
+            </dl>
+        </fieldset>
+        <fieldset id="Aquabatic" class="descr-list">
+            <legend>Aquabatic</legend>
+            <div>
+                <div>
+                        <div>
+                            <span class="header">Prerequisite</span>
+                            <ul>
+                                    <li><a href="#Swimming">Swimming</a></li>
+                            </ul>
+                        </div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Locomotion</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li>Increases Aquatic Mobility</li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="Flying" class="descr-list">
+            <legend>Flying</legend>
+            <div>
+                <div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Locomotion</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li>Increases Aerial Speed</li>
+                            <li>Increases Max Altitude</li>
+                            <li>Increases Altitude Gaining</li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd>Determines how skill the creatures were at flying</dd>
+            </dl>
+        </fieldset>
+        <fieldset id="Aerobatic" class="descr-list">
+            <legend>Aerobatic</legend>
+            <div>
+                <div>
+                        <div>
+                            <span class="header">Prerequisite</span>
+                            <ul>
+                                    <li><a href="#Flying">Flying</a></li>
+                            </ul>
+                        </div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Locomotion</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li>Increases Aerial Mobility</li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="MeleeDodging" class="descr-list">
+            <legend>Melee Dodging</legend>
+            <div>
+                <div>
+                        <div>
+                            <span class="header">Prerequisite</span>
+                            <ul>
+                                    <li><a href="#Walking">Walking</a></li>
+                            </ul>
+                        </div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Direct Combat</li>
+                            <li>Hand-to-Hand Combat</li>
+                            <li>Defense</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="Blocking" class="descr-list">
+            <legend>Blocking</legend>
+            <div>
+                <div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Direct Combat</li>
+                            <li>Hand-to-Hand Combat</li>
+                            <li>Defense</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="Deflecting" class="descr-list">
+            <legend>Deflecting</legend>
+            <div>
+                <div>
+                        <div>
+                            <span class="header">Alternate Names</span>
+                            <ul>
+                                    <li>Parrying</li>
+                            </ul>
+                        </div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Direct Combat</li>
+                            <li>Hand-to-Hand Combat</li>
+                            <li>Defense</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="ProjectileDodging" class="descr-list">
+            <legend>Projectile Dodging</legend>
+            <div>
+                <div>
+                        <div>
+                            <span class="header">Prerequisite</span>
+                            <ul>
+                                    <li><a href="#MeleeDodging">Melee Dodging</a></li>
+                            </ul>
+                        </div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Direct Combat</li>
+                            <li>Ranged Combat</li>
+                            <li>Defense</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="ProjectileCatching" class="descr-list">
+            <legend>Projectile Catching</legend>
+            <div>
+                <div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Direct Combat</li>
+                            <li>Ranged Combat</li>
+                            <li>Defense</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="ProjectileDeflecting" class="descr-list">
+            <legend>Projectile Deflecting</legend>
+            <div>
+                <div>
+                        <div>
+                            <span class="header">Alternate Names</span>
+                            <ul>
+                                    <li>Projectile Parrying</li>
+                            </ul>
+                        </div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Direct Combat</li>
+                            <li>Ranged Combat</li>
+                            <li>Defense</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="Striking" class="descr-list">
+            <legend>Striking</legend>
+            <div>
+                <div>
+                        <div>
+                            <span class="header">Alternate Names</span>
+                            <ul>
+                                    <li>Unarmed</li>
+                                    <li>Pugilism</li>
+                            </ul>
+                        </div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Direct Combat</li>
+                            <li>Hand-to-Hand Combat</li>
+                            <li>Offense</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="Grappling" class="descr-list">
+            <legend>Grappling</legend>
+            <div>
+                <div>
+                        <div>
+                            <span class="header">Alternate Names</span>
+                            <ul>
+                                    <li>Wrestling</li>
+                            </ul>
+                        </div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Direct Combat</li>
+                            <li>Hand-to-Hand Combat</li>
+                            <li>Offense</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="DaggerProficiency" class="descr-list">
+            <legend>Dagger Proficiency</legend>
+            <div>
+                <div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Direct Combat</li>
+                            <li>Hand-to-Hand Combat</li>
+                            <li>Offense</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="StaffProficiency" class="descr-list">
+            <legend>Staff Proficiency</legend>
+            <div>
+                <div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Direct Combat</li>
+                            <li>Hand-to-Hand Combat</li>
+                            <li>Offense</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="Swordsmanship" class="descr-list">
+            <legend>Swordsmanship</legend>
+            <div>
+                <div>
+                        <div>
+                            <span class="header">Alternate Names</span>
+                            <ul>
+                                    <li>Sword Proficiency</li>
+                            </ul>
+                        </div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Direct Combat</li>
+                            <li>Hand-to-Hand Combat</li>
+                            <li>Offense</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="QuickDraw" class="descr-list">
+            <legend>Quick Draw</legend>
+            <div>
+                <div>
+                        <div>
+                            <span class="header">Prerequisite</span>
+                            <ul>
+                                    <li><a href="#Swordsmanship">Swordsmanship</a></li>
+                            </ul>
+                        </div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Direct Combat</li>
+                            <li>Hand-to-Hand Combat</li>
+                            <li>Defense</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="SilentDraw" class="descr-list">
+            <legend>Silent Draw</legend>
+            <div>
+                <div>
+                        <div>
+                            <span class="header">Prerequisite</span>
+                            <ul>
+                                    <li><a href="#Swordsmanship">Swordsmanship</a></li>
+                            </ul>
+                        </div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Direct Combat</li>
+                            <li>Hand-to-Hand Combat</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="RapierProficiency" class="descr-list">
+            <legend>Rapier Proficiency</legend>
+            <div>
+                <div>
+                        <div>
+                            <span class="header">Alternate Names</span>
+                            <ul>
+                                    <li>Rapier Fencing</li>
+                            </ul>
+                        </div>
+                        <dl>
+                            <dt class="header">Derived From</dt>
+                            <dd><a href="#Swordsmanship">Swordsmanship</a></dd>
+                        </dl>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Direct Combat</li>
+                            <li>Hand-to-Hand Combat</li>
+                            <li>Offense</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="ArmingSwordProficiency" class="descr-list">
+            <legend>Arming Sword Proficiency</legend>
+            <div>
+                <div>
+                        <dl>
+                            <dt class="header">Derived From</dt>
+                            <dd><a href="#Swordsmanship">Swordsmanship</a></dd>
+                        </dl>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Direct Combat</li>
+                            <li>Hand-to-Hand Combat</li>
+                            <li>Offense</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="SaberProficiency" class="descr-list">
+            <legend>Saber Proficiency</legend>
+            <div>
+                <div>
+                        <dl>
+                            <dt class="header">Derived From</dt>
+                            <dd><a href="#Swordsmanship">Swordsmanship</a></dd>
+                        </dl>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Direct Combat</li>
+                            <li>Hand-to-Hand Combat</li>
+                            <li>Offense</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="LongswordProficiency" class="descr-list">
+            <legend>Longsword Proficiency</legend>
+            <div>
+                <div>
+                        <dl>
+                            <dt class="header">Derived From</dt>
+                            <dd><a href="#Swordsmanship">Swordsmanship</a></dd>
+                        </dl>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Direct Combat</li>
+                            <li>Hand-to-Hand Combat</li>
+                            <li>Offense</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="ZweihanderProficiency" class="descr-list">
+            <legend>Zweihander Proficiency</legend>
+            <div>
+                <div>
+                        <dl>
+                            <dt class="header">Derived From</dt>
+                            <dd><a href="#Swordsmanship">Swordsmanship</a></dd>
+                        </dl>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Direct Combat</li>
+                            <li>Hand-to-Hand Combat</li>
+                            <li>Offense</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="HalfSwording" class="descr-list">
+            <legend>Half-swording</legend>
+            <div>
+                <div>
+                        <div>
+                            <span class="header">Prerequisite</span>
+                            <ul>
+                                    <li><a href="#Swordsmanship">Swordsmanship</a></li>
+                            </ul>
+                        </div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Direct Combat</li>
+                            <li>Hand-to-Hand Combat</li>
+                            <li>Offense</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="Mordhau" class="descr-list">
+            <legend>Mordhau</legend>
+            <div>
+                <div>
+                        <div>
+                            <span class="header">Alternate Names</span>
+                            <ul>
+                                    <li>Mordstreich</li>
+                                    <li>Mordschlag</li>
+                                    <li>Murder-stroke</li>
+                                    <li>Murder-strike</li>
+                                    <li>Murder-blow</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <span class="header">Prerequisite</span>
+                            <ul>
+                                    <li><a href="#Swordsmanship">Swordsmanship</a></li>
+                            </ul>
+                        </div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Direct Combat</li>
+                            <li>Hand-to-Hand Combat</li>
+                            <li>Offense</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="AxeProficiency" class="descr-list">
+            <legend>Axe Proficiency</legend>
+            <div>
+                <div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Direct Combat</li>
+                            <li>Hand-to-Hand Combat</li>
+                            <li>Offense</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="SickleProficiency" class="descr-list">
+            <legend>Sickle Proficiency</legend>
+            <div>
+                <div>
+                        <dl>
+                            <dt class="header">Derived From</dt>
+                            <dd><a href="#AxeProficiency">Axe Proficiency</a></dd>
+                        </dl>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Direct Combat</li>
+                            <li>Hand-to-Hand Combat</li>
+                            <li>Offense</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="MaceProficiency" class="descr-list">
+            <legend>Mace Proficiency</legend>
+            <div>
+                <div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Direct Combat</li>
+                            <li>Hand-to-Hand Combat</li>
+                            <li>Offense</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="HammerProficiency" class="descr-list">
+            <legend>Hammer Proficiency</legend>
+            <div>
+                <div>
+                        <dl>
+                            <dt class="header">Derived From</dt>
+                            <dd><a href="#MaceProficiency">Mace Proficiency</a></dd>
+                        </dl>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Direct Combat</li>
+                            <li>Hand-to-Hand Combat</li>
+                            <li>Offense</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="SpearProficiency" class="descr-list">
+            <legend>Spear Proficiency</legend>
+            <div>
+                <div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Direct Combat</li>
+                            <li>Hand-to-Hand Combat</li>
+                            <li>Offense</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="PolearmsProficiency" class="descr-list">
+            <legend>Polearms Proficiency</legend>
+            <div>
+                <div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Direct Combat</li>
+                            <li>Hand-to-Hand Combat</li>
+                            <li>Offense</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="ScytheProficiency" class="descr-list">
+            <legend>Scythe Proficiency</legend>
+            <div>
+                <div>
+                        <dl>
+                            <dt class="header">Derived From</dt>
+                            <dd><a href="#PolearmsProficiency">Polearms Proficiency</a></dd>
+                        </dl>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Direct Combat</li>
+                            <li>Hand-to-Hand Combat</li>
+                            <li>Offense</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="FlexibleWeaponProficiency" class="descr-list">
+            <legend>Flexible Weapon Proficiency</legend>
+            <div>
+                <div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Direct Combat</li>
+                            <li>Hand-to-Hand Combat</li>
+                            <li>Offense</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="WhipProficiency" class="descr-list">
+            <legend>Whip Proficiency</legend>
+            <div>
+                <div>
+                        <dl>
+                            <dt class="header">Derived From</dt>
+                            <dd><a href="#FlexibleWeaponProficiency">Flexible Weapon Proficiency</a></dd>
+                        </dl>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Direct Combat</li>
+                            <li>Hand-to-Hand Combat</li>
+                            <li>Offense</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="PrehensileTailProficiency" class="descr-list">
+            <legend>Prehensile Tail Proficiency</legend>
+            <div>
+                <div>
+                        <dl>
+                            <dt class="header">Derived From</dt>
+                            <dd><a href="#WhipProficiency">Whip Proficiency</a></dd>
+                        </dl>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Direct Combat</li>
+                            <li>Hand-to-Hand Combat</li>
+                            <li>Offense</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="FlailProficiency" class="descr-list">
+            <legend>Flail Proficiency</legend>
+            <div>
+                <div>
+                        <dl>
+                            <dt class="header">Derived From</dt>
+                            <dd><a href="#FlexibleWeaponProficiency">Flexible Weapon Proficiency</a></dd>
+                        </dl>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Direct Combat</li>
+                            <li>Hand-to-Hand Combat</li>
+                            <li>Offense</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="NunchakuProficiency" class="descr-list">
+            <legend>Nunchaku Proficiency</legend>
+            <div>
+                <div>
+                        <dl>
+                            <dt class="header">Derived From</dt>
+                            <dd><a href="#FlexibleWeaponProficiency">Flexible Weapon Proficiency</a></dd>
+                        </dl>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Direct Combat</li>
+                            <li>Hand-to-Hand Combat</li>
+                            <li>Offense</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="RopeDartProficiency" class="descr-list">
+            <legend>Rope Dart Proficiency</legend>
+            <div>
+                <div>
+                        <dl>
+                            <dt class="header">Derived From</dt>
+                            <dd><a href="#FlexibleWeaponProficiency">Flexible Weapon Proficiency</a></dd>
+                        </dl>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Direct Combat</li>
+                            <li>Hand-to-Hand Combat</li>
+                            <li>Offense</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="ShieldProficiency" class="descr-list">
+            <legend>Shield Proficiency</legend>
+            <div>
+                <div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Direct Combat</li>
+                            <li>Hand-to-Hand Combat</li>
+                            <li>Defense</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="MultipleWeaponsWielding" class="descr-list">
+            <legend>Multiple Weapons Wielding</legend>
+            <div>
+                <div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Direct Combat</li>
+                            <li>Hand-to-Hand Combat</li>
+                            <li>Offense</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="DualWielding" class="descr-list">
+            <legend>Dual-wielding</legend>
+            <div>
+                <div>
+                        <dl>
+                            <dt class="header">Derived From</dt>
+                            <dd><a href="#MultipleWeaponsWielding">Multiple Weapons Wielding</a></dd>
+                        </dl>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Direct Combat</li>
+                            <li>Hand-to-Hand Combat</li>
+                            <li>Offense</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="TailWielding" class="descr-list">
+            <legend>Tail-wielding</legend>
+            <div>
+                <div>
+                        <dl>
+                            <dt class="header">Derived From</dt>
+                            <dd><a href="#MultipleWeaponsWielding">Multiple Weapons Wielding</a></dd>
+                        </dl>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Direct Combat</li>
+                            <li>Hand-to-Hand Combat</li>
+                            <li>Offense</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="ThrowingProficiency" class="descr-list">
+            <legend>Throwing Proficiency</legend>
+            <div>
+                <div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Direct Combat</li>
+                            <li>Ranged Combat</li>
+                            <li>Offense</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="LassoProficiency" class="descr-list">
+            <legend>Lasso Proficiency</legend>
+            <div>
+                <div>
+                        <dl>
+                            <dt class="header">Derived From</dt>
+                            <dd><a href="#ThrowingProficiency">Throwing Proficiency</a></dd>
+                        </dl>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Direct Combat</li>
+                            <li>Ranged Combat</li>
+                            <li>Offense</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="BolasProficiency" class="descr-list">
+            <legend>Bolas Proficiency</legend>
+            <div>
+                <div>
+                        <dl>
+                            <dt class="header">Derived From</dt>
+                            <dd><a href="#ThrowingProficiency">Throwing Proficiency</a></dd>
+                        </dl>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Direct Combat</li>
+                            <li>Ranged Combat</li>
+                            <li>Offense</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="SlingProficiency" class="descr-list">
+            <legend>Sling Proficiency</legend>
+            <div>
+                <div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Direct Combat</li>
+                            <li>Ranged Combat</li>
+                            <li>Offense</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="Archery" class="descr-list">
+            <legend>Archery</legend>
+            <div>
+                <div>
+                        <div>
+                            <span class="header">Alternate Names</span>
+                            <ul>
+                                    <li>Bow Proficiency</li>
+                            </ul>
+                        </div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Direct Combat</li>
+                            <li>Ranged Combat</li>
+                            <li>Offense</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="CrossbowProficiency" class="descr-list">
+            <legend>Crossbow Proficiency</legend>
+            <div>
+                <div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Direct Combat</li>
+                            <li>Ranged Combat</li>
+                            <li>Offense</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="FirearmsProficiency" class="descr-list">
+            <legend>Firearms Proficiency</legend>
+            <div>
+                <div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Direct Combat</li>
+                            <li>Ranged Combat</li>
+                            <li>Offense</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="AnimalRiding" class="descr-list">
+            <legend>Animal Riding</legend>
+            <div>
+                <div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Locomotion</li>
+                            <li>Direct Combat</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="Horsemanship" class="descr-list">
+            <legend>Horsemanship</legend>
+            <div>
+                <div>
+                        <dl>
+                            <dt class="header">Derived From</dt>
+                            <dd><a href="#AnimalRiding">Animal Riding</a></dd>
+                        </dl>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Locomotion</li>
+                            <li>Direct Combat</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="HorseArchery" class="descr-list">
+            <legend>Horse Archery</legend>
+            <div>
+                <div>
+                        <div>
+                            <span class="header">Prerequisite</span>
+                            <ul>
+                                    <li><a href="#Archery">Archery</a></li>
+                                    <li><a href="#Horsemanship">Horsemanship</a></li>
+                            </ul>
+                        </div>
+                        <dl>
+                            <dt class="header">Derived From</dt>
+                            <dd><a href="#Horsemanship">Horsemanship</a></dd>
+                        </dl>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Locomotion</li>
+                            <li>Direct Combat</li>
+                            <li>Ranged Combat</li>
+                            <li>Offense</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="Jousting" class="descr-list">
+            <legend>Jousting</legend>
+            <div>
+                <div>
+                        <div>
+                            <span class="header">Prerequisite</span>
+                            <ul>
+                                    <li><a href="#SpearProficiency">Spear Proficiency</a></li>
+                                    <li><a href="#Horsemanship">Horsemanship</a></li>
+                            </ul>
+                        </div>
+                        <dl>
+                            <dt class="header">Derived From</dt>
+                            <dd><a href="#Horsemanship">Horsemanship</a></dd>
+                        </dl>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Locomotion</li>
+                            <li>Direct Combat</li>
+                            <li>Hand-to-Hand Combat</li>
+                            <li>Offense</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="DragonRiding" class="descr-list">
+            <legend>Dragon Riding</legend>
+            <div>
+                <div>
+                        <dl>
+                            <dt class="header">Derived From</dt>
+                            <dd><a href="#AnimalRiding">Animal Riding</a></dd>
+                        </dl>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Locomotion</li>
+                            <li>Direct Combat</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="GreatEagleRiding" class="descr-list">
+            <legend>Great Eagle Riding</legend>
+            <div>
+                <div>
+                        <dl>
+                            <dt class="header">Derived From</dt>
+                            <dd><a href="#AnimalRiding">Animal Riding</a></dd>
+                        </dl>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Locomotion</li>
+                            <li>Direct Combat</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="PapilionRiding" class="descr-list">
+            <legend>Papilion Riding</legend>
+            <div>
+                <div>
+                        <dl>
+                            <dt class="header">Derived From</dt>
+                            <dd><a href="#AnimalRiding">Animal Riding</a></dd>
+                        </dl>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Locomotion</li>
+                            <li>Direct Combat</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="HippogryphRiding" class="descr-list">
+            <legend>Hippogryph Riding</legend>
+            <div>
+                <div>
+                        <dl>
+                            <dt class="header">Derived From</dt>
+                            <dd><a href="#AnimalRiding">Animal Riding</a></dd>
+                        </dl>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Locomotion</li>
+                            <li>Direct Combat</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="GryphonRiding" class="descr-list">
+            <legend>Gryphon Riding</legend>
+            <div>
+                <div>
+                        <dl>
+                            <dt class="header">Derived From</dt>
+                            <dd><a href="#AnimalRiding">Animal Riding</a></dd>
+                        </dl>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Locomotion</li>
+                            <li>Direct Combat</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="MilitaryStrategy" class="descr-list">
+            <legend>Military Strategy</legend>
+            <div>
+                <div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Military Doctrine</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="MilitaryTactic" class="descr-list">
+            <legend>Military Tactic</legend>
+            <div>
+                <div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Military Doctrine</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="StreetSmart" class="descr-list">
+            <legend>Street Smart</legend>
+            <div>
+                <div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Underhanded</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="FastTalking" class="descr-list">
+            <legend>Fast Talking</legend>
+            <div>
+                <div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Underhanded</li>
+                            <li>Deception</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="Bluffing" class="descr-list">
+            <legend>Bluffing</legend>
+            <div>
+                <div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Underhanded</li>
+                            <li>Deception</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="Misleading" class="descr-list">
+            <legend>Misleading</legend>
+            <div>
+                <div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Underhanded</li>
+                            <li>Deception</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="Lying" class="descr-list">
+            <legend>Lying</legend>
+            <div>
+                <div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Underhanded</li>
+                            <li>Deception</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="Seducing" class="descr-list">
+            <legend>Seducing</legend>
+            <div>
+                <div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Underhanded</li>
+                            <li>Deception</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="ConcealMotives" class="descr-list">
+            <legend>Conceal Motives</legend>
+            <div>
+                <div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Underhanded</li>
+                            <li>Deception</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="Intimidation" class="descr-list">
+            <legend>Intimidation</legend>
+            <div>
+                <div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Underhanded</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd>threaten to hurt, threaten to expose the target secret, blackmail, threaten to hurt the target&#x27;s loved one</dd>
+            </dl>
+        </fieldset>
+        <fieldset id="Bribing" class="descr-list">
+            <legend>Bribing</legend>
+            <div>
+                <div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Underhanded</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="Disguise" class="descr-list">
+            <legend>Disguise</legend>
+            <div>
+                <div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Underhanded</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="Camouflage" class="descr-list">
+            <legend>Camouflage</legend>
+            <div>
+                <div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Underhanded</li>
+                            <li>Stealth</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="Hide" class="descr-list">
+            <legend>Hide</legend>
+            <div>
+                <div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Underhanded</li>
+                            <li>Stealth</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="Sneaking" class="descr-list">
+            <legend>Sneaking</legend>
+            <div>
+                <div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Underhanded</li>
+                            <li>Stealth</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="Stalking" class="descr-list">
+            <legend>Stalking</legend>
+            <div>
+                <div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Underhanded</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="Filch" class="descr-list">
+            <legend>Filch</legend>
+            <div>
+                <div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Underhanded</li>
+                            <li>Stealing</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd>Stealing objects that are sitting in plain sight... without being spotted</dd>
+            </dl>
+        </fieldset>
+        <fieldset id="Pickpocketing" class="descr-list">
+            <legend>Pickpocketing</legend>
+            <div>
+                <div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Underhanded</li>
+                            <li>Stealing</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd>Stealing objects that are sitting in plain sight... without being spotted</dd>
+            </dl>
+        </fieldset>
+        <fieldset id="LockPicking" class="descr-list">
+            <legend>Lock Picking</legend>
+            <div>
+                <div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Underhanded</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="Forgery" class="descr-list">
+            <legend>Forgery</legend>
+            <div>
+                <div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Underhanded</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+        <fieldset id="Assassination" class="descr-list">
+            <legend>Assassination</legend>
+            <div>
+                <div>
+                </div>
+                <div>
+                    <span class="header">Tags</span>
+                    <ul>
+                            <li>Underhanded</li>
+                            <li>Direct Combat</li>
+                            <li>Offense</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+                    <span class="header">Effects</span>
+                    <ul>
+                            <li></li>
+                    </ul>
+                </div>
+            <dl>
+                <dt class="header">Description</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+</div>
+
+
+    
+</body>
+</html>

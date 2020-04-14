@@ -77,6 +77,228 @@
         "Origin": "Racial Perk"
       }
     ],
+    "Skills": [
+      {
+        "ID": "Running",
+        "Name": "Running",
+        "Level": 10
+      },
+      {
+        "ID": "Acrobatic",
+        "Name": "Acrobatic",
+        "Level": 10
+      },
+      {
+        "ID": "Parkour",
+        "Name": "Parkour",
+        "Level": 10
+      },
+      {
+        "ID": "Climbing",
+        "Name": "Climbing",
+        "Level": 8
+      },
+      {
+        "ID": "Branchiation",
+        "Name": "Branchiation",
+        "Level": 0
+      },
+      {
+        "ID": "Swimming",
+        "Name": "Swimming",
+        "Level": 3
+      },
+      {
+        "ID": "Diving",
+        "Name": "Diving",
+        "Level": 3
+      },
+      {
+        "ID": "Aquabatic",
+        "Name": "Aquabatic",
+        "Level": 0
+      },
+      {
+        "ID": "MeleeDodging",
+        "Name": "Melee Dodging",
+        "Level": 10
+      },
+      {
+        "ID": "ProjectileDodging",
+        "Name": "Projectile Dodging",
+        "Level": 5
+      },
+      {
+        "ID": "Striking",
+        "Name": "Striking",
+        "Level": 4
+      },
+      {
+        "ID": "Grappling",
+        "Name": "Grappling",
+        "Level": 2
+      },
+      {
+        "ID": "DaggerProficiency",
+        "Name": "Dagger Proficiency",
+        "Level": 3
+      },
+      {
+        "ID": "StaffProficiency",
+        "Name": "Staff Proficiency",
+        "Level": 6
+      },
+      {
+        "ID": "Swordsmanship",
+        "Name": "Swordsmanship",
+        "Level": 1
+      },
+      {
+        "ID": "AxeProficiency",
+        "Name": "Axe Proficiency",
+        "Level": 1
+      },
+      {
+        "ID": "MaceProficiency",
+        "Name": "Mace Proficiency",
+        "Level": 1
+      },
+      {
+        "ID": "SpearProficiency",
+        "Name": "Spear Proficiency",
+        "Level": 10
+      },
+      {
+        "ID": "PolearmsProficiency",
+        "Name": "Polearms Proficiency",
+        "Level": 10
+      },
+      {
+        "ID": "FlexibleWeaponProficiency",
+        "Name": "Flexible Weapon Proficiency",
+        "Level": 0
+      },
+      {
+        "ID": "ShieldProficiency",
+        "Name": "Shield Proficiency",
+        "Level": 1
+      },
+      {
+        "ID": "DualWielding",
+        "Name": "Dual-wielding",
+        "Level": 1
+      },
+      {
+        "ID": "ThrowingProficiency",
+        "Name": "Throwing Proficiency",
+        "Level": 3
+      },
+      {
+        "ID": "SlingProficiency",
+        "Name": "Sling Proficiency",
+        "Level": 0
+      },
+      {
+        "ID": "Archery",
+        "Name": "Archery",
+        "Level": 0
+      },
+      {
+        "ID": "CrossbowProficiency",
+        "Name": "Crossbow Proficiency",
+        "Level": 0
+      },
+      {
+        "ID": "FirearmsProficiency",
+        "Name": "Firearms Proficiency",
+        "Level": 5
+      },
+      {
+        "ID": "Horsemanship",
+        "Name": "Horsemanship",
+        "Level": 7
+      },
+      {
+        "ID": "MilitaryStrategy",
+        "Name": "Military Strategy",
+        "Level": 6
+      },
+      {
+        "ID": "MilitaryTactic",
+        "Name": "Military Tactic",
+        "Level": 6
+      },
+      {
+        "ID": "StreetSmart",
+        "Name": "Street Smart",
+        "Level": 6
+      },
+      {
+        "ID": "Misleading",
+        "Name": "Misleading",
+        "Level": 1
+      },
+      {
+        "ID": "Intimidation",
+        "Name": "Intimidation",
+        "Level": 0
+      },
+      {
+        "ID": "Bribing",
+        "Name": "Bribing",
+        "Level": 0
+      },
+      {
+        "ID": "Disguise",
+        "Name": "Disguise",
+        "Level": 1
+      },
+      {
+        "ID": "Camouflage",
+        "Name": "Camouflage",
+        "Level": 2
+      },
+      {
+        "ID": "Hide",
+        "Name": "Hide",
+        "Level": 2
+      },
+      {
+        "ID": "Sneaking",
+        "Name": "Sneaking",
+        "Level": 2
+      },
+      {
+        "ID": "Stalking",
+        "Name": "Stalking",
+        "Level": 4
+      },
+      {
+        "ID": "Filch",
+        "Name": "Filch",
+        "Level": 0
+      },
+      {
+        "ID": "Pickpocketing",
+        "Name": "Pickpocketing",
+        "Level": 0
+      },
+      {
+        "ID": "LockPicking",
+        "Name": "Lock Picking",
+        "Level": 0
+      },
+      {
+        "ID": "Forgery",
+        "Name": "Forgery",
+        "Level": 0
+      },
+      {
+        "ID": "Assassination",
+        "Name": "Assassination",
+        "Level": 1
+      }
+    ],
     "Traits": [
       {
         "ID": "Confident",

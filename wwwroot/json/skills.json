@@ -233,5 +233,1447 @@
     },
     "Description": "",
     "Commentary": null
+  },
+  "MeleeDodging": {
+    "Name": "Melee Dodging",
+    "AlternateNames": null,
+    "Prerequisite": {
+      "Items": [
+        "Walking"
+      ]
+    },
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Direct Combat",
+      "Hand-to-Hand Combat",
+      "Defense"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "Blocking": {
+    "Name": "Blocking",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Direct Combat",
+      "Hand-to-Hand Combat",
+      "Defense"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "Deflecting": {
+    "Name": "Deflecting",
+    "AlternateNames": {
+      "Items": [
+        "Parrying"
+      ]
+    },
+    "Prerequisite": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Direct Combat",
+      "Hand-to-Hand Combat",
+      "Defense"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "ProjectileDodging": {
+    "Name": "Projectile Dodging",
+    "AlternateNames": null,
+    "Prerequisite": {
+      "Items": [
+        "Melee Dodging"
+      ]
+    },
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Direct Combat",
+      "Ranged Combat",
+      "Defense"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "ProjectileCatching": {
+    "Name": "Projectile Catching",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Direct Combat",
+      "Ranged Combat",
+      "Defense"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "ProjectileDeflecting": {
+    "Name": "Projectile Deflecting",
+    "AlternateNames": {
+      "Items": [
+        "Projectile Parrying"
+      ]
+    },
+    "Prerequisite": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Direct Combat",
+      "Ranged Combat",
+      "Defense"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "Striking": {
+    "Name": "Striking",
+    "AlternateNames": {
+      "Items": [
+        "Unarmed",
+        "Pugilism"
+      ]
+    },
+    "Prerequisite": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Direct Combat",
+      "Hand-to-Hand Combat",
+      "Offense"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "Grappling": {
+    "Name": "Grappling",
+    "AlternateNames": {
+      "Items": [
+        "Wrestling"
+      ]
+    },
+    "Prerequisite": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Direct Combat",
+      "Hand-to-Hand Combat",
+      "Offense"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "DaggerProficiency": {
+    "Name": "Dagger Proficiency",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Direct Combat",
+      "Hand-to-Hand Combat",
+      "Offense"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "StaffProficiency": {
+    "Name": "Staff Proficiency",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Direct Combat",
+      "Hand-to-Hand Combat",
+      "Offense"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "Swordsmanship": {
+    "Name": "Swordsmanship",
+    "AlternateNames": {
+      "Items": [
+        "Sword Proficiency"
+      ]
+    },
+    "Prerequisite": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Direct Combat",
+      "Hand-to-Hand Combat",
+      "Offense"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "QuickDraw": {
+    "Name": "Quick Draw",
+    "AlternateNames": null,
+    "Prerequisite": {
+      "Items": [
+        "Swordsmanship"
+      ]
+    },
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Direct Combat",
+      "Hand-to-Hand Combat",
+      "Defense"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "SilentDraw": {
+    "Name": "Silent Draw",
+    "AlternateNames": null,
+    "Prerequisite": {
+      "Items": [
+        "Swordsmanship"
+      ]
+    },
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Direct Combat",
+      "Hand-to-Hand Combat"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "RapierProficiency": {
+    "Name": "Rapier Proficiency",
+    "AlternateNames": {
+      "Items": [
+        "Rapier Fencing"
+      ]
+    },
+    "Prerequisite": null,
+    "DerivedFrom": "Swordsmanship",
+    "Derivations": null,
+    "Tags": [
+      "Direct Combat",
+      "Hand-to-Hand Combat",
+      "Offense"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "ArmingSwordProficiency": {
+    "Name": "Arming Sword Proficiency",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": "Swordsmanship",
+    "Derivations": null,
+    "Tags": [
+      "Direct Combat",
+      "Hand-to-Hand Combat",
+      "Offense"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "SaberProficiency": {
+    "Name": "Saber Proficiency",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": "Swordsmanship",
+    "Derivations": null,
+    "Tags": [
+      "Direct Combat",
+      "Hand-to-Hand Combat",
+      "Offense"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "LongswordProficiency": {
+    "Name": "Longsword Proficiency",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": "Swordsmanship",
+    "Derivations": null,
+    "Tags": [
+      "Direct Combat",
+      "Hand-to-Hand Combat",
+      "Offense"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "ZweihanderProficiency": {
+    "Name": "Zweihander Proficiency",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": "Swordsmanship",
+    "Derivations": null,
+    "Tags": [
+      "Direct Combat",
+      "Hand-to-Hand Combat",
+      "Offense"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "HalfSwording": {
+    "Name": "Half-swording",
+    "AlternateNames": null,
+    "Prerequisite": {
+      "Items": [
+        "Swordsmanship"
+      ]
+    },
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Direct Combat",
+      "Hand-to-Hand Combat",
+      "Offense"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "Mordhau": {
+    "Name": "Mordhau",
+    "AlternateNames": {
+      "Items": [
+        "Mordstreich",
+        "Mordschlag",
+        "Murder-stroke",
+        "Murder-strike",
+        "Murder-blow"
+      ]
+    },
+    "Prerequisite": {
+      "Items": [
+        "Swordsmanship"
+      ]
+    },
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Direct Combat",
+      "Hand-to-Hand Combat",
+      "Offense"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "AxeProficiency": {
+    "Name": "Axe Proficiency",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Direct Combat",
+      "Hand-to-Hand Combat",
+      "Offense"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "SickleProficiency": {
+    "Name": "Sickle Proficiency",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": "Axe Proficiency",
+    "Derivations": null,
+    "Tags": [
+      "Direct Combat",
+      "Hand-to-Hand Combat",
+      "Offense"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "MaceProficiency": {
+    "Name": "Mace Proficiency",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Direct Combat",
+      "Hand-to-Hand Combat",
+      "Offense"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "HammerProficiency": {
+    "Name": "Hammer Proficiency",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": "Mace Proficiency",
+    "Derivations": null,
+    "Tags": [
+      "Direct Combat",
+      "Hand-to-Hand Combat",
+      "Offense"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "SpearProficiency": {
+    "Name": "Spear Proficiency",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Direct Combat",
+      "Hand-to-Hand Combat",
+      "Offense"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "PolearmsProficiency": {
+    "Name": "Polearms Proficiency",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Direct Combat",
+      "Hand-to-Hand Combat",
+      "Offense"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "ScytheProficiency": {
+    "Name": "Scythe Proficiency",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": "Polearms Proficiency",
+    "Derivations": null,
+    "Tags": [
+      "Direct Combat",
+      "Hand-to-Hand Combat",
+      "Offense"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "FlexibleWeaponProficiency": {
+    "Name": "Flexible Weapon Proficiency",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Direct Combat",
+      "Hand-to-Hand Combat",
+      "Offense"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "WhipProficiency": {
+    "Name": "Whip Proficiency",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": "Flexible Weapon Proficiency",
+    "Derivations": null,
+    "Tags": [
+      "Direct Combat",
+      "Hand-to-Hand Combat",
+      "Offense"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "PrehensileTailProficiency": {
+    "Name": "Prehensile Tail Proficiency",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": "Whip Proficiency",
+    "Derivations": null,
+    "Tags": [
+      "Direct Combat",
+      "Hand-to-Hand Combat",
+      "Offense"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "FlailProficiency": {
+    "Name": "Flail Proficiency",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": "Flexible Weapon Proficiency",
+    "Derivations": null,
+    "Tags": [
+      "Direct Combat",
+      "Hand-to-Hand Combat",
+      "Offense"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "NunchakuProficiency": {
+    "Name": "Nunchaku Proficiency",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": "Flexible Weapon Proficiency",
+    "Derivations": null,
+    "Tags": [
+      "Direct Combat",
+      "Hand-to-Hand Combat",
+      "Offense"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "RopeDartProficiency": {
+    "Name": "Rope Dart Proficiency",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": "Flexible Weapon Proficiency",
+    "Derivations": null,
+    "Tags": [
+      "Direct Combat",
+      "Hand-to-Hand Combat",
+      "Offense"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "ShieldProficiency": {
+    "Name": "Shield Proficiency",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Direct Combat",
+      "Hand-to-Hand Combat",
+      "Defense"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "MultipleWeaponsWielding": {
+    "Name": "Multiple Weapons Wielding",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Direct Combat",
+      "Hand-to-Hand Combat",
+      "Offense"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "DualWielding": {
+    "Name": "Dual-wielding",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": "Multiple Weapons Wielding",
+    "Derivations": null,
+    "Tags": [
+      "Direct Combat",
+      "Hand-to-Hand Combat",
+      "Offense"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "TailWielding": {
+    "Name": "Tail-wielding",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": "Multiple Weapons Wielding",
+    "Derivations": null,
+    "Tags": [
+      "Direct Combat",
+      "Hand-to-Hand Combat",
+      "Offense"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "ThrowingProficiency": {
+    "Name": "Throwing Proficiency",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Direct Combat",
+      "Ranged Combat",
+      "Offense"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "LassoProficiency": {
+    "Name": "Lasso Proficiency",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": "Throwing Proficiency",
+    "Derivations": null,
+    "Tags": [
+      "Direct Combat",
+      "Ranged Combat",
+      "Offense"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "BolasProficiency": {
+    "Name": "Bolas Proficiency",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": "Throwing Proficiency",
+    "Derivations": null,
+    "Tags": [
+      "Direct Combat",
+      "Ranged Combat",
+      "Offense"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "SlingProficiency": {
+    "Name": "Sling Proficiency",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Direct Combat",
+      "Ranged Combat",
+      "Offense"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "Archery": {
+    "Name": "Archery",
+    "AlternateNames": {
+      "Items": [
+        "Bow Proficiency"
+      ]
+    },
+    "Prerequisite": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Direct Combat",
+      "Ranged Combat",
+      "Offense"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "CrossbowProficiency": {
+    "Name": "Crossbow Proficiency",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Direct Combat",
+      "Ranged Combat",
+      "Offense"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "FirearmsProficiency": {
+    "Name": "Firearms Proficiency",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Direct Combat",
+      "Ranged Combat",
+      "Offense"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "AnimalRiding": {
+    "Name": "Animal Riding",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Locomotion",
+      "Direct Combat"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "Horsemanship": {
+    "Name": "Horsemanship",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": "Animal Riding",
+    "Derivations": null,
+    "Tags": [
+      "Locomotion",
+      "Direct Combat"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "HorseArchery": {
+    "Name": "Horse Archery",
+    "AlternateNames": null,
+    "Prerequisite": {
+      "Items": [
+        "Archery",
+        "Horsemanship"
+      ]
+    },
+    "DerivedFrom": "Horsemanship",
+    "Derivations": null,
+    "Tags": [
+      "Locomotion",
+      "Direct Combat",
+      "Ranged Combat",
+      "Offense"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "Jousting": {
+    "Name": "Jousting",
+    "AlternateNames": null,
+    "Prerequisite": {
+      "Items": [
+        "Spear Proficiency",
+        "Horsemanship"
+      ]
+    },
+    "DerivedFrom": "Horsemanship",
+    "Derivations": null,
+    "Tags": [
+      "Locomotion",
+      "Direct Combat",
+      "Hand-to-Hand Combat",
+      "Offense"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "DragonRiding": {
+    "Name": "Dragon Riding",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": "Animal Riding",
+    "Derivations": null,
+    "Tags": [
+      "Locomotion",
+      "Direct Combat"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "GreatEagleRiding": {
+    "Name": "Great Eagle Riding",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": "Animal Riding",
+    "Derivations": null,
+    "Tags": [
+      "Locomotion",
+      "Direct Combat"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "PapilionRiding": {
+    "Name": "Papilion Riding",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": "Animal Riding",
+    "Derivations": null,
+    "Tags": [
+      "Locomotion",
+      "Direct Combat"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "HippogryphRiding": {
+    "Name": "Hippogryph Riding",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": "Animal Riding",
+    "Derivations": null,
+    "Tags": [
+      "Locomotion",
+      "Direct Combat"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "GryphonRiding": {
+    "Name": "Gryphon Riding",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": "Animal Riding",
+    "Derivations": null,
+    "Tags": [
+      "Locomotion",
+      "Direct Combat"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "MilitaryStrategy": {
+    "Name": "Military Strategy",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Military Doctrine"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "MilitaryTactic": {
+    "Name": "Military Tactic",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Military Doctrine"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "StreetSmart": {
+    "Name": "Street Smart",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Underhanded"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "FastTalking": {
+    "Name": "Fast Talking",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Underhanded",
+      "Deception"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "Bluffing": {
+    "Name": "Bluffing",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Underhanded",
+      "Deception"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "Misleading": {
+    "Name": "Misleading",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Underhanded",
+      "Deception"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "Lying": {
+    "Name": "Lying",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Underhanded",
+      "Deception"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "Seducing": {
+    "Name": "Seducing",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Underhanded",
+      "Deception"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "ConcealMotives": {
+    "Name": "Conceal Motives",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Underhanded",
+      "Deception"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "Intimidation": {
+    "Name": "Intimidation",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Underhanded"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "threaten to hurt, threaten to expose the target secret, blackmail, threaten to hurt the target\u0027s loved one",
+    "Commentary": null
+  },
+  "Bribing": {
+    "Name": "Bribing",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Underhanded"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "Disguise": {
+    "Name": "Disguise",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Underhanded"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "Camouflage": {
+    "Name": "Camouflage",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Underhanded",
+      "Stealth"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "Hide": {
+    "Name": "Hide",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Underhanded",
+      "Stealth"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "Sneaking": {
+    "Name": "Sneaking",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Underhanded",
+      "Stealth"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "Stalking": {
+    "Name": "Stalking",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Underhanded"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "Filch": {
+    "Name": "Filch",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Underhanded",
+      "Stealing"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "Stealing objects that are sitting in plain sight... without being spotted",
+    "Commentary": null
+  },
+  "Pickpocketing": {
+    "Name": "Pickpocketing",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Underhanded",
+      "Stealing"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "Stealing objects that are sitting in plain sight... without being spotted",
+    "Commentary": null
+  },
+  "LockPicking": {
+    "Name": "Lock Picking",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Underhanded"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "Forgery": {
+    "Name": "Forgery",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Underhanded"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "Assassination": {
+    "Name": "Assassination",
+    "AlternateNames": null,
+    "Prerequisite": null,
+    "DerivedFrom": null,
+    "Derivations": null,
+    "Tags": [
+      "Underhanded",
+      "Direct Combat",
+      "Offense"
+    ],
+    "Effects": {
+      "Items": [
+        ""
+      ]
+    },
+    "Description": "",
+    "Commentary": null
   }
 }
