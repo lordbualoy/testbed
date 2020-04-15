@@ -435,13 +435,20 @@
     <div id="content-properties">
         <fieldset class="tabular">
             <legend>Properties</legend>
-            <ul>
-                {{#Properties}}
-                <li class="tooltip" data-template="TooltipProperties" name="{{ID}}"><a href="Properties.html#{{ID}}">{{Name}} ({{Origin}})</a></li>
-                {{/Properties}}
-            </ul>
+            <div class="tabular-section filter">
+            </div>
+            <div class="tabular-section associative-array">
+            </div>
         </fieldset>
     </div>
+</template>
+<template name="PropertiesBody">
+    {{#Properties}}
+    <div>
+        <span class="tooltip" data-template="TooltipProperties" name="{{ID}}"><a href="Properties.html#{{ID}}">{{Name}}</a></span>
+        <span>{{Origin}}</span>
+    </div>
+    {{/Properties}}
 </template>
 <template name="Classes">
     <div id="content-classes">

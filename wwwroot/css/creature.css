@@ -55,11 +55,6 @@ div.tippy-box[data-theme='custom'] > div.tippy-content > fieldset .header, .tab 
   font-weight: bold; }
 
 .tabular {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  padding: 5px;
-  border-radius: 10px;
-  border: 1px solid saddlebrown;
   display: flex;
   flex-direction: column; }
   .tabular > legend {
@@ -68,17 +63,19 @@ div.tippy-box[data-theme='custom'] > div.tippy-content > fieldset .header, .tab 
     margin-bottom: 0;
     margin-left: auto;
     margin-right: auto; }
-  .tabular-section.associative-array.tabular > div, .tabular > div.tabular-section.associative-array > div {
-    display: flex;
-    padding: 1px; }
-    .tabular-section.associative-array.tabular > div:nth-of-type(odd), .tabular > div.tabular-section.associative-array > div:nth-of-type(odd) {
-      background-color: burlywood; }
-    .tabular-section.associative-array.tabular > div:nth-of-type(even), .tabular > div.tabular-section.associative-array > div:nth-of-type(even) {
-      background-color: wheat; }
-    .tabular-section.associative-array.tabular > div > span, .tabular > div.tabular-section.associative-array > div > span {
-      flex-basis: 50%;
-      border: 1px solid lightgray;
-      margin: 1px; }
+  .tabular-section.associative-array.tabular, .tabular > div.tabular-section.associative-array {
+    margin-bottom: 1em; }
+    .tabular-section.associative-array.tabular > div, .tabular > div.tabular-section.associative-array > div {
+      display: flex;
+      padding: 1px; }
+      .tabular-section.associative-array.tabular > div:nth-of-type(odd), .tabular > div.tabular-section.associative-array > div:nth-of-type(odd) {
+        background-color: burlywood; }
+      .tabular-section.associative-array.tabular > div:nth-of-type(even), .tabular > div.tabular-section.associative-array > div:nth-of-type(even) {
+        background-color: wheat; }
+      .tabular-section.associative-array.tabular > div > span, .tabular > div.tabular-section.associative-array > div > span {
+        flex-basis: 50%;
+        border: 1px solid lightgray;
+        margin: 1px; }
   .tabular-section.filter.tabular > div, .tabular > div.tabular-section.filter > div {
     display: flex;
     flex-wrap: wrap;
@@ -186,8 +183,15 @@ label.checkbox {
 .outline > div:nth-child(2) > div:first-child > div > img {
   border: 20px solid transparent;
   border-image-source: url(../images/frame.png);
-  border-image-slice: 20;
+  border-image-slice: 70;
   border-image-repeat: repeat; }
+
+.tabular {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid saddlebrown; }
 
 .outline > div:nth-child(1) {
   align-items: center;

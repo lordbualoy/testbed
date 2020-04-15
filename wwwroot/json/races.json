@@ -1,0 +1,167 @@
+{
+  "Human": {
+    "Name": "Human",
+    "AlternateNames": {
+      "Items": [
+        "Homo sapiens"
+      ]
+    },
+    "Tags": [
+      "Humanoid",
+      "Deviant"
+    ],
+    "RacialProperties": {
+      "Items": [
+        "Sexual Reproduction"
+      ]
+    },
+    "RacialAttributes": {
+      "Strength": {
+        "Mean": 100,
+        "StandardDeviation": 0
+      },
+      "Intelligence": {
+        "Mean": 100,
+        "StandardDeviation": 15
+      },
+      "Cunning": {
+        "Mean": 100,
+        "StandardDeviation": 15
+      },
+      "Sociability": {
+        "Mean": 100,
+        "StandardDeviation": 15
+      },
+      "Constitution": {
+        "Mean": 100,
+        "StandardDeviation": 0
+      },
+      "Willpower": {
+        "Mean": 100,
+        "StandardDeviation": 0
+      },
+      "Agility": {
+        "Mean": 100,
+        "StandardDeviation": 0
+      },
+      "Reflex": {
+        "Mean": 100,
+        "StandardDeviation": 0
+      },
+      "SpeedOfThought": {
+        "Mean": 100,
+        "StandardDeviation": 0
+      },
+      "Endurance": {
+        "Mean": 100,
+        "StandardDeviation": 0
+      },
+      "Dexterity": {
+        "Mean": 100,
+        "StandardDeviation": 0
+      },
+      "LacertiliaIndex": {
+        "Mean": 100,
+        "StandardDeviation": 0
+      },
+      "Luck": {
+        "Mean": 100,
+        "StandardDeviation": 0
+      },
+      "Lifespan": {
+        "Mean": 100,
+        "StandardDeviation": 0
+      }
+    },
+    "RacialSkills": {
+      "Walking": 3,
+      "Running": 3,
+      "Jumping": 1,
+      "Acrobatic": 0,
+      "Parkour": 0,
+      "Climbing": 1,
+      "Branchiation": 0,
+      "Swimming": 0,
+      "Diving": 0,
+      "Aquabatic": 0,
+      "Flying": 0,
+      "Aerobatic": 0,
+      "MeleeDodging": 0,
+      "Blocking": 0,
+      "Deflecting": 0,
+      "ProjectileDodging": 0,
+      "ProjectileCatching": 0,
+      "ProjectileDeflecting": 0,
+      "Striking": 1,
+      "Grappling": 1,
+      "DaggerProficiency": 0,
+      "StaffProficiency": 0,
+      "Swordsmanship": 0,
+      "QuickDraw": 0,
+      "SilentDraw": 0,
+      "RapierProficiency": 0,
+      "ArmingSwordProficiency": 0,
+      "SaberProficiency": 0,
+      "LongswordProficiency": 0,
+      "ZweihanderProficiency": 0,
+      "HalfSwording": 0,
+      "Mordhau": 0,
+      "AxeProficiency": 0,
+      "SickleProficiency": 0,
+      "MaceProficiency": 0,
+      "HammerProficiency": 0,
+      "SpearProficiency": 0,
+      "PolearmsProficiency": 0,
+      "ScytheProficiency": 0,
+      "FlexibleWeaponProficiency": 0,
+      "WhipProficiency": 0,
+      "PrehensileTailProficiency": 0,
+      "FlailProficiency": 0,
+      "NunchakuProficiency": 0,
+      "RopeDartProficiency": 0,
+      "ShieldProficiency": 0,
+      "MultipleWeaponsWielding": 0,
+      "DualWielding": 0,
+      "TailWielding": 0,
+      "ThrowingProficiency": 0,
+      "LassoProficiency": 0,
+      "BolasProficiency": 0,
+      "SlingProficiency": 0,
+      "Archery": 0,
+      "CrossbowProficiency": 0,
+      "FirearmsProficiency": 0,
+      "AnimalRiding": 0,
+      "Horsemanship": 0,
+      "HorseArchery": 0,
+      "Jousting": 0,
+      "DragonRiding": 0,
+      "GreatEagleRiding": 0,
+      "PapilionRiding": 0,
+      "HippogryphRiding": 0,
+      "GryphonRiding": 0,
+      "MilitaryStrategy": 0,
+      "MilitaryTactic": 0,
+      "StreetSmart": 0,
+      "FastTalking": 0,
+      "Bluffing": 0,
+      "Misleading": 0,
+      "Lying": 0,
+      "Seducing": 0,
+      "ConcealMotives": 0,
+      "Intimidation": 0,
+      "Bribing": 0,
+      "Disguise": 0,
+      "Camouflage": 0,
+      "Hide": 0,
+      "Sneaking": 0,
+      "Stalking": 0,
+      "Filch": 0,
+      "Pickpocketing": 0,
+      "LockPicking": 0,
+      "Forgery": 0,
+      "Assassination": 0
+    },
+    "Description": "",
+    "Commentary": null
+  }
+}

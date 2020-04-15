@@ -75,6 +75,8 @@ import './event-delegation.js';
 
                 function GetContent() {
                     switch (name) {
+                        case 'Properties':
+                            return new Properties(content, creatureData.Detail, map.get(name));
                         case 'Skills':
                             return new Skills(content, creatureData.Detail, map.get(name));
                         default:
@@ -109,6 +111,10 @@ class TabContent {
 class TabContentWithFilter extends TabContent {
     constructor(content, name, data) {
         super(content, name, data);
+    }
+
+    get templateNameBody() {
+        return '';
     }
 
     setupEventListeners() {
@@ -147,15 +153,46 @@ class TabContentWithFilter extends TabContent {
     }
 
     renderFilter() {
-        this.content.querySelector('div.tabular-section.filter').innerHTML = Mustache.render(document.querySelector(`template[name=ContentFilter]`).innerHTML, this.data);
+        this.content.querySelector('div.tabular-section.filter').innerHTML = Mustache.render(document.querySelector('template[name=ContentFilter]').innerHTML, this.data);
         this.content.querySelectorAll('div.tabular-section.filter label.checkbox > input[type=checkbox]').forEach(v => v.checked = true);
     }
 
     renderBody() {
-        this.content.querySelector('div.tabular-section.associative-array').innerHTML = Mustache.render(document.querySelector(`template[name=SkillsBody]`).innerHTML, this.data);
+        this.content.querySelector('div.tabular-section.associative-array').innerHTML = Mustache.render(document.querySelector(`template[name=${this.templateNameBody}]`).innerHTML, this.data);
     }
 
     filterChanged() {
+    }
+}
+
+class Properties extends TabContentWithFilter {
+    constructor(content, creatureDetail, properties) {
+        const tags = new Set();
+        creatureDetail.Properties.forEach(x => {
+            properties[x.ID].Tags.forEach(y => {
+                if (!tags.has(y))
+                    tags.add(y);
+            });
+        });
+        super(content, 'Properties', { Filter: [...tags], Properties: creatureDetail.Properties.slice() });
+        this.properties = properties;
+        this.tags = tags;
+        this.creatureProperties = creatureDetail.Properties;
+    }
+
+    get templateNameBody() {
+        return 'PropertiesBody';
+    }
+
+    filterChanged() {
+        const tags = new Set();
+        this.content.querySelectorAll('div.filter > .specific label.checkbox > input[type=checkbox]:checked').forEach(v => {
+            const id = v.closest('label.checkbox').getAttribute('name');
+            if (!tags.has(id))
+                tags.add(id);
+        });
+        this.data.Properties = this.creatureProperties.filter(x => this.properties[x.ID].Tags.some(y => tags.has(y)));
+        this.renderBody();
     }
 }
 
@@ -172,6 +209,10 @@ class Skills extends TabContentWithFilter {
         this.skills = skills;
         this.tags = tags;
         this.creatureSkills = creatureDetail.Skills;
+    }
+
+    get templateNameBody() {
+        return 'SkillsBody';
     }
 
     filterChanged() {
