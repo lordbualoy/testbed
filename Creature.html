@@ -70,6 +70,10 @@
                 <span>{{Birthdate}}</span>
             </div>
             <div>
+                <span>Deathdate</span>
+                <span>{{Deathdate}}</span>
+            </div>
+            <div>
                 <span>Age</span>
                 <span>{{Age}}</span>
             </div>
@@ -78,16 +82,16 @@
                 <span>{{Height}}</span>
             </div>
             <div>
-                <span>Weight</span>
-                <span>{{Weight}}</span>
+                <span>Mass</span>
+                <span>{{Mass}}</span>
             </div>
             <div>
                 <span>Physique</span>
                 <span>{{Physique}}</span>
             </div>
             <div>
-                <span>Residence</span>
-                <span>{{Residence}}</span>
+                <span>Whereabouts</span>
+                <span>{{Whereabouts}}</span>
             </div>
             <div>
                 <span>Literacy</span>
@@ -138,7 +142,7 @@
 <template name="Profile">
     <div id="content-profile">
         <fieldset class="tabular tabular-section associative-array">
-            <legend>True Identity</legend>
+            <legend>Personal Information</legend>
             <div>
                 <span>Name</span>
                 <span>Grani</span>
@@ -146,6 +150,10 @@
             <div>
                 <span>Alias</span>
                 <span>-</span>
+            </div>
+            <div>
+                <span>Sex</span>
+                <span>{{Sex}}</span>
             </div>
             <div>
                 <span>Racial Category</span>
@@ -160,16 +168,12 @@
                 <span>-</span>
             </div>
             <div>
-                <span>Nationality</span>
-                <span>Victoria</span>
-            </div>
-            <div>
-                <span>Birthplace</span>
-                <span>Victoria</span>
-            </div>
-            <div>
                 <span>Birthdate</span>
                 <span>?</span>
+            </div>
+            <div>
+                <span>Deathdate</span>
+                <span>{{Deathdate}}</span>
             </div>
             <div>
                 <span>Chronological Age</span>
@@ -182,6 +186,42 @@
             <div>
                 <span>Apparent Age</span>
                 <span>?</span>
+            </div>
+            <div>
+                <span>Whereabouts</span>
+                <span></span>
+            </div>
+            <div>
+                <span>Literacy</span>
+                <span>{{Literacy}}</span>
+            </div>
+            <div>
+                <span>Nationality</span>
+                <span>Victoria</span>
+            </div>
+            <div>
+                <span>Birthplace</span>
+                <span>Victoria</span>
+            </div>
+            <div>
+                <span>Affiliation</span>
+                <span>{{Affiliation}}</span>
+            </div>
+            <div>
+                <span>Rank</span>
+                <span>{{Rank}}</span>
+            </div>
+            <div>
+                <span>Occupation</span>
+                <span>{{Occupation}}</span>
+            </div>
+            <div>
+                <span>Religion</span>
+                <span>{{Religion}}</span>
+            </div>
+            <div>
+                <span>Fighting Habit</span>
+                <span>{{FightingHabit}}</span>
             </div>
         </fieldset>
         <fieldset class="tabular tabular-section associative-array">
@@ -286,7 +326,15 @@
                 <span>100</span>
             </div>
             <div>
+                <span>Lifespan</span>
+                <span></span>
+            </div>
+            <div>
                 <span>Sexual Dimorphism</span>
+                <span></span>
+            </div>
+            <div>
+                <span>Blood Type</span>
                 <span></span>
             </div>
             <div>
@@ -318,9 +366,9 @@
                 <span></span>
             </div>
             <!--<div>
-              <span>Body Mass Index</span>
-              <span></span>
-            </div>-->
+      <span>Body Mass Index</span>
+      <span></span>
+    </div>-->
             <div>
                 <span>Corpulence Index</span>
                 <span></span>
@@ -342,7 +390,15 @@
                 <span></span>
             </div>
             <div>
-                <span>Maximum Carrying Capacity</span>
+                <span>Carrying Capacity</span>
+                <span>{{CurrentCarryingCapacity}}/{{MaximumCarryingCapacity}}</span>
+            </div>
+            <div>
+                <span>Encumbrance</span>
+                <span></span>
+            </div>
+            <div>
+                <span>Fatigue</span>
                 <span></span>
             </div>
             <div>
@@ -395,6 +451,10 @@
             </div>
             <div>
                 <span>Grappling Power</span>
+                <span></span>
+            </div>
+            <div>
+                <span>Resistance</span>
                 <span></span>
             </div>
         </fieldset>

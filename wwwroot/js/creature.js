@@ -58,8 +58,8 @@ import './event-delegation.js';
             });
 
             const tabs = new Map();
-            tab.querySelectorAll('.tab-button')
-                .forEach(v => tabs.set(v.getAttribute('name'), v));
+            for (const v of tab.querySelectorAll('.tab-button')) 
+                tabs.set(v.getAttribute('name'), v);
             let activeTab = undefined;
             activateTab(tabs.get(fragment));
 
@@ -125,7 +125,8 @@ class TabContentWithFilter extends TabContent {
                 e.target.checked = false;
             e.target.indeterminate = false;
 
-            this.content.querySelectorAll('div.filter > .specific label.checkbox > input[type=checkbox]').forEach(v => v.checked = e.target.checked);
+            for (const v of this.content.querySelectorAll('div.filter > .specific label.checkbox > input[type=checkbox]'))
+                v.checked = e.target.checked;
 
             this.filterChanged();
         });
@@ -154,7 +155,8 @@ class TabContentWithFilter extends TabContent {
 
     renderFilter() {
         this.content.querySelector('div.tabular-section.filter').innerHTML = Mustache.render(document.querySelector('template[name=ContentFilter]').innerHTML, this.data);
-        this.content.querySelectorAll('div.tabular-section.filter label.checkbox > input[type=checkbox]').forEach(v => v.checked = true);
+        for (const v of this.content.querySelectorAll('div.tabular-section.filter label.checkbox > input[type=checkbox]'))
+            v.checked = true;
     }
 
     renderBody() {
@@ -168,12 +170,12 @@ class TabContentWithFilter extends TabContent {
 class Properties extends TabContentWithFilter {
     constructor(content, creatureDetail, properties) {
         const tags = new Set();
-        creatureDetail.Properties.forEach(x => {
-            properties[x.ID].Tags.forEach(y => {
+        for (const x of creatureDetail.Properties) {
+            for (const y of properties[x.ID].Tags) {
                 if (!tags.has(y))
                     tags.add(y);
-            });
-        });
+            }
+        }
         super(content, 'Properties', { Filter: [...tags], Properties: creatureDetail.Properties.slice() });
         this.properties = properties;
         this.tags = tags;
@@ -186,11 +188,11 @@ class Properties extends TabContentWithFilter {
 
     filterChanged() {
         const tags = new Set();
-        this.content.querySelectorAll('div.filter > .specific label.checkbox > input[type=checkbox]:checked').forEach(v => {
+        for (const v of this.content.querySelectorAll('div.filter > .specific label.checkbox > input[type=checkbox]:checked')) {
             const id = v.closest('label.checkbox').getAttribute('name');
             if (!tags.has(id))
                 tags.add(id);
-        });
+        }
         this.data.Properties = this.creatureProperties.filter(x => this.properties[x.ID].Tags.some(y => tags.has(y)));
         this.renderBody();
     }
@@ -199,12 +201,12 @@ class Properties extends TabContentWithFilter {
 class Skills extends TabContentWithFilter {
     constructor(content, creatureDetail, skills) {
         const tags = new Set();
-        creatureDetail.Skills.forEach(x => {
-            skills[x.ID].Tags.forEach(y => {
+        for (const x of creatureDetail.Skills) {
+            for (const y of skills[x.ID].Tags) {
                 if (!tags.has(y))
                     tags.add(y);
-            });
-        });
+            }
+        }
         super(content, 'Skills', { Filter: [...tags], Skills: creatureDetail.Skills.slice() });
         this.skills = skills;
         this.tags = tags;
@@ -217,11 +219,11 @@ class Skills extends TabContentWithFilter {
 
     filterChanged() {
         const tags = new Set();
-        this.content.querySelectorAll('div.filter > .specific label.checkbox > input[type=checkbox]:checked').forEach(v => {
+        for (const v of this.content.querySelectorAll('div.filter > .specific label.checkbox > input[type=checkbox]:checked')) {
             const id = v.closest('label.checkbox').getAttribute('name');
             if (!tags.has(id))
                 tags.add(id);
-        });
+        }
         this.data.Skills = this.creatureSkills.filter(x => this.skills[x.ID].Tags.some(y => tags.has(y)));
         this.renderBody();
     }

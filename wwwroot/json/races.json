@@ -6,8 +6,13 @@
         "Homo sapiens"
       ]
     },
+    "Breeds": [
+      "Astoran",
+      "Feralan"
+    ],
     "Tags": [
       "Humanoid",
+      "Mammal",
       "Deviant"
     ],
     "RacialProperties": {
