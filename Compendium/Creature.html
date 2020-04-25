@@ -7,8 +7,8 @@
     <title></title>
 
     
-    <link rel="stylesheet" href="wwwroot/css/tippy.css" />
-    <link rel="stylesheet" href="wwwroot/css/creature.min.css" />
+    <link rel="stylesheet" href="../wwwroot/css/tippy.css" />
+    <link rel="stylesheet" href="../wwwroot/css/creature.min.css" />
 
 </head>
 <body>
@@ -43,7 +43,12 @@
     <div>
         <div>
             <div>
-                <img src="data:image/webp;base64,{{Image}}">
+                {{#Image}}
+                <img src="data:image/webp;base64,{{.}}">
+                {{/Image}}
+                {{^Image}}
+                <img src="../wwwroot/images/incognito.webp">
+                {{/Image}}
                 <span>Ability Estimation</span>
                 <span>{{AbilityEstimation}}</span>
             </div>
@@ -69,10 +74,12 @@
                 <span>Birthdate</span>
                 <span>{{Birthdate}}</span>
             </div>
+            {{#Deathdate}}
             <div>
                 <span>Deathdate</span>
-                <span>{{Deathdate}}</span>
+                <span>{{.}}</span>
             </div>
+            {{/Deathdate}}
             <div>
                 <span>Age</span>
                 <span>{{Age}}</span>
@@ -141,120 +148,150 @@
 </template>
 <template name="Profile">
     <div id="content-profile">
-        <fieldset class="tabular tabular-section associative-array">
-            <legend>Personal Information</legend>
-            <div>
-                <span>Name</span>
-                <span>Grani</span>
-            </div>
-            <div>
-                <span>Alias</span>
-                <span>-</span>
-            </div>
-            <div>
-                <span>Sex</span>
-                <span>{{Sex}}</span>
-            </div>
-            <div>
-                <span>Racial Category</span>
-                <span>Humanoid</span>
-            </div>
-            <div>
-                <span>Race</span>
-                <span>Kuranta</span>
-            </div>
-            <div>
-                <span>Breed</span>
-                <span>-</span>
-            </div>
-            <div>
-                <span>Birthdate</span>
-                <span>?</span>
-            </div>
-            <div>
-                <span>Deathdate</span>
-                <span>{{Deathdate}}</span>
-            </div>
-            <div>
-                <span>Chronological Age</span>
-                <span>?</span>
-            </div>
-            <div>
-                <span>Biological Age</span>
-                <span>?</span>
-            </div>
-            <div>
-                <span>Apparent Age</span>
-                <span>?</span>
-            </div>
-            <div>
-                <span>Whereabouts</span>
-                <span></span>
-            </div>
-            <div>
-                <span>Literacy</span>
-                <span>{{Literacy}}</span>
-            </div>
-            <div>
-                <span>Nationality</span>
-                <span>Victoria</span>
-            </div>
-            <div>
-                <span>Birthplace</span>
-                <span>Victoria</span>
-            </div>
-            <div>
-                <span>Affiliation</span>
-                <span>{{Affiliation}}</span>
-            </div>
-            <div>
-                <span>Rank</span>
-                <span>{{Rank}}</span>
-            </div>
-            <div>
-                <span>Occupation</span>
-                <span>{{Occupation}}</span>
-            </div>
-            <div>
-                <span>Religion</span>
-                <span>{{Religion}}</span>
-            </div>
-            <div>
-                <span>Fighting Habit</span>
-                <span>{{FightingHabit}}</span>
-            </div>
-        </fieldset>
-        <fieldset class="tabular tabular-section associative-array">
-            <legend>Alternate Identity #1</legend>
-            <div>
-                <span>Name</span>
-                <span>?</span>
-            </div>
-        </fieldset>
-        <fieldset class="tabular tabular-section associative-array">
-            <legend>Genealogical Information</legend>
-            <div>
-                <span>Father</span>
-                <span>?</span>
-            </div>
-            <div>
-                <span>Mother</span>
-                <span>?</span>
-            </div>
-            <div>
-                <span>Siblings</span>
-                <span>?</span>
-            </div>
-            <div>
-                <span>Spouse</span>
-                <span>-</span>
-            </div>
-            <div>
-                <span>Children</span>
-                <span>-</span>
-            </div>
-        </fieldset>
     </div>
+</template>
+<template name="ProfileBody">
+    <fieldset class="tabular tabular-section associative-array">
+        <legend>{{ProfileName}}</legend>
+        <div>
+            <span>Full Name</span>
+            <span>{{ProperName}}</span>
+        </div>
+        <div>
+            <span>Nick Name</span>
+            <span>{{NickName}}</span>
+        </div>
+        <div>
+            <span>Alias</span>
+            <ul>
+                {{#Alias}}
+                <li>{{.}}</li>
+                {{/Alias}}
+            </ul>
+        </div>
+        <div>
+            <span>Sex</span>
+            <span>{{Sex}}</span>
+        </div>
+        <div>
+            <span>Racial Category</span>
+            <ul>
+                {{#RacialTags}}
+                <li>{{.}}</li>
+                {{/RacialTags}}
+            </ul>
+        </div>
+        <div>
+            <span>Race</span>
+            <span>{{Race}}</span>
+        </div>
+        <div>
+            <span>Breed</span>
+            <span>{{Breed}}</span>
+        </div>
+        <div>
+            <span>Birthdate</span>
+            <span>{{Birthdate}}</span>
+        </div>
+        {{#Deathdate}}
+        <div>
+            <span>Deathdate</span>
+            <span>{{.}}</span>
+        </div>
+        {{/Deathdate}}
+        {{#ChronologicalAge}}
+        <div>
+            <span>Chronological Age</span>
+            <span>{{.}}</span>
+        </div>
+        {{/ChronologicalAge}}
+        {{^ChronologicalAge}}
+        <div>
+            <span>Age</span>
+            <span>{{Age}}</span>
+        </div>
+        {{/ChronologicalAge}}
+        {{#BiologicalAge}}
+        <div>
+            <span>Biological Age</span>
+            <span>{{.}}</span>
+        </div>
+        {{/BiologicalAge}}
+        {{#ApparentAge}}
+        <div>
+            <span>Apparent Age</span>
+            <span>{{.}}</span>
+        </div>
+        {{/ApparentAge}}
+        <div>
+            <span>Whereabouts</span>
+            <span>{{Whereabouts}}</span>
+        </div>
+        <div>
+            <span>Literacy</span>
+            <span>{{Literacy}}</span>
+        </div>
+        <div>
+            <span>Nationality</span>
+            <span>{{Nationality}}</span>
+        </div>
+        <div>
+            <span>Birthplace</span>
+            <span>{{Birthplace}}</span>
+        </div>
+        <div>
+            <span>Affiliation</span>
+            <span>{{Affiliation}}</span>
+        </div>
+        <div>
+            <span>Rank</span>
+            <span>{{Rank}}</span>
+        </div>
+        <div>
+            <span>Occupation</span>
+            <span>{{Occupation}}</span>
+        </div>
+        <div>
+            <span>Religion</span>
+            <span>{{Religion}}</span>
+        </div>
+        <div>
+            <span>Fighting Habit</span>
+            <span>{{FightingHabit}}</span>
+        </div>
+        <div>
+            <span>Father</span>
+            <span>{{Father}}</span>
+        </div>
+        <div>
+            <span>Mother</span>
+            <span>{{Mother}}</span>
+        </div>
+        <div>
+            <span>Siblings</span>
+            <ul>
+                {{#Siblings}}
+                <li>{{.}}</li>
+                {{/Siblings}}
+            </ul>
+        </div>
+        <div>
+            <span>Spouses</span>
+            <ul>
+                {{#Spouses}}
+                <li>{{.}}</li>
+                {{/Spouses}}
+            </ul>
+        </div>
+        <div>
+            <span>Children</span>
+            <ul>
+                {{#Children}}
+                <li>{{.}}</li>
+                {{/Children}}
+            </ul>
+        </div>
+    </fieldset>
 </template>
 <template name="Attributes">
     <div id="content-attributes">
@@ -319,11 +356,11 @@
             <legend>Secondary Attributes</legend>
             <div>
                 <span>Health Point</span>
-                <span>100</span>
+                <span>Placeholder</span>
             </div>
             <div>
                 <span>Stamina Point</span>
-                <span>100</span>
+                <span>Placeholder</span>
             </div>
             <div>
                 <span>Lifespan</span>
@@ -355,7 +392,7 @@
             </div>
             <div>
                 <span>Height</span>
-                <span>154 cm</span>
+                <span>Placeholder</span>
             </div>
             <div>
                 <span>Mass</span>
@@ -366,9 +403,9 @@
                 <span></span>
             </div>
             <!--<div>
-      <span>Body Mass Index</span>
-      <span></span>
-    </div>-->
+              <span>Body Mass Index</span>
+              <span></span>
+            </div>-->
             <div>
                 <span>Corpulence Index</span>
                 <span></span>
@@ -443,11 +480,11 @@
             </div>
             <div>
                 <span>Flexibility</span>
-                <span>100</span>
+                <span>Placeholder</span>
             </div>
             <div>
                 <span>Nourishment</span>
-                <span>Normal</span>
+                <span>Placeholder</span>
             </div>
             <div>
                 <span>Grappling Power</span>
@@ -482,11 +519,11 @@
             </div>
             <div>
                 <span>Eye Color</span>
-                <span>Purple</span>
+                <span>Placeholder</span>
             </div>
             <div>
                 <span>Hair Color</span>
-                <span>White</span>
+                <span>Placeholder</span>
             </div>
         </fieldset>
     </div>
@@ -515,27 +552,15 @@
         <fieldset class="tabular tabular-section associative-array">
             <legend>Classes</legend>
             <div>
-                <span>Vanguard</span>
+                <span>Placeholder</span>
                 <span>5</span>
             </div>
             <div>
-                <span>Police</span>
+                <span>Placeholder</span>
                 <span>5</span>
             </div>
             <div>
-                <span>Spearman</span>
-                <span>5</span>
-            </div>
-            <div>
-                <span>Pikeman</span>
-                <span>5</span>
-            </div>
-            <div>
-                <span>Lancer</span>
-                <span>5</span>
-            </div>
-            <div>
-                <span>Cavalry</span>
+                <span>Placeholder</span>
                 <span>5</span>
             </div>
         </fieldset>
@@ -565,8 +590,16 @@
         <fieldset class="tabular tabular-section associative-array">
             <legend>Spells</legend>
             <div>
-                <span>Originium Arts</span>
-                <span></span>
+                <span>Placeholder</span>
+                <span>1</span>
+            </div>
+            <div>
+                <span>Placeholder</span>
+                <span>2</span>
+            </div>
+            <div>
+                <span>Placeholder</span>
+                <span>3</span>
             </div>
         </fieldset>
     </div>
@@ -878,7 +911,7 @@
 
 
     
-    <script type="module" src="wwwroot/js/creature.js"></script>
+    <script type="module" src="../wwwroot/js/creature.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,136 @@
+{
+  "CreatureInnateData": {
+    "Image": "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",
+    "Identities": [
+      {
+        "IdentityKey": "Main",
+        "NickName": "Test",
+        "ProperName": "Test",
+        "Alias": [],
+        "Sex": "Male",
+        "Race": "Human",
+        "Breed": "Astoran",
+        "Existent": {
+          "Type": "Mortal",
+          "Birth": "1000-04-15T00:00:00.000\u002B00:00",
+          "Death": null,
+          "Whereabouts": null
+        },
+        "Literacy": "No",
+        "Nationality": null,
+        "Birthplace": null,
+        "Affiliation": null,
+        "Rank": null,
+        "Occupation": "Peasant",
+        "Religion": null,
+        "FightingHabit": "Bruteforce",
+        "GenealogicalInformation": {
+          "Father": null,
+          "Mother": null,
+          "Siblings": [],
+          "Spouses": [],
+          "Children": []
+        },
+        "IsVisible": true
+      },
+      {
+        "IdentityKey": "Alt1",
+        "NickName": "Alternate1",
+        "ProperName": "Alternate1",
+        "Alias": [],
+        "Sex": "Male",
+        "Race": "Human",
+        "Breed": "Astoran",
+        "Existent": {
+          "Type": "Mortal",
+          "Birth": "1000-04-15T00:00:00.000\u002B00:00",
+          "Death": null,
+          "Whereabouts": null
+        },
+        "Literacy": "No",
+        "Nationality": null,
+        "Birthplace": null,
+        "Affiliation": null,
+        "Rank": null,
+        "Occupation": "Serf",
+        "Religion": "Atheism",
+        "FightingHabit": "Bruteforce",
+        "GenealogicalInformation": {
+          "Father": null,
+          "Mother": null,
+          "Siblings": [],
+          "Spouses": [],
+          "Children": []
+        },
+        "IsVisible": true
+      },
+      {
+        "IdentityKey": "Alt2",
+        "NickName": "Alternate2",
+        "ProperName": "Alternate2",
+        "Alias": [],
+        "Sex": "Male",
+        "Race": "Human",
+        "Breed": "Astoran",
+        "Existent": {
+          "Type": "Mortal",
+          "Birth": "1000-04-15T00:00:00.000\u002B00:00",
+          "Death": null,
+          "Whereabouts": null
+        },
+        "Literacy": "No",
+        "Nationality": null,
+        "Birthplace": null,
+        "Affiliation": null,
+        "Rank": null,
+        "Occupation": "Lord",
+        "Religion": "Atheism",
+        "FightingHabit": "Bruteforce",
+        "GenealogicalInformation": {
+          "Father": null,
+          "Mother": null,
+          "Siblings": [],
+          "Spouses": [],
+          "Children": []
+        },
+        "IsVisible": true
+      }
+    ],
+    "ExtraProperties": [
+      {
+        "ID": "LeftHanded",
+        "Origin": "Gift"
+      }
+    ],
+    "AbsentProperties": [
+      "RightHanded"
+    ],
+    "Attributes": {
+      "Strength": 0,
+      "Intelligence": -0.9590586,
+      "Cunning": 0,
+      "Sociability": 0,
+      "Constitution": 0,
+      "Willpower": 0,
+      "Agility": 0,
+      "Reflex": 0,
+      "SpeedOfThought": 0,
+      "Endurance": 0,
+      "Dexterity": 0,
+      "LacertiliaIndex": 0,
+      "Luck": 10,
+      "Lifespan": 0.01
+    },
+    "Skills": {
+      "Diving": 1,
+      "Swimming": 1
+    },
+    "Traits": [
+      "Boastful",
+      "Careless",
+      "Proud"
+    ],
+    "Description": "test character"
+  },
+  "Events": []
+}

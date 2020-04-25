@@ -173,16 +173,16 @@ label.checkbox {
   border-image-repeat: repeat; }
 
 .nick-name {
-  border-width: 8px 56px;
+  border-width: 7px 58px;
   border-style: solid;
   border-color: transparent;
-  border-image-source: url(../images/title.png);
-  border-image-slice: 8 56;
-  border-image-repeat: repeat; }
+  border-image-source: url(../images/title.webp);
+  border-image-slice: 25 208;
+  border-image-repeat: round; }
 
 .outline > div:nth-child(2) > div:first-child > div > img {
   border: 20px solid transparent;
-  border-image-source: url(../images/frame.png);
+  border-image-source: url(../images/frame.webp);
   border-image-slice: 70;
   border-image-repeat: repeat; }
 

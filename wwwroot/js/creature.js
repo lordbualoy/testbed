@@ -1,29 +1,44 @@
 ﻿import Mustache from './mustache.js';
 import { delegate } from './tippy.esm.js';
 import './event-delegation.js';
+import './date.js';
+import './array.js';
 
-(async function () {
-    const queryString = new URLSearchParams(window.location.search);
-    const fragment = window.location.hash === "" ? "Profile" : window.location.hash.substring(1);
-    const creatureID = queryString.get('creature');
-    if (creatureID) {
+const queryString = new URLSearchParams(window.location.search);
+const fragment = window.location.hash === '' ? 'Profile' : window.location.hash.substring(1);
+const creatureID = queryString.get('creature');
+const date = (function () {
+    const temp = queryString.get('date');
+    return temp ? new Date(temp) : null;
+})();
+
+class Compendium {
+    static async Initialize() {
         const data = await Promise.all([
-            fetch('wwwroot/json/attributes.json').then((resp) => resp.json())
-            , fetch('wwwroot/json/properties.json').then((resp) => resp.json())
-            , fetch('wwwroot/json/skills.json').then((resp) => resp.json())
-            , fetch('wwwroot/json/traits.json').then((resp) => resp.json())
-            , fetch(`wwwroot/json/creatures/${creatureID}.json`).then((resp) => resp.json())
+            fetch('../wwwroot/json/races.json').then((resp) => resp.json())
+            , fetch('../wwwroot/json/attributes.json').then((resp) => resp.json())
+            , fetch('../wwwroot/json/properties.json').then((resp) => resp.json())
+            , fetch('../wwwroot/json/skills.json').then((resp) => resp.json())
+            , fetch('../wwwroot/json/traits.json').then((resp) => resp.json())
         ]);
 
-        const map = new Map();
-        map.set('Attributes', data[0]);
-        map.set('Properties', data[1]);
-        map.set('Skills', data[2]);
-        map.set('Traits', data[3]);
-        const creatureData = data[4];
+        let i = 0;
+        Compendium.Races = data[i++];
+        Compendium.Attributes = data[i++];
+        Compendium.Properties = data[i++];
+        Compendium.Skills = data[i++];
+        Compendium.Traits = data[i++];
+    }
+}
+
+(async function () {
+    if (creatureID) {
+        const fetchCreatureData = fetch(`../wwwroot/json/creatures/${creatureID}.json`).then((resp) => resp.json());
+        await Compendium.Initialize();
+        const creatureData = Creature.BuildCurrentData(await fetchCreatureData);
 
         document.title = creatureData.Outline.NickName;
-        const container = (function (map, creatureData, fragment) {
+        const container = (function (creatureData, fragment) {
             const container = document.createElement('div');
             container.id = 'container';
             container.innerHTML = document.querySelector('template[name=Container]').innerHTML;
@@ -39,7 +54,7 @@ import './event-delegation.js';
                 theme: 'custom',
                 onShow: instance => {
                     const element = instance.reference;
-                    const html = Mustache.render(document.querySelector(`template[name=${element.dataset.template}]`).innerHTML, map.get(activeTab.getAttribute('name'))[element.getAttribute('name')]);
+                    const html = Mustache.render(document.querySelector(`template[name=${element.dataset.template}]`).innerHTML, Compendium[activeTab.getAttribute('name')][element.getAttribute('name')]);
                     instance.setContent(html);
                 },
                 onHidden: instance => {
@@ -75,16 +90,18 @@ import './event-delegation.js';
 
                 function GetContent() {
                     switch (name) {
+                        case 'Profile':
+                            return new Profile(content, creatureData.Detail);
                         case 'Properties':
-                            return new Properties(content, creatureData.Detail, map.get(name));
+                            return new Properties(content, creatureData.Detail);
                         case 'Skills':
-                            return new Skills(content, creatureData.Detail, map.get(name));
+                            return new Skills(content, creatureData.Detail);
                         default:
                             return new TabContent(content, name, creatureData.Detail);
                     }
                 }
             }
-        })(map, creatureData, fragment);
+        })(creatureData, fragment);
         document.body.appendChild(container);
     }
 })();
@@ -167,17 +184,30 @@ class TabContentWithFilter extends TabContent {
     }
 }
 
+class Profile extends TabContent {
+    constructor(content, creatureDetail) {
+        super(content, 'Profile', creatureDetail);
+    }
+
+    renderContent() {
+        this.content.innerHTML = this.template;
+        const template = document.querySelector('template[name=ProfileBody]').innerHTML;
+        for (const profile of this.data.Profile) {
+            this.content.querySelector('#content-profile').insertAdjacentHTML('beforeend', Mustache.render(template, profile));
+        }
+    }
+}
+
 class Properties extends TabContentWithFilter {
-    constructor(content, creatureDetail, properties) {
+    constructor(content, creatureDetail) {
         const tags = new Set();
         for (const x of creatureDetail.Properties) {
-            for (const y of properties[x.ID].Tags) {
+            for (const y of Compendium.Properties[x.ID].Tags) {
                 if (!tags.has(y))
                     tags.add(y);
             }
         }
         super(content, 'Properties', { Filter: [...tags], Properties: creatureDetail.Properties.slice() });
-        this.properties = properties;
         this.tags = tags;
         this.creatureProperties = creatureDetail.Properties;
     }
@@ -193,22 +223,21 @@ class Properties extends TabContentWithFilter {
             if (!tags.has(id))
                 tags.add(id);
         }
-        this.data.Properties = this.creatureProperties.filter(x => this.properties[x.ID].Tags.some(y => tags.has(y)));
+        this.data.Properties = this.creatureProperties.filter(x => Compendium.Properties[x.ID].Tags.some(y => tags.has(y)));
         this.renderBody();
     }
 }
 
 class Skills extends TabContentWithFilter {
-    constructor(content, creatureDetail, skills) {
+    constructor(content, creatureDetail) {
         const tags = new Set();
         for (const x of creatureDetail.Skills) {
-            for (const y of skills[x.ID].Tags) {
+            for (const y of Compendium.Skills[x.ID].Tags) {
                 if (!tags.has(y))
                     tags.add(y);
             }
         }
         super(content, 'Skills', { Filter: [...tags], Skills: creatureDetail.Skills.slice() });
-        this.skills = skills;
         this.tags = tags;
         this.creatureSkills = creatureDetail.Skills;
     }
@@ -224,7 +253,380 @@ class Skills extends TabContentWithFilter {
             if (!tags.has(id))
                 tags.add(id);
         }
-        this.data.Skills = this.creatureSkills.filter(x => this.skills[x.ID].Tags.some(y => tags.has(y)));
+        this.data.Skills = this.creatureSkills.filter(x => Compendium.Skills[x.ID].Tags.some(y => tags.has(y)));
         this.renderBody();
+    }
+}
+
+class Creature {
+    constructor(data) {
+        const innateData = data.CreatureInnateData;
+
+        this.Image = innateData.Image || '';
+
+        this.Identities = new Identities(innateData.Identities);
+
+        const creatureRace = Compendium.Races[this.MainIdentity.Race];
+
+        this.Properties = new Map();
+        for (const racialProperty of creatureRace.RacialProperties.Items) {
+            const p = Compendium.Properties[racialProperty.ID];
+            this.Properties.set(racialProperty.ID, { ID: racialProperty.ID, Name: p.Name, Origin: p.Origin.Items.find(x => x === 'Racial Perk') ? 'Racial Perk' : 'Racial Vulnerability' });
+        }
+        for (const extraProperty of innateData.ExtraProperties) {
+            const p = Compendium.Properties[extraProperty.ID];
+            this.Properties.set(extraProperty.ID, { ID: extraProperty.ID, Name: p.Name, Origin: extraProperty.Origin });
+        }
+        for (const p of innateData.AbsentProperties)
+            this.Properties.delete(p);
+
+        this.Attributes = {};
+        for (const attr in creatureRace.RacialAttributes) {
+            const { Mean, StandardDeviation } = creatureRace.RacialAttributes[attr];
+            this.Attributes[attr] = Mean + Math.trunc(StandardDeviation * innateData.Attributes[attr]);
+        }
+
+        this.Skills = {};
+        for (const skill in creatureRace.RacialSkills)
+            this.Skills[skill] = { ID: skill, Name: Compendium.Skills[skill].Name, Level: creatureRace.RacialSkills[skill] };
+        for (const skill in innateData.Skills) {
+            if (this.Skills[skill] === undefined)
+                this.Skills[skill] = { ID: skill, Name: Compendium.Skills[skill].Name, Level: innateData.Skills[skill] };
+            else
+                this.Skills[skill].Level = Math.max(this.Skills[skill].Level, innateData.Skills[skill]);
+        }
+
+        this.Traits = new Set();
+        for (const trait of innateData.Traits)
+            this.Traits.add(trait);
+
+        this.Description = innateData.Description;
+    }
+
+    get MainIdentity() {
+        return this.Identities.Main;
+    }
+
+    static BuildCurrentData(data) {
+        const events = data.Events;
+
+        const creature = new Creature(data);
+
+        for (const e of events) {
+            if (new Date(e.DateTime) > date)
+                break;
+            EventExecutor[e.EventType](creature, e.DateTime, ...e.EventArguments);
+        }
+
+        const mainIdentity = creature.MainIdentity;
+        return {
+            Outline: {
+                NickName: mainIdentity.NickName
+                , Image: creature.Image
+                , AbilityEstimation: 1000
+                , ProperName: mainIdentity.ProperName
+                , Sex: mainIdentity.Sex
+                , Race: Compendium.Races[mainIdentity.Race].Name
+                , Breed: mainIdentity.Breed
+                , Birthdate: mainIdentity.Existent.Birth.formatDate()
+                , Deathdate: mainIdentity.Existent.Death ? mainIdentity.Existent.Death.formatDate() : null
+                , Age: mainIdentity.Existent.ChronologicalAge
+                , Height: null
+                , Mass: null
+                , Physique: null
+                , Whereabouts: mainIdentity.Existent.Whereabouts
+                , Literacy: mainIdentity.Literacy
+                , Nationality: mainIdentity.Nationality
+                , Affiliation: mainIdentity.Affiliation
+                , Rank: mainIdentity.Rank
+                , Occupation: mainIdentity.Occupation
+                , SocialClass: null
+                , Religion: mainIdentity.Religion
+                , FightingHabit: mainIdentity.FightingHabit
+                , Personality: []
+                , Description: creature.Description
+            }
+            , Detail: {
+                Profile: creature.Identities.convertToProfile()
+                , Attributes: Object.assign({}, creature.Attributes)
+                , Properties: Array.from(creature.Properties).map(x => x[1])
+                , Skills: Object.keys(creature.Skills).map(id => creature.Skills[id])
+                , Traits: Array.from(creature.Traits).map(x => ({ ID: x, Name: Compendium.Traits[x].Name }))
+            }
+        };
+    }
+}
+
+class Identities {
+    constructor(identities) {
+        this.data = [];
+        for (const i of identities) {
+            this.data.push(new Identity(i));
+        }
+    }
+
+    get Main() {
+        return this.data.find(x => x.IsVisible);
+    }
+
+    add(identity) {
+        this.data.push(new Identity(identity));
+    }
+
+    get(identityKey) {
+        return this.data.find(x => x.IdentityKey === identityKey);
+    }
+
+    remove(identityKey) {
+        this.data.remove(x => x.IdentityKey === identityKey);
+    }
+
+    convertToProfile() {
+        const visibleIdentities = this.data.filter(x => x.IsVisible);
+        return [this.convert(visibleIdentities[0], 0), ...visibleIdentities.slice(1).map((v, i) => this.convert(v, i + 1))];
+    }
+
+    convert(identity, index) {
+        let age;
+        if (identity.Existent.Type !== 'Immortal')
+            age = { Age: identity.Existent.ChronologicalAge };
+        else {
+            age = {
+                ChronologicalAge: identity.Existent.ChronologicalAge
+                , BiologicalAge: identity.Existent.BiologicalAge
+                , ApparentAge: identity.Existent.ApparentAge
+            };
+        }
+
+        const race = Compendium.Races[identity.Race];
+        const genealogicalInfo = identity.GenealogicalInformation;
+
+        return Object.assign({
+            ProfileName: index === 0 ? 'Personal Information' : `Alternate Identity #${index}`
+            , ProperName: identity.ProperName
+            , NickName: identity.NickName
+            , Alias: identity.Alias
+            , Sex: identity.Sex
+            , RacialTags: race.Tags.slice()
+            , Race: race.Name
+            , Breed: identity.Breed
+            , Birthdate: identity.Existent.Birth.formatDate()
+            , Deathdate: identity.Existent.Death ? identity.Existent.Death.formatDate() : null
+            , Whereabouts: identity.Existent.Whereabouts
+            , Literacy: identity.Literacy
+            , Nationality: identity.Nationality
+            , Birthplace: identity.Birthplace
+            , Affiliation: identity.Affiliation
+            , Rank: identity.Rank
+            , Occupation: identity.Occupation
+            , Religion: identity.Religion
+            , FightingHabit: identity.FightingHabit
+            , Father: genealogicalInfo.Father
+            , Mother: genealogicalInfo.Mother
+            , Siblings: genealogicalInfo.Siblings.slice()
+            , Spouses: genealogicalInfo.Spouses.slice()
+            , Children: genealogicalInfo.Children.slice()
+        }, age);
+    }
+}
+
+class Identity {
+    constructor(identity) {
+        for (const p in identity) {
+            if (p !== 'Existent')
+                this[p] = identity[p];
+            else
+                this[p] = new Existent(identity[p]);
+        }
+    }
+}
+
+class Existent {
+    constructor(existent) {
+        this.Type = existent.Type;
+        this.Birth = new Date(existent.Birth);
+        if (this.Type === 'Immortal') {
+            this.StopAgingDate = new Date(existent.StopAgingDate);
+            this.GrowthFactor = existent.GrowthFactor;
+        }
+        this.Death = existent.Death ? new Date(existent.Death) : null;
+        this.Whereabouts = existent.Whereabouts;
+    }
+
+    get ChronologicalAge() {
+        return this.Birth.calculatePeriodToGivenDate(date || this.Birth).years;
+    }
+
+    get BiologicalAge() {
+        let min = date > this.StopAgingDate ? this.StopAgingDate : date;
+        if (this.Death !== null) {
+            min = min > this.Death ? this.Death : min;
+        }
+
+        return this.Birth.calculatePeriodToGivenDate(min).years;
+    }
+
+    get ApparentAge() {
+        return this.BiologicalAge * this.GrowthFactor;
+    }
+}
+
+class EventExecutor {
+    static SetImage(creature, dateTime, imageData) {
+        creature.Image = imageData;
+    }
+
+    static Kill(creature, dateTime) {
+        for (const identity of creature.Identities.filter(x => x.Existent.Death === null))
+            identity.Existent.Death = dateTime;
+    }
+
+    static AddIdentity(creature, dateTime, identity) {
+        creature.Identities.add(identity);
+    }
+
+    static SetIdentityNickName(creature, dateTime, identityKey, nickName) {
+        creature.Identities.get(identityKey).NickName = nickName;
+    }
+
+    static SetIdentityProperName(creature, dateTime, identityKey, properName) {
+        creature.Identities.get(identityKey).ProperName = ProperName;
+    }
+
+    static SetIdentityAddAlias(creature, dateTime, identityKey, alias) {
+        creature.Identities.get(identityKey).Alias.push(alias);
+    }
+
+    static SetIdentityRemoveAlias(creature, dateTime, identityKey, alias) {
+        creature.Identities.get(identityKey).Alias.remove(x => x === alias);
+    }
+
+    static SetIdentitySex(creature, dateTime, identityKey, sex) {
+        creature.Identities.get(identityKey).Sex = sex;
+    }
+
+    static SetIdentityRace(creature, dateTime, identityKey, race) {
+        creature.Identities.get(identityKey).Race = race;
+    }
+
+    static SetIdentityBreed(creature, dateTime, identityKey, breed) {
+        creature.Identities.get(identityKey).Breed = breed;
+    }
+
+    static SetIdentityBirthDate(creature, dateTime, identityKey, birthDate) {
+        creature.Identities.get(identityKey).Existent.Birth = new Date(birthDate);
+    }
+
+    static SetIdentityDeathDate(creature, dateTime, identityKey, deathDate) {
+        creature.Identities.get(identityKey).Existent.Death = new Date(deathDate);
+    }
+
+    static SetIdentityWhereabouts(creature, dateTime, identityKey, whereabouts) {
+        creature.Identities.get(identityKey).Existent.Whereabouts = whereabouts;
+    }
+
+    static SetIdentityLiteracy(creature, dateTime, identityKey, literacy) {
+        creature.Identities.get(identityKey).Literacy = literacy;
+    }
+
+    static SetIdentityNationality(creature, dateTime, identityKey, nationality) {
+        creature.Identities.get(identityKey).Nationality = nationality;
+    }
+
+    static SetIdentityAffiliation(creature, dateTime, identityKey, affiliation) {
+        creature.Identities.get(identityKey).Affiliation = affiliation;
+    }
+
+    static SetIdentityRank(creature, dateTime, identityKey, rank) {
+        creature.Identities.get(identityKey).Rank = rank;
+    }
+
+    static SetIdentityOccupation(creature, dateTime, identityKey, occupation) {
+        creature.Identities.get(identityKey).Occupation = occupation;
+    }
+
+    static SetIdentityReligion(creature, dateTime, identityKey, religion) {
+        creature.Identities.get(identityKey).Religion = religion;
+    }
+
+    static SetIdentityFightingHabit(creature, dateTime, identityKey, fightingHabit) {
+        creature.Identities.get(identityKey).FightingHabit = fightingHabit;
+    }
+
+    static SetIdentityFather(creature, dateTime, identityKey, fatherName) {
+        creature.Identities.get(identityKey).GenealogicalInformation.Father = fatherName;
+    }
+
+    static SetIdentityMother(creature, dateTime, identityKey, motherName) {
+        creature.Identities.get(identityKey).GenealogicalInformation.Mother = motherName;
+    }
+
+    static SetIdentityAddSibling(creature, dateTime, identityKey, siblingName) {
+        creature.Identities.get(identityKey).GenealogicalInformation.Siblings.push(siblingName);
+    }
+
+    static SetIdentityAddSpouse(creature, dateTime, identityKey, spouseName) {
+        creature.Identities.get(identityKey).GenealogicalInformation.Spouses.push(spouseName);
+    }
+
+    static SetIdentityAddChild(creature, dateTime, identityKey, childName) {
+        creature.Identities.get(identityKey).GenealogicalInformation.Children.push(childName);
+    }
+
+    static SetIdentityVisibility(creature, dateTime, identityKey, isVisible) {
+        creature.Identities.get(identityKey).IsVisible = isVisible;
+    }
+
+    static RemoveIdentity(creature, dateTime, identityKey) {
+        creature.Identities.remove(identityKey);
+    }
+
+    static AddProperty(creature, dateTime, property, origin) {
+        creature.Properties.set(property, { ID: property, Name: Compendium.Properties[property].Name, Origin: origin });
+    }
+
+    static RemoveProperty(creature, dateTime, property) {
+        creature.Properties.delete(property);
+    }
+
+    static SetAttribute(creature, dateTime, attribute, amount) {
+        creature.Attributes[attribute] = amount;
+    }
+
+    static ChangeAttribute(creature, dateTime, attribute, amount) {
+        const newAmount = creature.Attributes[attribute] + amount;
+        Current.Attributes[attribute] = newAmount >= 0 ? newAmount: 0;
+    }
+
+    static SetSkill(creature, dateTime, skill, amount) {
+        if (amount === 0)
+            delete creature.Skills[skill];
+        else if (creature.Skills[skill])
+            creature.Skills[skill].Level = amount;
+        else
+            creature.Skills[skill] = { ID: skill, Name: Compendium.Skills[skill].Name, Level: amount };
+    }
+
+    static ChangeSkill(creature, dateTime, skill, amount) {
+        const oldAmount = creature.Skills[skill] ? creature.Skills[skill] : 0;
+        const newAmount = oldAmount + amount;
+        if (newAmount === 0)
+            delete creature.Skills[skill];
+        else if (creature.Skills[skill])
+            creature.Skills[skill].Level = newAmount;
+        else
+            creature.Skills[skill] = { ID: skill, Name: Compendium.Skills[skill].Name, Level: amount };
+    }
+
+    static AddTrait(creature, dateTime, trait) {
+        creature.Traits.add(trait);
+    }
+
+    static RemoveTrait(creature, dateTime, trait) {
+        creature.Traits.remove(trait);
+    }
+
+    static SetDescription(creature, dateTime, description) {
+        creature.Description = description;
     }
 }

@@ -1,0 +1,81 @@
+{
+  "CreatureInnateData": {
+    "Image": "",
+    "Identities": [
+      {
+        "IdentityKey": "Main",
+        "NickName": "????",
+        "ProperName": "Unknown",
+        "Alias": [
+          "Nobody",
+          "No one",
+          "Anonymous",
+          "The Unknown"
+        ],
+        "Sex": "Male",
+        "Race": "Human",
+        "Breed": "Astoran",
+        "Existent": {
+          "Type": "Mortal",
+          "Birth": "1000-04-15T00:00:00.000\u002B00:00",
+          "Death": null,
+          "Whereabouts": null
+        },
+        "Literacy": "Yes",
+        "Nationality": null,
+        "Birthplace": null,
+        "Affiliation": null,
+        "Rank": null,
+        "Occupation": "Sentinel",
+        "Religion": null,
+        "FightingHabit": "Bruteforce",
+        "GenealogicalInformation": {
+          "Father": null,
+          "Mother": null,
+          "Siblings": [],
+          "Spouses": [],
+          "Children": []
+        },
+        "IsVisible": true
+      }
+    ],
+    "ExtraProperties": [],
+    "AbsentProperties": [],
+    "Attributes": {
+      "Strength": -0.07834628,
+      "Intelligence": 0.08042943,
+      "Cunning": 0.44483578,
+      "Sociability": -0.0083999215,
+      "Constitution": 0.121036164,
+      "Willpower": -0.81447536,
+      "Agility": 0.116191044,
+      "Reflex": 0.27628136,
+      "SpeedOfThought": -0.33472437,
+      "Endurance": 0.04953125,
+      "Dexterity": 1.8072114,
+      "LacertiliaIndex": 0.5035242,
+      "Luck": 0.117378555,
+      "Lifespan": 0.52903503
+    },
+    "Skills": {
+      "Sneaking": 5,
+      "Swordsmanship": 5,
+      "Assassination": 5
+    },
+    "Traits": [
+      "Cautious",
+      "Dishonest",
+      "Manipulative"
+    ],
+    "Description": "A very mysterious person, none has ever seen his face under the hood"
+  },
+  "Events": [
+    {
+      "DateTime": "1000-05-20T00:00:00.000\u002B02:00",
+      "EventType": "AddTrait",
+      "EventArguments": [
+        "Observant"
+      ]
+    }
+  ]
+}
