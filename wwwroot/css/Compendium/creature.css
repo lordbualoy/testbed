@@ -1,24 +1,36 @@
 ﻿.nick-name {
-  display: block;
-  font-size: 2em;
+  font-size: 2em; }
+
+.tabular > legend, div.tippy-box[data-theme='custom'] > div.tippy-content > fieldset > legend {
+  font-size: 1.5em; }
+
+div.tippy-box[data-theme='custom'] > div.tippy-content > fieldset .header, .tab > div > .tab-button {
+  font-size: 1.17em; }
+
+.nick-name {
   font-weight: bold; }
 
 .tabular > legend, div.tippy-box[data-theme='custom'] > div.tippy-content > fieldset > legend {
-  display: block;
-  font-size: 1.5em;
   font-weight: bold; }
 
 div.tippy-box[data-theme='custom'] > div.tippy-content > fieldset .header, .tab > div > .tab-button {
-  display: block;
-  font-size: 1.17em;
   font-weight: bold; }
+
+.nick-name {
+  display: block; }
+
+.tabular > legend, div.tippy-box[data-theme='custom'] > div.tippy-content > fieldset > legend {
+  display: block; }
+
+div.tippy-box[data-theme='custom'] > div.tippy-content > fieldset .header, .tab > div > .tab-button {
+  display: block; }
 
 /* latin-ext */
 @font-face {
   font-family: 'MedievalSharp';
   font-style: normal;
   font-weight: 400;
-  src: local("MedievalSharp"), url(../fonts/MedievalSharp-latin-ext.woff2) format("woff2");
+  src: url(../../fonts/MedievalSharp-latin-ext.woff2) format("woff2");
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
 
 /* latin */
@@ -26,11 +38,11 @@ div.tippy-box[data-theme='custom'] > div.tippy-content > fieldset .header, .tab 
   font-family: 'MedievalSharp';
   font-style: normal;
   font-weight: 400;
-  src: local("MedievalSharp"), url(../fonts/MedievalSharp-latin.woff2) format("woff2");
+  src: url(../../fonts/MedievalSharp-latin.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 
-* {
-  font-family: "MedievalSharp"; }
+body {
+  font-family: 'MedievalSharp'; }
 
 p, span, li, dt, dd {
   color: darkred; }
@@ -40,19 +52,31 @@ p, span, li, dt, dd {
     color: red; }
 
 .nick-name {
-  display: block;
-  font-size: 2em;
+  font-size: 2em; }
+
+.tabular > legend, div.tippy-box[data-theme='custom'] > div.tippy-content > fieldset > legend {
+  font-size: 1.5em; }
+
+div.tippy-box[data-theme='custom'] > div.tippy-content > fieldset .header, .tab > div > .tab-button {
+  font-size: 1.17em; }
+
+.nick-name {
   font-weight: bold; }
 
 .tabular > legend, div.tippy-box[data-theme='custom'] > div.tippy-content > fieldset > legend {
-  display: block;
-  font-size: 1.5em;
   font-weight: bold; }
 
 div.tippy-box[data-theme='custom'] > div.tippy-content > fieldset .header, .tab > div > .tab-button {
-  display: block;
-  font-size: 1.17em;
   font-weight: bold; }
+
+.nick-name {
+  display: block; }
+
+.tabular > legend, div.tippy-box[data-theme='custom'] > div.tippy-content > fieldset > legend {
+  display: block; }
+
+div.tippy-box[data-theme='custom'] > div.tippy-content > fieldset .header, .tab > div > .tab-button {
+  display: block; }
 
 .tabular {
   display: flex;
@@ -168,7 +192,7 @@ label.checkbox {
 
 #container {
   border: 30px solid transparent;
-  border-image-source: url(../images/background.webp);
+  border-image-source: url(../../images/background.webp);
   border-image-slice: 100 fill;
   border-image-repeat: repeat; }
 
@@ -176,13 +200,13 @@ label.checkbox {
   border-width: 7px 58px;
   border-style: solid;
   border-color: transparent;
-  border-image-source: url(../images/title.webp);
+  border-image-source: url(../../images/title.webp);
   border-image-slice: 25 208;
   border-image-repeat: round; }
 
 .outline > div:nth-child(2) > div:first-child > div > img {
   border: 20px solid transparent;
-  border-image-source: url(../images/frame.webp);
+  border-image-source: url(../../images/frame.webp);
   border-image-slice: 70;
   border-image-repeat: repeat; }
 
