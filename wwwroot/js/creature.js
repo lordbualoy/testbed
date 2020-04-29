@@ -14,6 +14,9 @@ const date = (function () {
 
 class Compendium {
     static async Initialize() {
+        if (this.initialized)
+            return;
+
         const data = await Promise.all([
             fetch('../wwwroot/json/races.json').then((resp) => resp.json())
             , fetch('../wwwroot/json/attributes.json').then((resp) => resp.json())
@@ -28,6 +31,8 @@ class Compendium {
         Compendium.Properties = data[i++];
         Compendium.Skills = data[i++];
         Compendium.Traits = data[i++];
+
+        this.initialized = true;
     }
 }
 

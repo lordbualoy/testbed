@@ -26,15 +26,17 @@ header > article > section .header {
   display: block; }
 
 body {
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  color: darkred;
+  background-color: wheat; }
 
 h1, h2, h3, h4, h5, h6 {
-  border-bottom: 1px solid grey; }
+  border-bottom: 1px solid saddlebrown; }
 
 header > article {
   margin: 0 0 0.5em 0.5em;
-  background-color: lightgrey;
-  border: 1px solid grey;
+  background-color: burlywood;
+  border: 1px solid saddlebrown;
   border-radius: 0.5em;
   overflow: hidden;
   min-width: 22em;
@@ -44,11 +46,14 @@ header > article {
       float: right; } }
   header > article > section .header {
     text-align: center;
-    background-color: lightskyblue; }
+    background-color: darksalmon; }
   header > article > section > div:not(.header) {
     display: flex;
     flex-direction: column;
     align-items: center; }
+    header > article > section > div:not(.header) > img {
+      max-width: 22em;
+      max-height: 22em; }
   header > article > section table {
     border-collapse: collapse;
     table-layout: fixed;
@@ -57,10 +62,10 @@ header > article {
       max-width: 50%;
       border-width: 1px 0px;
       border-style: solid;
-      border-color: grey; }
+      border-color: saddlebrown; }
       header > article > section table td:nth-child(odd) {
         border-right-width: 1px;
-        background-color: darkgrey;
+        background-color: tan;
         font-weight: bold; }
       header > article > section table td:nth-child(even) {
         background-color: transparent; }
@@ -69,14 +74,18 @@ header > article {
 
 header > nav > details {
   display: inline-block;
-  background-color: lightgrey;
-  border: 1px solid grey;
+  background-color: burlywood;
+  border: 1px solid saddlebrown;
   border-radius: 0.25em; }
   header > nav > details > summary {
     text-align: center;
     cursor: pointer; }
   header > nav > details > ol {
     margin-right: 0.625em; }
+
+main > section {
+  margin-top: 1em;
+  margin-bottom: 1em; }
 
 .gallery-container {
   display: flex;
@@ -85,7 +94,7 @@ header > nav > details {
     margin: 1em 1em;
     max-height: 15em;
     width: 10em;
-    border: 1px solid grey;
+    border: 1px solid saddlebrown;
     border-radius: 0.25em;
     display: flex;
     flex-direction: column; }
@@ -102,7 +111,7 @@ header > nav > details {
       flex-shrink: 0.13333; }
 
 footer {
-  border: 1px solid grey;
+  border: 1px solid saddlebrown;
   border-radius: 0.25em;
   padding: 0.5em 0.25em;
   display: flex;
@@ -114,4 +123,4 @@ footer {
     margin: 0 0.25em;
     padding: 0 0.25em;
     border-radius: 0.25em;
-    background-color: lightskyblue; }
+    background-color: darksalmon; }
