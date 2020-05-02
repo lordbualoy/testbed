@@ -17,7 +17,7 @@
         "Breed": "Astoran",
         "Existent": {
           "Type": "Mortal",
-          "Birth": "1000-04-15T00:00:00.000\u002B00:00",
+          "Birth": "1000-04-15T00:00:00.000+00:00",
           "Death": null,
           "Whereabouts": null
         },
@@ -42,24 +42,24 @@
     "ExtraProperties": [],
     "AbsentProperties": [],
     "Attributes": {
-      "Strength": -0.07834628,
-      "Intelligence": 0.08042943,
-      "Cunning": 0.44483578,
-      "Sociability": -0.0083999215,
-      "Constitution": 0.121036164,
-      "Willpower": -0.81447536,
-      "Agility": 0.116191044,
-      "Reflex": 0.27628136,
-      "SpeedOfThought": -0.33472437,
-      "Endurance": 0.04953125,
-      "Dexterity": 1.8072114,
-      "LacertiliaIndex": 0.5035242,
-      "Luck": 0.117378555,
-      "Lifespan": 0.52903503
+      "Strength": 1.2848458,
+      "Intelligence": -0.71096295,
+      "Cunning": 0.987075,
+      "Sociability": -0.6121658,
+      "Constitution": -1.6351794,
+      "Willpower": -0.92488015,
+      "Agility": 0.28097618,
+      "Reflex": 3.6875668,
+      "SpeedOfThought": -0.17812903,
+      "Endurance": -0.23667325,
+      "Dexterity": -0.2348954,
+      "LacertiliaIndex": -0.20593092,
+      "Luck": 0.61843383,
+      "Lifespan": -0.9144934
     },
     "Skills": {
-      "Sneaking": 5,
       "Swordsmanship": 5,
+      "Sneaking": 5,
       "Assassination": 5
     },
     "Traits": [
@@ -71,7 +71,7 @@
   },
   "Events": [
     {
-      "DateTime": "1000-05-20T00:00:00.000\u002B02:00",
+      "DateTime": "1000-05-20T00:00:00.000+02:00",
       "EventType": "AddTrait",
       "EventArguments": [
         "Observant"

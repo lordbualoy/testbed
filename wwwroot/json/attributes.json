@@ -26,7 +26,7 @@
       "Decreases the chance of getting Bluffed by another character"
     ],
     "NegativeEffects": [],
-    "Description": "A measure of a creature\u0027s problem-solving, decision-making ability, and how quickly it learns",
+    "Description": "A measure of a creature's problem-solving, decision-making ability, and how quickly it learns",
     "Commentary": null
   },
   "Cunning": {
@@ -35,7 +35,7 @@
       "Decreases the chance of getting Bluffed by another character"
     ],
     "NegativeEffects": [],
-    "Description": "A measure of a creature\u0027s perception, craftiness, wit and wile",
+    "Description": "A measure of a creature's perception, craftiness, wit and wile",
     "Commentary": null
   },
   "Sociability": {
@@ -44,7 +44,7 @@
       ""
     ],
     "NegativeEffects": [],
-    "Description": "A measure of a creature\u0027s ability to socialize with others",
+    "Description": "A measure of a creature's ability to socialize with others",
     "Commentary": null
   },
   "Constitution": {
@@ -65,7 +65,7 @@
       "Increases the chance of resisting Interrogation and Torture"
     ],
     "NegativeEffects": [],
-    "Description": "A measure of a creature\u2019s strength of mind as in ability to withstand psychological stress",
+    "Description": "A measure of a creature’s strength of mind as in ability to withstand psychological stress",
     "Commentary": null
   },
   "Agility": {
@@ -91,7 +91,7 @@
       "Increase arithmetic operations per second"
     ],
     "NegativeEffects": [],
-    "Description": "A measure of a creature\u0027s thinking speed",
+    "Description": "A measure of a creature's thinking speed",
     "Commentary": null
   },
   "Endurance": {
@@ -123,7 +123,7 @@
       "Minimum Lacertilia Index required for spellcasting is at 120"
     ],
     "NegativeEffects": [],
-    "Description": "A measure of a creature\u0027s affinity with the Lacertilia",
+    "Description": "A measure of a creature's affinity with the Lacertilia",
     "Commentary": null
   },
   "Luck": {
@@ -133,7 +133,7 @@
       "Increases chance of winning in gambling"
     ],
     "NegativeEffects": [],
-    "Description": "A measure of a creature\u0027s luck",
+    "Description": "A measure of a creature's luck",
     "Commentary": null
   },
   "Lifespan": {

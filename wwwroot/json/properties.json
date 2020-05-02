@@ -25,8 +25,8 @@
     },
     "Effects": {
       "PositiveEffects": [
-        "The creatures can manipulate Lacertilia giving them the ability to use \u201Cmagic\u201D",
-        "Grants \u003Ca href=\u0022#LacertiliaSense\u0022\u003ELacertilia Sense\u003C/a\u003E"
+        "The creatures can manipulate Lacertilia giving them the ability to use “magic”",
+        "Grants <a href=\"/Compendium/Properties.html#LacertiliaSense\">Lacertilia Sense</a>"
       ],
       "NegativeEffects": []
     },
@@ -174,7 +174,7 @@
       "NegativeEffects": []
     },
     "Description": "The creatures have a superior spatial ability",
-    "Commentary": "\u003Ca href=\u0022https://en.wikipedia.orghttps://en.wikipedia.org/wiki/Spatial_ability\u0022\u003Ehttps://en.wikipedia.org/wiki/Spatial_ability\u003C/a\u003E"
+    "Commentary": "<a href=\"https://en.wikipedia.org/wiki/Spatial_ability\">https://en.wikipedia.org/wiki/Spatial_ability</a>"
   },
   "Biocomputer_Programmable": {
     "Name": "Biocomputer: Programmable",
@@ -246,7 +246,7 @@
     "Conditions": null,
     "Effects": {
       "PositiveEffects": [
-        "Grants \u003Ca href=\u0022#AsexualReproduction\u0022\u003EAsexual Reproduction\u003C/a\u003E"
+        "Grants <a href=\"/Compendium/Properties.html#AsexualReproduction\">Asexual Reproduction</a>"
       ],
       "NegativeEffects": [
         "Cannot reproduced sexually",
@@ -254,7 +254,7 @@
       ]
     },
     "Description": "The race has no sex and cannot sexually reproduce",
-    "Commentary": "Beings such as Microorganisms; Note that plants can also reproduce asexually but they weren\u0027t asexual as they can reproduce via both sexually \u0026 asexually"
+    "Commentary": "Beings such as Microorganisms; Note that plants can also reproduce asexually but they weren't asexual as they can reproduce via both sexually & asexually"
   },
   "AsexualReproduction": {
     "Name": "Asexual Reproduction",
@@ -739,7 +739,7 @@
       "PositiveEffects": [
         "It gives a creature a spare eye in case one is damaged",
         "It gives a wider field of view",
-        "It can give stereopsis in which binocular disparity (or parallax) provided by the two eyes\u0027 different positions on the head gives precise depth perception; This also allows a creature to break the camouflage of another creature",
+        "It can give stereopsis in which binocular disparity (or parallax) provided by the two eyes' different positions on the head gives precise depth perception; This also allows a creature to break the camouflage of another creature",
         "It allows a creature to see more of, or all of, an object behind an obstacle"
       ],
       "NegativeEffects": []
@@ -822,7 +822,7 @@
       "PositiveEffects": null,
       "NegativeEffects": null
     },
-    "Description": "non dominant hand penalty: says the char is left handed when the char is wielding a sword (or anything that were normally used in dominant hand) in his left hand he will suffer -2 dex mod for every action he use that sword for (ambidextrous remove non dominant penalty)\r\nuse dominant hand for something normally used in non-dominant hand: (for ambidextrous the bonus is always active) bonus to dex and str when rolling for\r\n-shield\r\n-parrying dagger\r\n-free hand action mid combat\r\nFor example a shield is most prominently worn on left hand (non-dominant hand) but let\u0027s say if a character is right-handed and he wield a shield on his right instead of left he would get this bonus\r\nAnd for another example, if a character is ambidextrous and he wield a shield on his left like any normal warrior would he would get this bonus as his left hand were also dominant hand (well both of his hands were dominant...)",
+    "Description": "non dominant hand penalty: says the char is left handed when the char is wielding a sword (or anything that were normally used in dominant hand) in his left hand he will suffer -2 dex mod for every action he use that sword for (ambidextrous remove non dominant penalty)\r\nuse dominant hand for something normally used in non-dominant hand: (for ambidextrous the bonus is always active) bonus to dex and str when rolling for\r\n-shield\r\n-parrying dagger\r\n-free hand action mid combat\r\nFor example a shield is most prominently worn on left hand (non-dominant hand) but let's say if a character is right-handed and he wield a shield on his right instead of left he would get this bonus\r\nAnd for another example, if a character is ambidextrous and he wield a shield on his left like any normal warrior would he would get this bonus as his left hand were also dominant hand (well both of his hands were dominant...)",
     "Commentary": null
   },
   "LeftHanded": {
@@ -942,6 +942,6 @@
       "NegativeEffects": []
     },
     "Description": "",
-    "Commentary": "\u003Ca href=\u0022https://www.livescience.comhttps://www.livescience.com/44196-why-do-cats-have-whiskers.html\u0022\u003Ehttps://www.livescience.com/44196-why-do-cats-have-whiskers.html\u003C/a\u003E"
+    "Commentary": "<a href=\"https://www.livescience.com/44196-why-do-cats-have-whiskers.html\">https://www.livescience.com/44196-why-do-cats-have-whiskers.html</a>"
   }
 }

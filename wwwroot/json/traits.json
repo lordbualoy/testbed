@@ -113,7 +113,7 @@
     "Levels": null,
     "Effects": null,
     "Description": "",
-    "Commentary": "Arrogance is different from \u003Ca href=\u0022#Proud\u0022\u003EProud\u003C/a\u003E"
+    "Commentary": "Arrogance is different from <a href=\"/Compendium/Traits.html#Proud\">Proud</a>"
   },
   "Humble": {
     "Name": "Humble",
@@ -143,7 +143,7 @@
     "Levels": null,
     "Effects": null,
     "Description": "",
-    "Commentary": "Proud is different from \u003Ca href=\u0022#Arrogance\u0022\u003EArrogance\u003C/a\u003E"
+    "Commentary": "Proud is different from <a href=\"/Compendium/Traits.html#Arrogance\">Arrogance</a>"
   },
   "Decisive": {
     "Name": "Decisive",
@@ -208,8 +208,8 @@
     "Levels": null,
     "Effects": {
       "PositiveEffects": [
-        "\u002BWillpower against intimidation check",
-        "\u002BWillpower against fright check"
+        "+Willpower against intimidation check",
+        "+Willpower against fright check"
       ],
       "NegativeEffects": []
     },
@@ -1045,7 +1045,7 @@
     },
     "Levels": null,
     "Effects": null,
-    "Description": "The character don\u0027t sugarcoat anything and say exactly what he think",
+    "Description": "The character don't sugarcoat anything and say exactly what he think",
     "Commentary": null
   },
   "Stuttering": {
@@ -1589,7 +1589,7 @@
     },
     "Levels": null,
     "Effects": null,
-    "Description": "somewhat relate to greedy but differs in that greedy person wants to \u0022earn\u0022 more and more wealth but can still be a big spender, stingy person on the other hand wants to \u0022hoard wealth and didn\u0027t want to spend them\u0022 but doesn\u0027t necessarily want to \u0022earn\u0022 more and more wealth like greedy person do; make will check to spend money even if it is something the character urgently needed, bonus to discount rate",
+    "Description": "somewhat relate to greedy but differs in that greedy person wants to \"earn\" more and more wealth but can still be a big spender, stingy person on the other hand wants to \"hoard wealth and didn't want to spend them\" but doesn't necessarily want to \"earn\" more and more wealth like greedy person do; make will check to spend money even if it is something the character urgently needed, bonus to discount rate",
     "Commentary": null
   },
   "Extravagant": {
@@ -1864,7 +1864,7 @@
     "Levels": null,
     "Effects": null,
     "Description": "",
-    "Commentary": "Gluttony is different from \u003Ca href=\u0022#CompulsiveBehavior_Eating\u0022\u003ECompulsive Behavior Eating\u003C/a\u003E"
+    "Commentary": "Gluttony is different from <a href=\"/Compendium/Traits.html#CompulsiveBehavior_Eating\">Compulsive Behavior Eating</a>"
   },
   "Anorexia": {
     "Name": "Anorexia",
@@ -1910,7 +1910,7 @@
     "IncompatibleWith": null,
     "Levels": null,
     "Effects": null,
-    "Description": "the character will kill any foe that he engages in a fight unless he pass a will check to restrain his urge to kill, if he didn\u2019t attempt the roll or failed the roll he will kill his foe even if it mean breaking the law, violating the order, or getting him killed later",
+    "Description": "the character will kill any foe that he engages in a fight unless he pass a will check to restrain his urge to kill, if he didn’t attempt the roll or failed the roll he will kill his foe even if it mean breaking the law, violating the order, or getting him killed later",
     "Commentary": null
   },
   "Berserk": {
@@ -1942,8 +1942,8 @@
         "Self Defense Only",
         "Reluctant Fighter",
         "Reluctant Killer",
-        "Won\u0027t Kill",
-        "Won\u0027t Fight"
+        "Won't Kill",
+        "Won't Fight"
       ]
     },
     "AccompanyingTraits": {
@@ -2026,7 +2026,7 @@
     "Commentary": null
   },
   "NeverKill": {
-    "Name": "Won\u0027t Kill",
+    "Name": "Won't Kill",
     "AlternateNames": null,
     "Type": "Negative",
     "DerivedFrom": "Doormat",
@@ -2039,11 +2039,11 @@
     "IncompatibleWith": null,
     "Levels": null,
     "Effects": null,
-    "Description": "will suffer mental breakdown when killing or feeling responsible for someone\u0027s death",
+    "Description": "will suffer mental breakdown when killing or feeling responsible for someone's death",
     "Commentary": null
   },
   "NeverFight": {
-    "Name": "Won\u0027t Fight",
+    "Name": "Won't Fight",
     "AlternateNames": null,
     "Type": "Negative",
     "DerivedFrom": "Doormat",

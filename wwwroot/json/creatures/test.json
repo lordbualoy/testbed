@@ -12,7 +12,7 @@
         "Breed": "Astoran",
         "Existent": {
           "Type": "Mortal",
-          "Birth": "1000-04-15T00:00:00.000\u002B00:00",
+          "Birth": "1000-04-15T00:00:00.000+00:00",
           "Death": null,
           "Whereabouts": null
         },
@@ -43,7 +43,7 @@
         "Breed": "Astoran",
         "Existent": {
           "Type": "Mortal",
-          "Birth": "1000-04-15T00:00:00.000\u002B00:00",
+          "Birth": "1000-04-15T00:00:00.000+00:00",
           "Death": null,
           "Whereabouts": null
         },
@@ -74,7 +74,7 @@
         "Breed": "Astoran",
         "Existent": {
           "Type": "Mortal",
-          "Birth": "1000-04-15T00:00:00.000\u002B00:00",
+          "Birth": "1000-04-15T00:00:00.000+00:00",
           "Death": null,
           "Whereabouts": null
         },
@@ -107,7 +107,7 @@
     ],
     "Attributes": {
       "Strength": 0,
-      "Intelligence": -0.9590586,
+      "Intelligence": -0.6642146,
       "Cunning": 0,
       "Sociability": 0,
       "Constitution": 0,
@@ -122,8 +122,8 @@
       "Lifespan": 0.01
     },
     "Skills": {
-      "Diving": 1,
-      "Swimming": 1
+      "Swimming": 1,
+      "Diving": 1
     },
     "Traits": [
       "Boastful",

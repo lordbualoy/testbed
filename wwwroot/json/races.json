@@ -83,24 +83,23 @@
     },
     "RacialSkills": {
       "Walking": 3,
-      "Running": 3,
       "Jumping": 1,
-      "Climbing": 1,
+      "Running": 3,
       "Striking": 1,
-      "Grappling": 1
+      "Grappling": 1,
+      "Climbing": 1
     },
     "Description": "",
     "Commentary": null
   },
-  "Streozariel": {
-    "Name": "Streozariel",
+  "Elf": {
+    "Name": "Elf",
     "AlternateNames": null,
     "Breeds": [],
     "Tags": [
       "Humanoid",
       "Mammal",
-      "Eternal",
-      "Hybrid"
+      "Deviant"
     ],
     "RacialProperties": {
       "Items": [
@@ -170,11 +169,187 @@
     },
     "RacialSkills": {
       "Walking": 3,
-      "Running": 3,
       "Jumping": 1,
-      "Climbing": 1,
+      "Running": 3,
       "Striking": 1,
-      "Grappling": 1
+      "Grappling": 1,
+      "Climbing": 1
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "Angel": {
+    "Name": "Angel",
+    "AlternateNames": null,
+    "Breeds": [],
+    "Tags": [
+      "Humanoid",
+      "Mammal",
+      "Eternal"
+    ],
+    "RacialProperties": {
+      "Items": [
+        {
+          "ID": "SexualReproduction",
+          "Name": "Sexual Reproduction"
+        }
+      ]
+    },
+    "RacialAttributes": {
+      "Strength": {
+        "Mean": 100,
+        "StandardDeviation": 0
+      },
+      "Intelligence": {
+        "Mean": 100,
+        "StandardDeviation": 15
+      },
+      "Cunning": {
+        "Mean": 100,
+        "StandardDeviation": 15
+      },
+      "Sociability": {
+        "Mean": 100,
+        "StandardDeviation": 15
+      },
+      "Constitution": {
+        "Mean": 100,
+        "StandardDeviation": 0
+      },
+      "Willpower": {
+        "Mean": 100,
+        "StandardDeviation": 0
+      },
+      "Agility": {
+        "Mean": 100,
+        "StandardDeviation": 0
+      },
+      "Reflex": {
+        "Mean": 100,
+        "StandardDeviation": 0
+      },
+      "SpeedOfThought": {
+        "Mean": 100,
+        "StandardDeviation": 0
+      },
+      "Endurance": {
+        "Mean": 100,
+        "StandardDeviation": 0
+      },
+      "Dexterity": {
+        "Mean": 100,
+        "StandardDeviation": 0
+      },
+      "LacertiliaIndex": {
+        "Mean": 100,
+        "StandardDeviation": 0
+      },
+      "Luck": {
+        "Mean": 100,
+        "StandardDeviation": 0
+      },
+      "Lifespan": {
+        "Mean": 50,
+        "StandardDeviation": 0
+      }
+    },
+    "RacialSkills": {
+      "Walking": 3,
+      "Jumping": 1,
+      "Running": 3,
+      "Striking": 1,
+      "Grappling": 1,
+      "Climbing": 1
+    },
+    "Description": "",
+    "Commentary": null
+  },
+  "Throgreosh": {
+    "Name": "Throgreosh",
+    "AlternateNames": null,
+    "Breeds": [
+      "Throgreosh",
+      "Succubus"
+    ],
+    "Tags": [
+      "Humanoid",
+      "Mammal",
+      "Eternal",
+      "Demon"
+    ],
+    "RacialProperties": {
+      "Items": [
+        {
+          "ID": "SexualReproduction",
+          "Name": "Sexual Reproduction"
+        }
+      ]
+    },
+    "RacialAttributes": {
+      "Strength": {
+        "Mean": 100,
+        "StandardDeviation": 0
+      },
+      "Intelligence": {
+        "Mean": 100,
+        "StandardDeviation": 15
+      },
+      "Cunning": {
+        "Mean": 100,
+        "StandardDeviation": 15
+      },
+      "Sociability": {
+        "Mean": 100,
+        "StandardDeviation": 15
+      },
+      "Constitution": {
+        "Mean": 100,
+        "StandardDeviation": 0
+      },
+      "Willpower": {
+        "Mean": 100,
+        "StandardDeviation": 0
+      },
+      "Agility": {
+        "Mean": 100,
+        "StandardDeviation": 0
+      },
+      "Reflex": {
+        "Mean": 100,
+        "StandardDeviation": 0
+      },
+      "SpeedOfThought": {
+        "Mean": 100,
+        "StandardDeviation": 0
+      },
+      "Endurance": {
+        "Mean": 100,
+        "StandardDeviation": 0
+      },
+      "Dexterity": {
+        "Mean": 100,
+        "StandardDeviation": 0
+      },
+      "LacertiliaIndex": {
+        "Mean": 100,
+        "StandardDeviation": 0
+      },
+      "Luck": {
+        "Mean": 100,
+        "StandardDeviation": 0
+      },
+      "Lifespan": {
+        "Mean": 50,
+        "StandardDeviation": 0
+      }
+    },
+    "RacialSkills": {
+      "Walking": 3,
+      "Jumping": 1,
+      "Running": 3,
+      "Striking": 1,
+      "Grappling": 1,
+      "Climbing": 1
     },
     "Description": "",
     "Commentary": null
